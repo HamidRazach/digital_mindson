@@ -1,0 +1,999 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>UI/UX Design | Digital Minds On</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" type="image/x-icon" href="img/logo/icon.svg">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/aos.min.css">
+    <link rel="stylesheet" href="css/icofont.min.css">
+    <link rel="stylesheet" href="css/glightbox.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+    <script>
+        // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+        if (localStorage.getItem("theme-color") === "dark" || (!("theme-color" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+            document.documentElement.classList.add("is_dark");
+        }
+        if (localStorage.getItem("theme-color") === "light") {
+            document.documentElement.classList.remove("is_dark");
+        } 
+    </script>
+
+</head>
+
+
+<body class="body__wrapper">
+    <!-- pre loader area start -->
+    <div id="back__preloader">
+        <div id="back__circle_loader"></div>
+        <div class="back__loader_logo">
+            <img loading="lazy" src="img/logo/icon.svg" alt="Preload">
+        </div>
+    </div>
+    <!-- pre loader area end -->
+
+
+    <!-- Dark/Light area start -->
+    <div class="mode_switcher my_switcher">
+        <button id="light--to-dark-button" class="light align-items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon dark__mode" viewBox="0 0 512 512">
+                <path
+                    d="M160 136c0-30.62 4.51-61.61 16-88C99.57 81.27 48 159.32 48 248c0 119.29 96.71 216 216 216 88.68 0 166.73-51.57 200-128-26.39 11.49-57.38 16-88 16-119.29 0-216-96.71-216-216z"
+                    fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                    stroke-width="32" />
+            </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon light__mode" viewBox="0 0 512 512">
+                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32"
+                    d="M256 48v48M256 416v48M403.08 108.92l-33.94 33.94M142.86 369.14l-33.94 33.94M464 256h-48M96 256H48M403.08 403.08l-33.94-33.94M142.86 142.86l-33.94-33.94" />
+                <circle cx="256" cy="256" r="80" fill="none" stroke="currentColor" stroke-linecap="round"
+                    stroke-miterlimit="10" stroke-width="32" />
+            </svg>
+
+            <span class="light__mode">Light</span>
+            <span class="dark__mode">Dark</span>
+        </button>
+    </div>
+    <!-- Dark/Light area end -->
+
+
+
+    <main class="main_wrapper overflow-hidden">
+
+        <!-- animation  -->
+        <div class="header__animate bg__black">
+            <div class="container-fluid">
+                <div class="header__animate__wraper">
+
+                    <div class="header__animate__item">
+                        <i class="icofont-phone"></i>
+                        <h3><a href="tel:(+92)3207588171">+92 3207588171</a></h3>
+                    </div>
+
+                    <div class="header__animate__item">
+                        <i class="icofont-email"></i>
+                        <h3><a href="mailto:info@digitalmindson.com">info@digitalmindson.com</a></h3>
+                    </div>
+                    <div class="header__animate__item">
+                        <i class="icofont-phone"></i>
+                        <h3><a href="tel:(+92)3207588171">+92 3207588171</a></h3>
+                    </div>
+
+                    <div class="header__animate__item">
+                        <i class="icofont-email"></i>
+                        <h3><a href="mailto:info@digitalmindson.com">info@digitalmindson.com</a></h3>
+                    </div>
+                    <div class="header__animate__item">
+                        <i class="icofont-phone"></i>
+                        <h3><a href="tel:(+92)3207588171">+92 3207588171</a></h3>
+                    </div>
+
+                    <div class="header__animate__item">
+                        <i class="icofont-email"></i>
+                        <h3><a href="mailto:info@digitalmindson.com">info@digitalmindson.com</a></h3>
+                    </div>
+                    <div class="header__animate__item">
+                        <i class="icofont-phone"></i>
+                        <h3><a href="tel:(+92)3207588171">+92 3207588171</a></h3>
+                    </div>
+
+                    <div class="header__animate__item">
+                        <i class="icofont-email"></i>
+                        <h3><a href="mailto:info@digitalmindson.com">info@digitalmindson.com</a></h3>
+                    </div>
+                    <div class="header__animate__item">
+                        <i class="icofont-phone"></i>
+                        <h3><a href="tel:(+92)3207588171">+92 3207588171</a></h3>
+                    </div>
+
+                    <div class="header__animate__item">
+                        <i class="icofont-email"></i>
+                        <h3><a href="mailto:info@digitalmindson.com">info@digitalmindson.com</a></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <header>
+            <div class="headerarea headerarea--1 headerarea__transparent header__sticky main__header ">
+                <div class="container desktop__menu__wrapper">
+                    <div class="headerarea__main__wrapper position-relative">
+
+                        <div class="headerarea__component__wrap">
+                            <div class="headerarea__component">
+                                <div class="headerarea__logo">
+                                    <a href="index.html"><img src="img/logo/full-logo.svg" alt="Bastun Logo"></a>
+                                </div>
+                            </div>
+                            <div class="headerarea__component">
+                                <div class="headerarea__main__menu">
+                                    <nav>
+                                        <ul>
+                                            <li
+                                                class="headerarea__common__dropdown headerarea__mega__menu position-static">
+                                                <a class="headerarea__has__dropdown" href="index.html">HOME
+                                                </a>
+
+
+                                            </li>
+
+                                            <li class="headerarea__common__dropdown"><a
+                                                    class="headerarea__has__dropdown" href="service.html">Services
+                                                    <i class="icofont-long-arrow-down"></i></a>
+                                                <ul
+                                                    class="headerarea__submenu headerarea__submenu--five--wrap service-scrollbar">
+
+                                                    <li><a href="webdevelopment.html">Web Development</a></li>
+                                                    <li><a href="software.html">Software Development</a></li>
+                                                    <li><a href="appdevelop.html">App Development</a></li>
+                                                    <li><a href="GameDevelop.html">Game Development</a></li>
+                                                    <li><a href="digtalmarketing.html">Digital Marketing</a></li>
+                                                    <li><a href="uidesign.html">UI/UX Design</a></li>
+                                                    <li><a href="itexpert.html">IT Specialist</a></li>
+                                                    <li><a href="#">Content Creator</a></li>
+                                                    <li><a href="seo.html">Search Engine Optimization(SEO)</a></li>
+
+                                                </ul>
+
+                                            </li>
+
+                                            <li><a href="#">Careers </a></li>
+                                            <li><a href="blog.html">BLOG </a></li>
+                                            <li><a href="team.html">Team </a></li>
+
+                                            <li class="headerarea__common__dropdown"><a
+                                                    class="headerarea__has__dropdown" href="contact.html">CONTACT
+                                                    <i class="icofont-long-arrow-down"></i></a>
+                                                <ul class="headerarea__submenu headerarea__submenu--five--wrap">
+
+                                                    <li><a href="about.html">ABOUT </a></li>
+                                                    <li><a href="project.html">Portfolio </a></li>
+
+                                                </ul>
+
+                                            </li>
+
+                                </div>
+
+                                </ul>
+                                </nav>
+                            </div>
+                            <div class="headerarea__component">
+                                <div class="headerarea__right">
+
+                                    <div class="headerarea__button">
+                                        <a class="default__button" href="contact.html">GET FREE QUATE</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="mob_menu_wrapper container-fluid">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="offcanvas__header--menu__open ">
+                        <a class="offcanvas__header--menu__open--btn" href="javascript:void(0)" data-offcanvas>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon offcanvas__header--menu__open--svg"
+                                viewBox="0 0 512 512">
+                                <path fill="currentColor" stroke="currentColor" stroke-linecap="round"
+                                    stroke-miterlimit="10" stroke-width="32" d="M80 160h352M80 256h352M80 352h352" />
+                            </svg>
+                            <span class="visually-hidden">Offcanvas Menu Open</span>
+                        </a>
+                    </div>
+                    <div class="mobile__log">
+                        <div class="mobile__log--title"><a class="mobile__log--link" href="index.html">
+                                <img class="mobile__log--img" src="img/logo/full-logo.svg" alt="logo-img">
+                            </a></div>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+        </header>
+        <!-- header start -->
+
+
+        <!-- Start Offcanvas header menu -->
+        <div class="offcanvas__header">
+            <div class="offcanvas__inner">
+                <div class="offcanvas__logo">
+                    <a class="offcanvas__logo_link" href="index.html">
+                        <img src="img/logo/Logo_2.png" alt="Logo-img">
+                    </a>
+                    <button class="offcanvas__close--btn" data-offcanvas>Close</button>
+                </div>
+                <nav class="offcanvas__menu">
+                    <ul class="offcanvas__menu_ul">
+                        <li class="offcanvas__menu_li">
+                            <a class="offcanvas__menu_item" href="index.html">Home</a>
+                            <ul class="offcanvas__sub_menu">
+                                <li class="offcanvas__sub_menu_li"><a href="#"
+                                        class="offcanvas__sub_menu_item">Multipages</a>
+                                    <ul class="offcanvas__sub_menu">
+                                        <li class="offcanvas__sub_menu_li"><a href="index.html"
+                                                class="offcanvas__sub_menu_item">Business Consulting</a></li>
+                                        <li class="offcanvas__sub_menu_li"><a href="home-2(marketing-consulting).html"
+                                                class="offcanvas__sub_menu_item">Marketing Consulting</a></li>
+                                        <li class="offcanvas__sub_menu_li"><a href="home-3(corporate-business).html"
+                                                class="offcanvas__sub_menu_item">Corporate Business</a></li>
+                                        <li class="offcanvas__sub_menu_li"><a href="home-4(digital-agency).html"
+                                                class="offcanvas__sub_menu_item">Digital Agency</a></li>
+                                        <li class="offcanvas__sub_menu_li"><a href="home-5(finance-consulting).html"
+                                                class="offcanvas__sub_menu_item">Finance Consulting</a></li>
+                                        <li class="offcanvas__sub_menu_li"><a href="home-6(insurance).html"
+                                                class="offcanvas__sub_menu_item">Insurance</a></li>
+                                        <li class="offcanvas__sub_menu_li"><a href="home-7(human-resorce).html"
+                                                class="offcanvas__sub_menu_item">Human Resource</a></li>
+                                        <li class="offcanvas__sub_menu_li"><a href="home-8(creative-agency).html"
+                                                class="offcanvas__sub_menu_item">Creative Agency</a></li>
+                                        <li class="offcanvas__sub_menu_li"><a href="home-9(ecommerce).html"
+                                                class="offcanvas__sub_menu_item">eCommerce</a></li>
+                                        <li class="offcanvas__sub_menu_li"><a href="home-10(personal-portfolio).html"
+                                                class="offcanvas__sub_menu_item">Personal Portfolio</a></li>
+                                        <li class="offcanvas__sub_menu_li"><a href="home-11(seo-agency).html"
+                                                class="offcanvas__sub_menu_item">SEO Agency</a></li>
+                                        <li class="offcanvas__sub_menu_li"><a href="home-12(creative-portfolio).html"
+                                                class="offcanvas__sub_menu_item">Creative Portfolio</a></li>
+                                        <li class="offcanvas__sub_menu_li"><a href="home-13(event-conference).html"
+                                                class="offcanvas__sub_menu_item">Event Conference</a></li>
+                                        <li class="offcanvas__sub_menu_li"><a href="home-14(sass-app).html"
+                                                class="offcanvas__sub_menu_item">Sass App</a></li>
+                                        <li class="offcanvas__sub_menu_li"><a href="home-15(freelancer).html"
+                                                class="offcanvas__sub_menu_item">Freelancer</a></li>
+                                        <li class="offcanvas__sub_menu_li"><a href="home-16(technology).html"
+                                                class="offcanvas__sub_menu_item">Technology</a></li>
+                                        <li class="offcanvas__sub_menu_li"><a href="home-17(web-agency).html"
+                                                class="offcanvas__sub_menu_item">Web Agency</a></li>
+                                        <li class="offcanvas__sub_menu_li"><a href="home-18(travel-agency).html"
+                                                class="offcanvas__sub_menu_item">Travel Agency</a></li>
+                                        <li class="offcanvas__sub_menu_li"><a
+                                                href="home-19(international-consulting).html"
+                                                class="offcanvas__sub_menu_item">International Consulting</a></li>
+                                        <li class="offcanvas__sub_menu_li"><a href="home-20(startup).html"
+                                                class="offcanvas__sub_menu_item">Startup</a></li>
+                                    </ul>
+                                </li>
+
+
+                                <li class="offcanvas__sub_menu_li"><a href="#"
+                                        class="offcanvas__sub_menu_item">Onepage</a>
+                                    <ul class="offcanvas__sub_menu">
+                                        <li class="offcanvas__sub_menu_li"><a href="index-onepage.html"
+                                                class="offcanvas__sub_menu_item">Business Consulting</a></li>
+                                        <li class="offcanvas__sub_menu_li"><a
+                                                href="home-2(marketing-consulting)-onepage.html"
+                                                class="offcanvas__sub_menu_item">Marketing Consulting</a></li>
+                                        <li class="offcanvas__sub_menu_li"><a
+                                                href="home-3(corporate-business)-onepage.html"
+                                                class="offcanvas__sub_menu_item">Corporate Business</a></li>
+                                        <li class="offcanvas__sub_menu_li"><a href="home-4(digital-agency)-onepage.html"
+                                                class="offcanvas__sub_menu_item">Digital Agency</a></li>
+                                        <li class="offcanvas__sub_menu_li"><a
+                                                href="home-5(finance-consulting)-onepage.html"
+                                                class="offcanvas__sub_menu_item">Finance Consulting</a></li>
+                                        <li class="offcanvas__sub_menu_li"><a href="home-6(insurance)-onepage.html"
+                                                class="offcanvas__sub_menu_item">Insurance</a></li>
+                                        <li class="offcanvas__sub_menu_li"><a href="home-7(human-resorce)-onepage.html"
+                                                class="offcanvas__sub_menu_item">Human Resource</a></li>
+                                        <li class="offcanvas__sub_menu_li"><a
+                                                href="home-8(creative-agency)-onepage.html"
+                                                class="offcanvas__sub_menu_item">Creative Agency</a></li>
+                                        <li class="offcanvas__sub_menu_li"><a href="home-9(ecommerce)-onepage.html"
+                                                class="offcanvas__sub_menu_item">eCommerce</a></li>
+                                        <li class="offcanvas__sub_menu_li"><a
+                                                href="home-10(personal-portfolio)-onepage.html"
+                                                class="offcanvas__sub_menu_item">Personal Portfolio</a></li>
+                                        <li class="offcanvas__sub_menu_li"><a href="home-11(seo-agency)-onepage.html"
+                                                class="offcanvas__sub_menu_item">SEO Agency</a></li>
+                                        <li class="offcanvas__sub_menu_li"><a
+                                                href="home-12(creative-portfolio)-onepage.html"
+                                                class="offcanvas__sub_menu_item">Creative Portfolio</a></li>
+                                        <li class="offcanvas__sub_menu_li"><a
+                                                href="home-13(event-conference)-onepage.html"
+                                                class="offcanvas__sub_menu_item">Event Conference</a></li>
+                                        <li class="offcanvas__sub_menu_li"><a href="home-14(sass-app)-onepage.html"
+                                                class="offcanvas__sub_menu_item">Sass App</a></li>
+                                        <li class="offcanvas__sub_menu_li"><a href="home-15(freelancer)-onepage.html"
+                                                class="offcanvas__sub_menu_item">Freelancer</a></li>
+                                        <li class="offcanvas__sub_menu_li"><a href="home-16(technology)-onepage.html"
+                                                class="offcanvas__sub_menu_item">Technology</a></li>
+                                        <li class="offcanvas__sub_menu_li"><a href="home-17(web-agency)-onepage.html"
+                                                class="offcanvas__sub_menu_item">Web Agency</a></li>
+                                        <li class="offcanvas__sub_menu_li"><a href="home-18(travel-agency)-onepage.html"
+                                                class="offcanvas__sub_menu_item">Travel Agency</a></li>
+                                        <li class="offcanvas__sub_menu_li"><a
+                                                href="home-19(international-consulting)-onepage.html"
+                                                class="offcanvas__sub_menu_item">International Consulting</a></li>
+                                        <li class="offcanvas__sub_menu_li"><a href="home-20(startup).html"
+                                                class="offcanvas__sub_menu_item">Startup</a></li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="offcanvas__menu_li">
+                            <a class="offcanvas__menu_item" href="#">Pages</a>
+                            <ul class="offcanvas__sub_menu">
+                                <li class="offcanvas__sub_menu_li"><a href="blog.html"
+                                        class="offcanvas__sub_menu_item">Blog</a></li>
+                                <li class="offcanvas__sub_menu_li"><a href="blog-details.html"
+                                        class="offcanvas__sub_menu_item">Blog Details</a></li>
+                                <li class="offcanvas__sub_menu_li"><a href="project.html"
+                                        class="offcanvas__sub_menu_item">Projects</a></li>
+                                <li class="offcanvas__sub_menu_li"><a href="project-details.html"
+                                        class="offcanvas__sub_menu_item">Project Details</a></li>
+                                <li class="offcanvas__sub_menu_li"><a href="service.html"
+                                        class="offcanvas__sub_menu_item">Service</a></li>
+                                <li class="offcanvas__sub_menu_li"><a href="service-details.html"
+                                        class="offcanvas__sub_menu_item">Service Details</a></li>
+                                <li class="offcanvas__sub_menu_li"><a href="service-details.html"
+                                        class="offcanvas__sub_menu_item">Service Details</a></li>
+                                <li class="offcanvas__sub_menu_li"><a href="team.html"
+                                        class="offcanvas__sub_menu_item">Team</a></li>
+                                <li class="offcanvas__sub_menu_li"><a href="team-details.html"
+                                        class="offcanvas__sub_menu_item">Team Details</a></li>
+                                <li class="offcanvas__sub_menu_li"><a href="team-details.html"
+                                        class="offcanvas__sub_menu_item">Team Details</a></li>
+                                <li class="offcanvas__sub_menu_li"><a href="faq.html"
+                                        class="offcanvas__sub_menu_item">FAQ</a></li>
+                                <li class="offcanvas__sub_menu_li"><a href="error.html"
+                                        class="offcanvas__sub_menu_item">Error 404</a></li>
+                                <li class="offcanvas__sub_menu_li"><a href="login.html"
+                                        class="offcanvas__sub_menu_item">Login</a></li>
+                            </ul>
+                        </li>
+                        <li class="offcanvas__menu_li">
+                            <a class="offcanvas__menu_item" href="home-9(ecommerce).html">eCommerce</a>
+                            <ul class="offcanvas__sub_menu">
+                                <li class="offcanvas__sub_menu_li"><a href="shop.html"
+                                        class="offcanvas__sub_menu_item">Shop</a></li>
+                                <li class="offcanvas__sub_menu_li"><a href="product-details.html"
+                                        class="offcanvas__sub_menu_item">Product Details</a></li>
+                                <li class="offcanvas__sub_menu_li"><a href="shop-2-column.html"
+                                        class="offcanvas__sub_menu_item">Shop 2 Column</a></li>
+                                <li class="offcanvas__sub_menu_li"><a href="shop-4-column.html"
+                                        class="offcanvas__sub_menu_item">Shop 4 Column</a></li>
+                                <li class="offcanvas__sub_menu_li"><a href="cart.html"
+                                        class="offcanvas__sub_menu_item">Cart</a></li>
+                                <li class="offcanvas__sub_menu_li"><a href="checkout.html"
+                                        class="offcanvas__sub_menu_item">Checkout</a></li>
+                                <li class="offcanvas__sub_menu_li"><a href="wishlist.html"
+                                        class="offcanvas__sub_menu_item">Wishlist</a></li>
+                            </ul>
+                        </li>
+                        <li class="offcanvas__menu_li"><a class="offcanvas__menu_item" href="about.html">About</a></li>
+                        <li class="offcanvas__menu_li"><a class="offcanvas__menu_item" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="offcanvas__account--items">
+                        <a class="offcanvas__account--items__btn d-flex align-items-center" href="login.html">
+                            <span class="offcanvas__account--items__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20.51" height="19.443"
+                                    viewBox="0 0 512 512">
+                                    <path
+                                        d="M344 144c-3.92 52.87-44 96-88 96s-84.15-43.12-88-96c-4-55 35-96 88-96s92 42 88 96z"
+                                        fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="32" />
+                                    <path
+                                        d="M256 304c-87 0-175.3 48-191.64 138.6C62.39 453.52 68.57 464 80 464h352c11.44 0 17.62-10.48 15.65-21.4C431.3 352 343 304 256 304z"
+                                        fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32" />
+                                </svg>
+                            </span>
+                            <span class="offcanvas__account--items__label">Login / Register</span>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- End Offcanvas header menu -->
+
+
+
+        <!-- breadcrumbarea__start -->
+        <div class="breadcrumbarea" style="background: url(img/about/about__bg__1.jpg);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="breadcrumbarea__content__wraper">
+                            <div class="breadcrumbarea__title">
+                                <h2 class="heading">Graphic Design</h2>
+                            </div>
+                            <div class="breadcrumbarea__inner">
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li>// </li>
+                                    <li> <a href="service.html">Services</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+        <!-- breadcrumbarea__end -->
+
+
+
+        <!-- service__details__start -->
+        <div class="service__details sp_top_140 sp_bottom_160">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 col-md-12 col-12">
+                        <div class="service__details__sidebar sidebar">
+                            <div class="sidebar__widget" data-aos="fade-up" data-aos-duration="1500">
+
+                                <div class="sidebar__search">
+                                    <form action="#" style="position: relative;">
+                                        <input class="sidebar__common__input" type="text" placeholder="Search Here...">
+                                        <div class="sidebar__search__button">
+                                            <svg width="18" height="19" viewBox="0 0 18 19" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M14.4 13.372L17.91 16.864C17.97 16.924 18 17.002 18 17.098C18 17.194 17.97 17.272 17.91 17.332L16.758 18.484C16.698 18.544 16.62 18.574 16.524 18.574C16.428 18.574 16.35 18.544 16.29 18.484L15.966 18.142L15.804 17.998C15.72 17.926 15.672 17.884 15.66 17.872L12.816 15.028C12.756 14.956 12.672 14.92 12.564 14.92C12.468 14.908 12.384 14.932 12.312 14.992C11.664 15.448 10.962 15.802 10.206 16.054C9.426 16.306 8.628 16.432 7.812 16.432C6.396 16.432 5.082 16.078 3.87 15.37C2.694 14.674 1.758 13.738 1.062 12.562C0.354 11.35 0 10.036 0 8.62C0 7.204 0.354 5.89 1.062 4.678C1.758 3.502 2.694 2.566 3.87 1.87C5.082 1.162 6.396 0.807999 7.812 0.807999C9.228 0.807999 10.536 1.162 11.736 1.87C12.912 2.566 13.848 3.502 14.544 4.678C15.252 5.89 15.606 7.204 15.606 8.62C15.606 10.156 15.192 11.566 14.364 12.85C14.316 12.934 14.292 13.024 14.292 13.12C14.304 13.216 14.34 13.3 14.4 13.372ZM12.528 12.256C12.924 11.74 13.23 11.176 13.446 10.564C13.662 9.94 13.77 9.292 13.77 8.62C13.77 7.54 13.5 6.538 12.96 5.614C12.432 4.702 11.718 3.982 10.818 3.454C9.894 2.914 8.892 2.644 7.812 2.644C6.732 2.644 5.73 2.914 4.806 3.454C3.894 3.982 3.174 4.702 2.646 5.614C2.106 6.538 1.836 7.54 1.836 8.62C1.836 9.7 2.106 10.702 2.646 11.626C3.174 12.538 3.894 13.258 4.806 13.786C5.73 14.326 6.732 14.596 7.812 14.596C8.532 14.596 9.222 14.476 9.882 14.236C10.542 13.984 11.136 13.63 11.664 13.174C11.988 12.898 12.276 12.592 12.528 12.256Z"
+                                                    fill="#1C5C05" />
+                                            </svg>
+
+                                        </div>
+                                    </form>
+                                </div>
+
+                            </div>
+
+                            <div class="sidebar__widget" data-aos="fade-up" data-aos-duration="1800">
+
+                                <div class="sidebar__title">
+                                    <h5>All Services:</h5>
+                                </div>
+                                <div class="sidebar__list">
+                                    <ul>
+                                        <li>
+                                            <a class="sidebar__common__input" href="#">Web Development
+                                                <i class="icofont-rounded-right"></i>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a class="sidebar__common__input" href="#">Software Development
+                                                <i class="icofont-rounded-right"></i>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a class="sidebar__common__input" href="#">App Development
+
+                                                <i class="icofont-rounded-right"></i>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a class="sidebar__common__input" href="#">Digital Marketing
+                                                <i class="icofont-rounded-right"></i>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a class="sidebar__common__input" href="#">WordPress Development
+                                                <i class="icofont-rounded-right"></i>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a class="sidebar__common__input" href="uidesign.html">UI/UX Design
+                                                <i class="icofont-rounded-right"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="sidebar__common__input" href="#">Game Development
+                                                <i class="icofont-rounded-right"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="sidebar__common__input" href="#">SEO Specialist
+                                                <i class="icofont-rounded-right"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="sidebar__common__input" href="#">Content creator
+                                                <i class="icofont-rounded-right"></i>
+                                            </a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+
+                            </div>
+
+
+                            <div class="sidebar__widget" data-aos="fade-up" data-aos-duration="2100">
+
+                                <div class="sidebar__title">
+                                    <h5>Download Brochure:</h5>
+                                </div>
+                                <div class="sidebar__button">
+                                    <a class="default__button sidebar__button__1" target="_blank"
+                                        href="img/download.pdf">Download PDF<i class="icofont-file-pdf"></i></a>
+                                    <a class="default__button btn__black" target="_blank"
+                                        href="img/download.docx">Download DOC<i class="icofont-file-document"></i></a>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                    <div class="col-xl-8 col-lg-8 col-md-12 col-12">
+                        <div class="service__details__wraper">
+                            <div class="service__details__img" data-aos="fade-up" data-aos-duration="1500">
+                                <img src="img/service/service__details__1.png" alt="">
+                            </div>
+                            <div class="service__details__heading" data-aos="fade-up" data-aos-duration="1500">
+                                <h4>Management Consulting</h4>
+                            </div>
+                            <div class="service__details__text" data-aos="fade-up" data-aos-duration="1500">
+                                <p>Digital Minds On is the best UX design agency because it fully comprehends the fact
+                                    that every single potentially innovative digital experience is indeed rightly based
+                                    on two pillars, usability and an alluring appearance. Our full-service UI/UX design
+                                    solutions are designed to assist companies in developing effective and
+                                    easy-to-navigate digital solutions.</p>
+                                <p> If you need to redesign or develop a new website, design a catchy mobile
+                                    application, or improve the interface of your software, our team of professional UI
+                                    designers is ready to help. Come with me to explore what is visual design in UI UX,
+                                    what UX design recruitment agencies and how Saudi Arabia UI/UX design agency help us
+                                    get more revenue and stability. </p>
+                            </div>
+                            <div class="service__details__planning" data-aos="fade-up" data-aos-duration="1500">
+                                <div class="row">
+                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                        <div class="service__details__planning__img">
+                                            <img src="img/service/service__details__2.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                        <div class="service__details__planning__inner">
+                                            <div class="service__details__planning__heading">
+                                                <h6>Our Approach to UI/UX Design</h6>
+                                            </div>
+                                            <div class="service__details__planning__text">
+                                                <p>Digital Minds On is one of the best UX design agencies and always
+                                                    designs humans first which means we use a human-centered design all
+                                                    around.</p>
+                                                <p>Our strategic focus includes experience in design and development,
+                                                    and we achieve all</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p> these by research, innovation, and applying what is current in design trends to
+                                        produce a product that will offer the best to the users.</p>
+                                </div>
+                            </div>
+
+                            <div class="service__details__heading" data-aos="fade-up" data-aos-duration="1500">
+                                <h2>Discovery & Research</h2>
+                            </div>
+                            <div class="service__details__text" data-aos="fade-up" data-aos-duration="1500">
+                                <p>The first principle of design and why we do it is that it is impossible to overstate
+                                    the importance of understanding the user. The first stage of our process is focused
+                                    on market research into your audience, your market, competitors, etc. </p>
+                                <p>Thus, understanding how users behave and what they like or dislike is what will
+                                    enable designers to provide designs that suit the users and the business at large.
+                                </p>
+                            </div>
+                            <div class="service__details__heading" data-aos="fade-up" data-aos-duration="1500">
+                                <h2>Wireframing & Prototyping</h2>
+                            </div>
+                            <div class="service__details__text" data-aos="fade-up" data-aos-duration="1500">
+                                <p>The next step is making wireframes and completing interactive prototypes. These
+                                    low-fidelity blueprints give a low graphic representational plan of your product to
+                                    plan a user’s experience and location of objects of interest.</p>
+                                <p>Prototyping is useful in determining the feasibility of the interface to work as
+                                    desired and takes place before arriving at the last design.
+                                </p>
+                            </div>
+                            <div class="service__details__heading" data-aos="fade-up" data-aos-duration="1500">
+                                <h2>Usability Testing & Iteration</h2>
+                            </div>
+                            <div class="service__details__text" data-aos="fade-up" data-aos-duration="1500">
+                                <p>Digital Minds On, a UI/UX design agency overemphasizes the importance of testing when
+                                    carrying out designs. To determine the usability of the product, its utility and
+                                    efficiency, as well as how much the user enjoys it, we undergo usability tests.</p>
+                                <p>We modify the design with a view of meeting all the users’ needs and expectations
+                                    before actually deploying the design.</p>
+                            </div>
+                            <div class="service__details__heading" data-aos="fade-up" data-aos-duration="1500">
+                                <h2>UI/UX Design Features</h2><br>
+                                <h3>User-Centered Design</h3>
+                            </div>
+                            <div class="service__details__text" data-aos="fade-up" data-aos-duration="1500">
+                                <p>Each of the decisions made is tailored to provide the highest value to your users. It
+                                    means your digital platform will be easy to navigate and beneficial for its users.
+                                </p>
+                                <h3>Responsive Design</h3>
+                                <p> For a business, having customers interact with your platform, through multiple
+                                    devices is something you need to ensure is seamless both on the desktop, tablets,
+                                    and smartphones. Our responsive design method means that your website or application
+                                    looks and feels as good on a smartphone or tablet as it does on a desktop computer
+                                    or laptop.</p>
+                                <h3>Visual Design Consistency</h3>
+                                <p>We design attractive interfaces concerning not only graphic design but also
+                                    representing your company’s values. Our designs are centered on ensuring that any
+                                    interfaces we build for your business are linked and recognizable across all your
+                                    channels.</p>
+                            </div>
+                            <div class="service__details__heading" data-aos="fade-up" data-aos-duration="1500">
+                                <h2>Usability Testing & Iteration</h2>
+                            </div>
+                            <div class="service__details__text" data-aos="fade-up" data-aos-duration="1500">
+                                <p>Digital Minds On, a UI/UX design agency overemphasizes the importance of testing when
+                                    carrying out designs. To determine the usability of the product, its utility and
+                                    efficiency, as well as how much the user enjoys it, we undergo usability tests.</p>
+                                <p>We modify the design with a view of meeting all the users’ needs and expectations
+                                    before actually deploying the design.</p>
+                            </div>
+                            <div class="service__details__heading" data-aos="fade-up" data-aos-duration="1500">
+                                <h2>UI/UX Design Components</h2>
+                                <h3>Wireframes</h3>
+                            </div>
+                            <div class="service__details__text" data-aos="fade-up" data-aos-duration="1500">
+                                <p>Wireframes are the most basic and essential part of any good design. They give a
+                                    general framework of where the content, navigation, and other items are to be
+                                    positioned. It helps in creating a representation of the layout process in order to
+                                    move to the late stage of design.</p>
+                            </div>
+                            <div class="service__details__heading" data-aos="fade-up" data-aos-duration="1500">
+
+                                <h3>Prototypes</h3>
+                            </div>
+                            <div class="service__details__text" data-aos="fade-up" data-aos-duration="1500">
+                                <p>Prototypes contain clickable, interactive replicas of the design, implemented within
+                                    a physical space. These let stakeholders and users interact with the functionality
+                                    before the development process is done, and that is advantageous. The role of
+                                    prototyping also lies in the processes of making usability problems findable and
+                                    design decisions verifiable.</p>
+
+                            </div>
+                            <div class="service__details__heading" data-aos="fade-up" data-aos-duration="1500">
+
+                                <h3>UI Elements</h3>
+                            </div>
+                            <div class="service__details__text" data-aos="fade-up" data-aos-duration="1500">
+                                <p>Starting from buttons and ending with sliders and icons, including color schemes of
+                                    the interface’s components, all the visuals are planned. Therefore, our UI UX
+                                    designers aim to design a coherent set of user interface elements that support the
+                                    application of a coherent brand and make the direction of the user’s gaze as smooth
+                                    as possible.</p>
+
+                            </div>
+                            <div class="service__details__heading" data-aos="fade-up" data-aos-duration="1500">
+                                <h2>Benefits of the Digital Minds on the UI/UX Design Services</h2>
+                                <h3>Improved User Engagement</h3>
+                            </div>
+                            <div class="service__details__text" data-aos="fade-up" data-aos-duration="1500">
+                                <p>A good use of the interface also keeps the user hooked for a longer period. Our UI/UX
+                                    designer makes the work understandable and visible and by making the platform
+                                    enjoyable and understandable, you keep your users engaged resulting in low bounce
+                                    rates and high conversions.</p>
+                            </div>
+                            <div class="service__details__heading" data-aos="fade-up" data-aos-duration="1500">
+                                <h3>Higher Conversion Rates</h3>
+                            </div>
+                            <div class="service__details__text" data-aos="fade-up" data-aos-duration="1500">
+                                <p>We have specific designs that are optimized to be liked and used by users who want to
+                                    make the required conversions. No matter whether you require people to register at
+                                    your website, buy a particular product, or perform an act, we ensure our design
+                                    process directs your users to your intended goals.</p>
+                            </div>
+                            <div class="service__details__heading" data-aos="fade-up" data-aos-duration="1500">
+                                <h3>Cost Efficiency</h3>
+                            </div>
+                            <div class="service__details__text" data-aos="fade-up" data-aos-duration="1500">
+                                <p>Good design means well-spent money, bad design costs a lot of money. Well-composed
+                                    product prevents users from expecting constant updates and fixes which would make
+                                    the development costs high and user satisfaction low.</p>
+                            </div>
+                            <div class="service__details__heading" data-aos="fade-up" data-aos-duration="1500">
+                                <h2>Additional UI/UX Services</h2>
+                                <h3>Mobile App UI/UX Design</h3>
+                            </div>
+                            <div class="service__details__text" data-aos="fade-up" data-aos-duration="1500">
+                                <p>This implies that most mobile applications must be designed differently since their
+                                    operating environment has limited space and different ways of use. We have a
+                                    dedicated unit dealing in the development and design of application interfaces that
+                                    are receptive to different mobile devices.</p>
+                            </div>
+                            <div class="service__details__heading" data-aos="fade-up" data-aos-duration="1500">
+                                <h3>Website UI/UX Design</h3>
+                            </div>
+                            <div class="service__details__text" data-aos="fade-up" data-aos-duration="1500">
+                                <p>Your website could serve as the first impression that a prospect has about your
+                                    business. We create website interfaces that are highly usable for users, beautiful,
+                                    responsive, and aimed at increasing conversion rates for leads captured.</p>
+                            </div>
+                            <div class="service__details__heading" data-aos="fade-up" data-aos-duration="1500">
+
+                                <h3>Dashboard Design</h3>
+                            </div>
+                            <div class="service__details__text" data-aos="fade-up" data-aos-duration="1500">
+                                <p>The complex data has to be explained to be understandable to the audiences who are
+                                    listening. We develop interfaces that are easy to navigate and understand and help
+                                    users organize health tasks with analyzed data and realistic information.</p>
+                            </div>
+                            <div class="service__details__heading" data-aos="fade-up" data-aos-duration="1500">
+                                <h3>eCommerce UI and UX Design</h3>
+                            </div>
+                            <div class="service__details__text" data-aos="fade-up" data-aos-duration="1500">
+                                <p>When it comes to influencing purchases the user's e-commerce business experience is
+                                    very important. Our eCommerce interfaces are easy to navigate, safe, and highly
+                                    effective at turning exploratory users into buyers from the moment they enter the
+                                    site until the time they check out.</p>
+                            </div>
+                            <div class="service__details__heading" data-aos="fade-up" data-aos-duration="1500">
+                                <h3>Custom Software UI/UX Design</h3>
+                            </div>
+                            <div class="service__details__text" data-aos="fade-up" data-aos-duration="1500">
+                                <p>Our team also specializes in the creation of interfaces for specific custom
+                                    application UI design software. Our software solutions are custom-built to your
+                                    requirements, whether you need a system for use within the organization or for
+                                    external use by customers.</p>
+                            </div>
+                            <div class="service__details__heading" data-aos="fade-up" data-aos-duration="1500">
+                                <h3>Conclusion</h3>
+                            </div>
+                            <div class="service__details__text" data-aos="fade-up" data-aos-duration="1500">
+                                <p>UI/UX design is crucial when developing applications, websites, and other digital
+                                    goods, all of which must have strong user appeal. At Digital Minds On UX design
+                                    company Luxembourg, our core business is to provide professional design services
+                                    that respond well to aesthetic appeal as well as usability. Whether it is an
+                                    experimental website, an innovative application or a unique software interface, we
+                                    guarantee to build beautiful products that not only look good to the naked eye but
+                                    run perfectly to the eye of the end user. Choose us to breathe life into your vision
+                                    and deliver stunning and memorable experiences to your consumers.</p>
+                            </div>
+                            <div class="service__details__button" data-aos="fade-up" data-aos-duration="1500">
+                                <a class="default__button" href="#">GET A FREE QUOTE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- service__details__end -->
+
+
+
+        <!--whattapp-icon-->
+        <div class="whatsapp-icons">
+            <a href="https://wa.me/923207588171" class="w-inline-block floatingg-icon" target="_blank"
+                aria-label="whatsapp"><span style="display:none">Whatsup</span>
+                <div class="tochatbe-icon-whatsapp">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        aria-hidden="true" focusable="false" width="1em" height="1em"
+                        style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
+                        preserveAspectRatio="xMidYMid meet" viewBox="0 0 448 512">
+                        <path fill="#ffffff"
+                            d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z">
+                        </path>
+                    </svg>
+                </div>
+            </a>
+        </div>
+        <!--whattappicon-->
+        <!-- footer start -->
+        <div class="footer position-relative sp_top_250 pink__bg__color" id="footer__area"
+            style="background-image: url(img/footer/footer_1.png);">
+
+            <div class="bastun__brand__badge bastun__brand__badge__footer">
+                <div class="bastun__brand__badge__inner position-relative">
+                    <a href="index.html">
+
+                        <img class="bbb__animate" src="img/footer/brand__badge.png" alt="Footer badge">
+                        <img class="bbb__icon" src="img/footer/brand__badge__inner.png" alt="Footer icon badge">
+                    </a>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="footer__wrapper sp_bottom_110">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-6 col-md-6" data-aos="fade-up" data-aos-duration="1500">
+                            <div class="footer__widget footer__left">
+                                <div class="footer__logo">
+                                    <img src="img/logo/full-logo.svg" alt="">
+                                </div>
+                                <div class="footer__text">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt labore et dolore magna aliqua</p>
+                                </div>
+                                <div class="footer__icon">
+                                    <ul>
+                                        <li>
+                                            <a href="#"><i class="icofont-facebook"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="icofont-twitter"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="icofont-skype"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="icofont-linkedin"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-6 col-md-6 col-sm-6" data-aos="fade-up" data-aos-duration="2000">
+                            <div class="footer__widget footer__support">
+                                <div class="footer__menu__title">
+                                    <h6>SUPPORT :</h6>
+                                </div>
+                                <div class="footer__menu">
+                                    <ul>
+                                        <li>
+                                            <a href="#">Home</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">About us</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Blog update</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Our services</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Testimonial</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-6 col-md-6 col-sm-6" data-aos="fade-up" data-aos-duration="2500">
+                            <div class="footer__widget footer__quick">
+                                <div class="footer__menu__title">
+                                    <h6>QUICK LINKS :</h6>
+                                </div>
+                                <div class="footer__menu">
+                                    <ul>
+                                        <li>
+                                            <a href="#">Privacy & policy</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Terms & conditions</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">FAQ</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Customer support</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Contact us</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12" data-aos="fade-up" data-aos-duration="3000">
+                            <div class="footer__widget footer__right">
+                                <div class="footer__menu__title">
+                                    <h6>SUBSCRIP NEWSLETTER :</h6>
+                                </div>
+                                <div class="footer__input">
+                                    <input type="text" placeholder="Enter your email:">
+                                </div>
+                                <div class="footer__bottom">
+                                    <a class="default__button" href="#">SUBSCRIBE NOW</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="copyright">
+
+                    <div class="row align-items-center">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-12">
+                            <div class="copyright__left">
+                                <p>Copyright © 2024 <a href="#">BASTUN.</a> All Right Reserved</p>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-12">
+                            <div class="copyright__right">
+                                <ul>
+                                    <li>
+                                        <a href="#">Privacy & Policy ||</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Terms & Conditions</a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- footer__section__end -->
+
+
+
+
+
+
+
+
+    </main>
+
+
+
+
+
+    <!-- JS here -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/glightbox.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+        if (localStorage.getItem("theme-color") === "dark" || (!("theme-color" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+            document.getElementById("light--to-dark-button")?.classList.add("dark--mode");
+        }
+        if (localStorage.getItem("theme-color") === "light") {
+            document.getElementById("light--to-dark-button")?.classList.remove("dark--mode");
+        } 
+    </script>
+
+
+</body>
+
+
+
+</html>
