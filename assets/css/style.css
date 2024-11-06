@@ -11249,6 +11249,33 @@ i.icofont-phone {
 .header__animate__item a {
   color: #fff;
 }
+/* bac top top */
+.back-to-top {
+position: fixed;
+bottom: 30px;
+right: 30px;
+display: none;
+width: 50px;
+height: 50px;
+background-color: #fe0094;
+border-radius: 50%;
+align-items: center;
+justify-content: center;
+color: white;
+text-decoration: none;
+transition: opacity 0.3s ease, transform 0.3s ease;
+box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+.back-to-top:hover {
+  box-shadow: var(--darkShadow);
+  background-color: #0c0e2b;
+  transform: scale(1.1);
+}
+.back-to-top svg {
+width: 24px;
+height: 24px;
+}
+
 /* ..... web card.. */
 
 .service-card {
