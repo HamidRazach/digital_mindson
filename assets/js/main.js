@@ -693,6 +693,16 @@ lightToDarkButton?.addEventListener("click", function () {
     }
 });
 
+// /JavaScript to show/hide the Back to Top button
+        const backToTopButton = document.getElementById("backToTop");
 
+        window.addEventListener("scroll", function() {
+            if (window.scrollY > 200) { // Show after scrolling down 200px
+                backToTopButton.style.display = "flex";
+            } else {
+                backToTopButton.style.display = "none";
+            }
+        });
+ 
 
 
