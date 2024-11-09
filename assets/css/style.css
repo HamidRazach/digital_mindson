@@ -11312,3 +11312,76 @@ height: 24px;
 .row.g-4 {
   margin-bottom: 30px;
 }
+/* home page changing css */
+.about-section {
+  padding: 40px;
+}
+.about-section img {
+  border-radius: 10px;
+}
+.service-section h3 {
+  font-weight: bold;
+}
+.service-page {
+  background-color: #f9f9f9;
+  padding: 40px;
+}
+.service-section img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+/* ======= */
+        .service-card {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+        .service-card:hover {
+            background-color: #f0f9ff;
+            box-shadow: 0 4px 15px rgba(0, 123, 255, 0.1);
+        }
+        .service-card .icon {
+            font-size: 3rem;
+            color: #17a2b8;
+        }
+        .service-card .arrow {
+            font-size: 1.5rem;
+            color: #17a2b8;
+            transition: color 0.3s;
+        }
+        .service-card:hover .arrow {
+            color: #0d6efd;
+        }
+        .divider {
+            border-top: 1px dashed #ddd;
+            margin: 10px 0;
+        }
+        .sp_bottom_600 {
+          padding-bottom: 700px;
+      }
+      .sp_bottom_50 {
+        padding-bottom: 50px;
+    }
+      .specialties-section {
+        background-color: #f9f9f9;
+    }
+    .specialty-card {
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        text-align: center;
+        transition: transform 0.3s;
+    }
+    .specialty-card:hover {
+        transform: translateY(-5px);
+    }
+    .icon {
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+        color: #007bff;
+    }
+    .learn-more {
+        margin-top: 15px;
+        font-size: 0.9rem;
+    }
