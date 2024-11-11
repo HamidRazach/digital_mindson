@@ -671,20 +671,20 @@ new TypeWriter(txtElement, words, wait);
 const lightToDarkButton = document.getElementById("light--to-dark-button");
 lightToDarkButton?.addEventListener("click", function () {
     if (localStorage.getItem("theme-color")) {
-      if (localStorage.getItem("theme-color") === "light") {
+      if (localStorage.getItem("theme-color") === "#4a179b") {
         document.documentElement.classList.add("is_dark");
         localStorage.setItem("theme-color", "dark");
         lightToDarkButton?.classList.add("dark--mode");
       } else {
         document.documentElement.classList.remove("is_dark");
-        localStorage.setItem("theme-color", "light");
+        localStorage.setItem("theme-color", "#4a179b");
         lightToDarkButton?.classList?.remove("dark--mode");
       }
     } else {
       if (document.documentElement.classList.contains("is_dark")) {
         document.documentElement.classList.remove("is_dark");
         lightToDarkButton?.classList?.remove("dark--mode");
-        localStorage.setItem("theme-color", "light");
+        localStorage.setItem("theme-color", "#4a179b");
       } else {
         document.documentElement.classList.add("is_dark");
         localStorage.setItem("theme-color", "dark");

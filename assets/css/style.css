@@ -1942,7 +1942,7 @@ img.herobanner__vector.hero__icon__3 {
   font-size: 14px;
   padding: 33px 18px 37px;
   display: block;
-  color: var(--whiteColor);
+  color: (--whiteColor);
 }
 @media (min-width: 1366px) and (max-width: 1499px) {
   .headerarea__main__menu ul li a {
@@ -3110,7 +3110,7 @@ img.herobanner__vector.hero__icon__3 {
 }
 @media (min-width: 1366px) and (max-width: 1499px) {
   .herobanner__title h1 {
-    font-size: 42px;
+    font-size: 60px;
     line-height: 70px;
   }
 }
@@ -11323,7 +11323,7 @@ height: 24px;
   font-weight: bold;
 }
 .service-page {
-  background-color: #f9f9f9;
+  background: var(--pinkcolor);
   padding: 40px;
 }
 .service-section img {
@@ -11334,10 +11334,12 @@ height: 24px;
         .service-card {
             border: 1px solid #ddd;
             border-radius: 10px;
-            transition: background-color 0.3s, box-shadow 0.3s;
+            transition: box-shadow 0.3s;
+            background: var(--whiteColor);
         }
         .service-card:hover {
-            background-color: #f0f9ff;
+          background: var(--gradientColor);
+          color: #fff;
             box-shadow: 0 4px 15px rgba(0, 123, 255, 0.1);
         }
         .service-card .icon {
@@ -11398,15 +11400,29 @@ height: 24px;
   }
 
   p.mt-2 {
- 
-  color: var(--whiteColor);
+  color: var(--blackColor);
   font-size: 19px;
   font-style: normal;
   font-weight: 500;
-  line-height: 40px;
-  max-width: 84%;
+  line-height: 35px;
+  max-width: 100%;
+  text-align: justify;
 }
 .image-icon svg {
   width: 100px;
   height: auto;
+}
+.list-unstyled-2 li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.list-unstyled-2 .timeout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52%;
+}
+.aligned-text {
+  text-align: start;
 }
