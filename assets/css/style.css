@@ -11426,3 +11426,9 @@ height: 24px;
 .aligned-text {
   text-align: start;
 }
+.service-card p {
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--contentColor);
+  font-weight: 400;
+}
