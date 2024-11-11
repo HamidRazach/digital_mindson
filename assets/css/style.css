@@ -11374,7 +11374,13 @@ height: 24px;
         padding: 20px;
         text-align: center;
         transition: transform 0.3s;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
     }
+    .specialty-card p {
+      text-align: start;
+  }
     .specialty-card:hover {
         transform: translateY(-5px);
     }
@@ -11431,4 +11437,7 @@ height: 24px;
   line-height: 26px;
   color: var(--contentColor);
   font-weight: 400;
+}
+.specialties-section {
+  background: #877d84d9;
 }
