@@ -428,9 +428,6 @@
         </div>
         <!-- End Offcanvas header menu -->
 
-
-
-        <!-- breadcrumbarea__start -->
         <!-- herobanner__section__start -->
         <div class="herobanner d-flex align-items-center herobanner__with__transparent__header">
             <div class="container">
@@ -476,15 +473,12 @@
 
         </div>
         <!-- herobanner__section__end -->
-        <!-- breadcrumbarea__end -->
-
-
 
         <!-- service__details__start -->
         <div class="service__details sp_top_70 sp_bottom_50">
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-4 col-lg-4 col-md-12 col-12">
+                    <div class="col-xl-4 col-lg-4 col-md-12 col-12 aos-init aos-animate" data-aos="fade-up" data-aos-duration="1500">
                         <div class="service__details__sidebar sidebar">
                             <div class="sidebar__widget" data-aos="fade-up" data-aos-duration="1500">
 
@@ -587,6 +581,46 @@
 
 
 
+                        </div>
+                        <!-- form -->
+                        <div class="contact__input__wrapper contact__grident__bg" style="padding: 30px;">
+                            <form id="contact-form" class="contact-form" action="https://html.themewin.com/bastun-preview/bastun/mail.php" method="post">
+                                <div class="row">
+                                    <div class="col-xl-12">
+                                        <div class="contact__input">
+                                            <input class="contact__common__input" type="text" name="con_name" id="con_name" placeholder="Your Name">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-12">
+                                        <div class="contact__input">
+                                            <input class="contact__common__input" type="text" name="con_email" id="con_email" placeholder="Email">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-12">
+                                        <div class="contact__input">
+                                            <input class="contact__common__input" type="text" name="phone" placeholder="Phone">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-12">
+                                        <select class="contact__common__input" name="subject" id="subject">
+                                            <option value="volvo">Subject:</option>
+                                            <option value="saab">Saab</option>
+                                            <option value="mercedes">Mercedes</option>
+                                            <option value="audi">Audi</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-xl-12">
+                                        <textarea class="contact__common__input" name="con_message" id="con_message" cols="30" rows="10">write a message....</textarea>
+                                    </div>
+                                    <div class="col-xl-12">
+                                        <div class="contact__button">
+                                            <button type="submit" value="submit" class="default__button" name="submit">SEND MESSAGE</button>
+                                            <p class="form-messege"></p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
                     <div class="col-xl-8 col-lg-8 col-md-12 col-12">
@@ -945,7 +979,8 @@
         </div>
         </div>
         <!-- service__details__end -->
-            <!--whattapp-icon-->
+
+        <!--whattapp-icon-->
             <div class="whatsapp-icons">
                 <a href="https://wa.me/923086582833" class="w-inline-block floatingg-icon" target="_blank" aria-label="whatsapp"><span style="display:none">Whatsup</span>
                     <div class="tochatbe-icon-whatsapp">
@@ -956,7 +991,8 @@
                     </div>
                 </a>
             </div>
-            <!--whattappicon-->
+        <!--whattappicon-->
+
         <!-- footer start -->
         <div class="footer position-relative sp_top_250 pink__bg__color" id="footer__area"
             style="background-image: url(assets/img/footer/footer_1.png);">
@@ -1096,13 +1132,14 @@
             </div>
         </div>
         <!-- footer__section__end -->
-             <!-- back to top -->
+
+        <!-- back to top -->
              <a href="#top" class="back-to-top" id="backToTop">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up">
                     <path d="M12 19V6M5 12l7-7 7 7"/>
                 </svg>
             </a>
-                   <!-- back to top -->
+        <!-- back to top -->
     </main>
     <!-- JS here -->
     <script src="assets/js/popper.min.js"></script>
@@ -1113,7 +1150,6 @@
     <script src="assets/js/main.js"></script>
 
     <script>
-        // On page load or when changing themes, best to add inline in `head` to avoid FOUC
         if (localStorage.getItem("theme-color") === "dark" || (!("theme-color" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
             document.getElementById("light--to-dark-button")?.classList.add("dark--mode");
         }
