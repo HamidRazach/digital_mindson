@@ -1200,8 +1200,6 @@ button.default__button {
   right: 0;
 }
 
-
-
 .mode_switcher.my_switcher button {
   display: flex;
   font-size: 20px;
@@ -8926,14 +8924,12 @@ p.mt-2 {
 .is_dark .headerarea__logo .dark__mode {
   display: none;
 }
-/* service css card dar or light mode  */
 .light_mode .specialty-card h5 {
   color: #5f6c76;
 }
 .light_mode .specialty-card p {
   color: #5f6c76;
 }
-/* Dark mode hover effect - apply only on hover when .is_dark class is active */
 .is_dark .specialty-card h5,
 .is_dark .specialty-card p {
   color: inherit;
@@ -8943,8 +8939,12 @@ p.mt-2 {
 .is_dark .specialty-card:hover p {
   color: #fff; 
 }
-
-
 /* ====service card=== */
+.horizontal-card .card-body .card-text {
+  color: #5f6c76;
+}
+.horizontal-card .card-body .card-title {
+  color: #0a0624;
+}
 
 
