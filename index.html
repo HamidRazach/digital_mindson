@@ -22,22 +22,20 @@
 
 
     <script>
-        // // On page load or when changing themes, best to add inline in `head` to avoid FOUC
-        // if (localStorage.getItem("theme-color") === "dark" || (!("theme-color" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
-        //     document.documentElement.classList.add("is_dark");
-        // }
-        // if (localStorage.getItem("theme-color") === "#4a179b") {
-        //     document.documentElement.classList.remove("is_dark");
-        // } 
-        if (
+         if (
             localStorage.getItem("theme-color") === "dark" ||
             (!("theme-color" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)
         ) {
             document.documentElement.classList.add("is_dark");
+            document.querySelectorAll('.card').forEach(card => {
+                card.classList.add('dark-mode-card');
+            });
         } else {
             document.documentElement.classList.remove("is_dark");
+            document.querySelectorAll('.card').forEach(card => {
+                card.classList.remove('dark-mode-card');
+            });
         }
-        // service card light or dark mode 
     </script>
     <!-- service card dark mode or light mode  -->
     <script>
@@ -536,15 +534,15 @@
                         <div class="col-md-6">
                             <div class="card mb-3">
                                 <div class="row g-0">
-                                    <div class="col-md-4 p-0">
+                                    <div class="col-md-4">
                                         <img src="assets/img/service/33.jpg" class="img-fluid rounded-start" alt="...">
                                     </div>
-                                    <div class="col-md-8 p-0">
+                                    <div class="col-md-8">
                                         <div class="card-body">
                                             <h5 class="card-title">Web Development</h5>
-                                            <p class="card-text">Special web design solutions that let you have safe,
+                                            <span class="card-text">Special web design solutions that let you have safe,
                                                 effective, and usable web sites, optimised for brand promotion and use.
-                                            </p>
+                                            </span>
                                         </div>
                                     </div>
                                 </div>
@@ -553,15 +551,15 @@
                         <div class="col-md-6">
                             <div class="card mb-3">
                                 <div class="row g-0">
-                                    <div class="col-md-4 p-0">
+                                    <div class="col-md-4">
                                         <img src="assets/img/service/33.jpg" class="img-fluid rounded-start" alt="...">
                                     </div>
-                                    <div class="col-md-8 p-0">
+                                    <div class="col-md-8">
                                         <div class="card-body">
                                             <h5 class="card-title">Software Development</h5>
-                                            <p class="card-text">Build reusable, effective software solutions enhancing
+                                            <span class="card-text">Build reusable, effective software solutions enhancing
                                                 organization’s performance and revenue using modern technologies and
-                                                solutions.</p>
+                                                solutions.</span>
                                         </div>
                                     </div>
                                 </div>
@@ -570,14 +568,14 @@
                         <div class="col-md-6">
                             <div class="card mb-3">
                                 <div class="row g-0">
-                                    <div class="col-md-4 p-0">
+                                    <div class="col-md-4">
                                         <img src="assets/img/service/33.jpg" class="img-fluid rounded-start" alt="...">
                                     </div>
-                                    <div class="col-md-8 p-0">
+                                    <div class="col-md-8">
                                         <div class="card-body">
                                             <h5 class="card-title">Game Development</h5>
-                                            <p class="card-text">Play exciting games with our professional team, using
-                                                the most efficient tools, such as Unreal Engine for GUl.</p>
+                                            <span class="card-text">Play exciting games with our professional team, using
+                                                the most efficient tools, such as Unreal Engine for GUl.</span>
                                         </div>
                                     </div>
                                 </div>
@@ -586,15 +584,15 @@
                         <div class="col-md-6">
                             <div class="card mb-3">
                                 <div class="row g-0">
-                                    <div class="col-md-4 p-0">
+                                    <div class="col-md-4">
                                         <img src="assets/img/service/33.jpg" class="img-fluid rounded-start" alt="...">
                                     </div>
-                                    <div class="col-md-8 p-0">
+                                    <div class="col-md-8">
                                         <div class="card-body">
                                             <h5 class="card-title">Mobile Application</h5>
-                                            <p class="card-text">
+                                            <span class="card-text">
                                                 Play exciting games with our professional team, using the most efficient
-                                                tools, such as Unreal Engine for GUl.</p>
+                                                tools, such as Unreal Engine for GUl.</span>
                                         </div>
                                     </div>
                                 </div>
@@ -603,15 +601,15 @@
                         <div class="col-md-6">
                             <div class="card mb-3">
                                 <div class="row g-0">
-                                    <div class="col-md-4 p-0">
+                                    <div class="col-md-4">
                                         <img src="assets/img/service/33.jpg" class="img-fluid rounded-start" alt="...">
                                     </div>
-                                    <div class="col-md-8 p-0">
+                                    <div class="col-md-8">
                                         <div class="card-body">
                                             <h5 class="card-title">Search Engine Optimization</h5>
-                                            <p class="card-text">Increase website popularity, page ranking and
+                                            <span class="card-text">Increase website popularity, page ranking and
                                                 visibility to increase the organic traffic of a specific website thereby
-                                                promoting business.</p>
+                                                promoting business.</span>
                                         </div>
                                     </div>
                                 </div>
@@ -620,15 +618,15 @@
                         <div class="col-md-6">
                             <div class="card mb-3">
                                 <div class="row g-0">
-                                    <div class="col-md-4 p-0">
+                                    <div class="col-md-4">
                                         <img src="assets/img/service/33.jpg" class="img-fluid rounded-start" alt="...">
                                     </div>
-                                    <div class="col-md-8 p-0">
+                                    <div class="col-md-8">
                                         <div class="card-body">
                                             <h5 class="card-title">UI/UX Design</h5>
-                                            <p class="card-text">Improve the client experience with seamless, beautiful
+                                            <span class="card-text">Improve the client experience with seamless, beautiful
                                                 UI/UX designs that resonate with your brand or target consumer by the
-                                                best UI/UX designers.</p>
+                                                best UI/UX designers.</span>
                                         </div>
                                     </div>
                                 </div>
@@ -637,15 +635,15 @@
                         <div class="col-md-6">
                             <div class="card mb-3">
                                 <div class="row g-0">
-                                    <div class="col-md-4 p-0">
+                                    <div class="col-md-4">
                                         <img src="assets/img/service/33.jpg" class="img-fluid rounded-start" alt="...">
                                     </div>
-                                    <div class="col-md-8 p-0">
+                                    <div class="col-md-8">
                                         <div class="card-body">
                                             <h5 class="card-title">IT Management Solution</h5>
-                                            <p class="card-text">A wide range of information technology services that
+                                            <span class="card-text">A wide range of information technology services that
                                                 entails on help desk support, protection services and network solutions
-                                                for your organization to function. </p>
+                                                for your organization to function. </span>
                                         </div>
                                     </div>
                                 </div>
@@ -654,15 +652,15 @@
                         <div class="col-md-6">
                             <div class="card mb-3">
                                 <div class="row g-0">
-                                    <div class="col-md-4 p-0">
+                                    <div class="col-md-4">
                                         <img src="assets/img/service/33.jpg" class="img-fluid rounded-start" alt="...">
                                     </div>
-                                    <div class="col-md-8 p-0">
+                                    <div class="col-md-8">
                                         <div class="card-body">
                                             <h5 class="card-title">Content Creator</h5>
-                                            <p class="card-text">Deliver compelling message with SEO optimization,
+                                            <span class="card-text">Deliver compelling message with SEO optimization,
                                                 staying on-brand and with flexible and adaptable content for different
-                                                media.</p>
+                                                media.</span>
                                         </div>
                                     </div>
                                 </div>
