@@ -8866,6 +8866,10 @@ p.mt-2 {
 /* ====service card=== */
 .service-page .card {
   border: none !important;
+  cursor: pointer;
+}
+.service-page .card:hover {
+   transform: scale(1.05);
 }
 
 
