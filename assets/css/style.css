@@ -3836,6 +3836,8 @@ img.herobanner__vector.hero__icon__3 {
 
 .team__member__3__img img {
   border-radius: 10px;
+  width: 50%;
+  height: 170px;
 }
 
 .contact__icon span:hover {
