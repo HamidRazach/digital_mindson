@@ -8710,46 +8710,6 @@ i.icofont-phone {
 }
 
 /* ..... web card.. */
-
-.service-card {
-  border: 1px solid #e0e0e0;
-  border-radius: 10px;
-  transition: transform 0.3s, background-color 0.3s, color 0.3s;
-  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05);
-  height: 100%;
-}
-
-.service-card:hover {
-  transform: translateY(-10px);
-  background-color: linear-gradient(135deg, #00b4db, #ff0080);
-}
-
-.service-card .icon,
-.service-card .card-title,
-.service-card .card-text {
-  transition: color 0.3s;
-  text-align: start;
-}
-.service-card .card-title {
-  color: #fff;
-}
-.service-card .card-text {
-  text-align: justify;
-}
-
-.service-card:hover .icon,
-.service-card:hover .card-title,
-.service-card:hover .card-text {
-  color: #ff0080;
-  background: linear-gradient(135deg, #00b4db, #ff0080);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.icon {
-  font-size: 40px;
-}
-
 .row.g-4 {
   margin-bottom: 30px;
 }
@@ -8778,34 +8738,6 @@ i.icofont-phone {
 }
 
 /* ======= */
-.service-card {
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  transition: box-shadow 0.3s;
-  background: var(--whiteColor);
-}
-
-.service-card:hover {
-  background: var(--gradientColor);
-  color: #fff;
-  box-shadow: 0 4px 15px rgba(0, 123, 255, 0.1);
-}
-
-.service-card .icon {
-  font-size: 3rem;
-  color: #17a2b8;
-}
-
-.service-card .arrow {
-  font-size: 1.5rem;
-  color: #17a2b8;
-  transition: color 0.3s;
-}
-
-.service-card:hover .arrow {
-  color: #0d6efd;
-}
-
 .divider {
   border-top: 1px dashed #ddd;
   margin: 10px 0;
@@ -8896,14 +8828,6 @@ p.mt-2 {
 .aligned-text {
   text-align: start;
 }
-
-.service-card p {
-  font-size: 16px;
-  line-height: 26px;
-  color: var(--contentColor);
-  font-weight: 400;
-}
-
 .specialties-section {
   background: lightgray;
 }
@@ -8940,11 +8864,12 @@ p.mt-2 {
   color: #fff; 
 }
 /* ====service card=== */
-.horizontal-card .card-body .card-text {
-  color: #5f6c76;
+.service-page .card {
+  border: none !important;
 }
-.horizontal-card .card-body .card-title {
-  color: #0a0624;
+.service-page .card .col-md-4 img {
+  width: 100%;
+  height: 224px;
 }
 
 
