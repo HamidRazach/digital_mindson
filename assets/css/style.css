@@ -8868,8 +8868,10 @@ p.mt-2 {
   border: none !important;
   cursor: pointer;
 }
-.service-page .card:hover {
+.card:hover {
    transform: scale(1.05);
 }
-
+.request-quote__area-input-field {
+  width: 49%;
+}
 
