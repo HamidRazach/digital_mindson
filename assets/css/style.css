@@ -8903,10 +8903,14 @@ p.mt-2 {
   color: #212529;
 }
 .card {
-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 .card-text {
   font-size: 17px;
+}
+.horizontal-card .card img {
+  height: 248px;
+  width: 224px;
 }
 
 
