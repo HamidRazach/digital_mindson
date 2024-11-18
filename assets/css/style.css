@@ -2954,6 +2954,9 @@ img.herobanner__vector.hero__icon__3 {
   padding: 44px 38px 16px 44px;
   border-radius: var(--borderRadius);
 }
+.service__details .horizontal-card .col-md-8 .col-md-4 {
+  padding-right: 0px;
+}
 
 .service__details__planning__text p {
   margin: 0;
