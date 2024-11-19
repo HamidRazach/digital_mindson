@@ -680,22 +680,22 @@
                                             nulla facilisi morbi tempus. Scelerisque eleifend donec pretium vulputate
                                             sapien nec
                                             sagittis aliquam.</p>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                                tempor
-                                                incididunt ut labore et dolore magna aliqua. Odio facilisis mauris sit amet
-                                                massa
-                                                vitae tortor condimentum. Etiam sit amet nisl purus in mollis nunc sed. Quam
-                                                vulputate dignissim suspendisse in est ante in. Amet commodo nulla facilisi
-                                                nullam
-                                                vehicula. Arcu vitae elementum curabitur vitae nunc. Duis ultricies lacus
-                                                sed turpis
-                                                tincidunt id aliquet risus feugiat. Aenean vel elit scelerisque mauris
-                                                pellentesque
-                                                pulvinar. Turpis egestas maecenas pharetra convallis. Ac turpis egestas
-                                                maecenas
-                                                pharetra convallis. Morbi tincidunt augue interdum velit euismod. Accumsan
-                                                sit amet
-                                                nulla facilisi morbi tempus.</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor
+                                            incididunt ut labore et dolore magna aliqua. Odio facilisis mauris sit amet
+                                            massa
+                                            vitae tortor condimentum. Etiam sit amet nisl purus in mollis nunc sed. Quam
+                                            vulputate dignissim suspendisse in est ante in. Amet commodo nulla facilisi
+                                            nullam
+                                            vehicula. Arcu vitae elementum curabitur vitae nunc. Duis ultricies lacus
+                                            sed turpis
+                                            tincidunt id aliquet risus feugiat. Aenean vel elit scelerisque mauris
+                                            pellentesque
+                                            pulvinar. Turpis egestas maecenas pharetra convallis. Ac turpis egestas
+                                            maecenas
+                                            pharetra convallis. Morbi tincidunt augue interdum velit euismod. Accumsan
+                                            sit amet
+                                            nulla facilisi morbi tempus.</p>
                                     </div>
                                 </div>
                             </div>
@@ -1059,7 +1059,7 @@
         </div>
         <!-- footer__section__end -->
         <!-- back to top -->
-        <a href="#top" class="back-to-top" id="backToTop">
+        <a class="back-to-top" id="backToTop">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up">
                 <path d="M12 19V6M5 12l7-7 7 7" />
@@ -1068,10 +1068,6 @@
         <!-- back to top -->
     </main>
 
-
-
-
-
     <!-- JS here -->
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
@@ -1079,6 +1075,27 @@
     <script src="assets/js/plugins.js"></script>
     <script src="assets/js/swiper-bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
+
+    <!-- back to top -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const backToTopButton = document.getElementById("backToTop");
+            window.addEventListener("scroll", () => {
+                if (window.scrollY > 200) {
+                    backToTopButton.classList.add("show");
+                } else {
+                    backToTopButton.classList.remove("show");
+                }
+            });
+            backToTopButton.addEventListener("click", (e) => {
+                e.preventDefault();
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth",
+                });
+            });
+        });
+    </script>
 
     <script>
         // On page load or when changing themes, best to add inline in `head` to avoid FOUC

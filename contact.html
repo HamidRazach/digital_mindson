@@ -1,9 +1,6 @@
 <!doctype html>
 <html class="no-js" lang="zxx">
 
-
-<!-- Mirrored from html.themewin.com/bastun-preview/bastun/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 19 Oct 2024 19:48:44 GMT -->
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -871,9 +868,10 @@
             </div>
             <!-- footer__section__end -->
                  <!-- back to top -->
-                 <a href="#top" class="back-to-top" id="backToTop">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up">
-                        <path d="M12 19V6M5 12l7-7 7 7"/>
+                 <a class="back-to-top" id="backToTop">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up">
+                        <path d="M12 19V6M5 12l7-7 7 7" />
                     </svg>
                 </a>
                        <!-- back to top -->
@@ -892,7 +890,26 @@
     <script src="assets/js/swiper-bundle.min.js"></script>
     <script src="assets/js/ajax-form.js"></script>
     <script src="assets/js/main.js"></script>
-
+        <!-- back to top -->
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                const backToTopButton = document.getElementById("backToTop");
+                window.addEventListener("scroll", () => {
+                    if (window.scrollY > 200) {
+                        backToTopButton.classList.add("show");
+                    } else {
+                        backToTopButton.classList.remove("show");
+                    }
+                });
+                backToTopButton.addEventListener("click", (e) => {
+                    e.preventDefault();
+                    window.scrollTo({
+                        top: 0,
+                        behavior: "smooth",
+                    });
+                });
+            });
+        </script>
     <script>
         // On page load or when changing themes, best to add inline in `head` to avoid FOUC
         if (localStorage.getItem("theme-color") === "dark" || (!("theme-color" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {

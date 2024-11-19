@@ -9,15 +9,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/icon.svg">
-    <!-- Place favicon.ico in the root directory -->
+    <!-- Place favicon.icon -->
 
     <!-- CSS here -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <!-- <link rel="stylesheet" href="css/animate.min.css"> -->
     <link rel="stylesheet" href="assets/css/aos.min.css">
-    <!-- <link rel="stylesheet" href="css/magnific-popup.css"> -->
     <link rel="stylesheet" href="assets/css/icofont.min.css">
-    <!-- <link rel="stylesheet" href="css/slick.css"> -->
     <link rel="stylesheet" href="assets/css/glightbox.min.css">
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -25,12 +22,11 @@
 
 
     <script>
-        // On page load or when changing themes, best to add inline in `head` to avoid FOUC
         if (localStorage.getItem("theme-color") === "dark" || (!("theme-color" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
-          document.documentElement.classList.add("is_dark");
-        } 
+            document.documentElement.classList.add("is_dark");
+        }
         if (localStorage.getItem("theme-color") === "light") {
-          document.documentElement.classList.remove("is_dark");
+            document.documentElement.classList.remove("is_dark");
         } 
     </script>
 
@@ -46,14 +42,24 @@
         </div>
     </div>
     <!-- pre loader area end -->
-    
+
 
     <!-- Dark/Light area start -->
     <div class="mode_switcher my_switcher">
         <button id="light--to-dark-button" class="light align-items-center">
-            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon dark__mode" viewBox="0 0 512 512"><path d="M160 136c0-30.62 4.51-61.61 16-88C99.57 81.27 48 159.32 48 248c0 119.29 96.71 216 216 216 88.68 0 166.73-51.57 200-128-26.39 11.49-57.38 16-88 16-119.29 0-216-96.71-216-216z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon dark__mode" viewBox="0 0 512 512">
+                <path
+                    d="M160 136c0-30.62 4.51-61.61 16-88C99.57 81.27 48 159.32 48 248c0 119.29 96.71 216 216 216 88.68 0 166.73-51.57 200-128-26.39 11.49-57.38 16-88 16-119.29 0-216-96.71-216-216z"
+                    fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                    stroke-width="32" />
+            </svg>
 
-            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon light__mode" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M256 48v48M256 416v48M403.08 108.92l-33.94 33.94M142.86 369.14l-33.94 33.94M464 256h-48M96 256H48M403.08 403.08l-33.94-33.94M142.86 142.86l-33.94-33.94"/><circle cx="256" cy="256" r="80" fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon light__mode" viewBox="0 0 512 512">
+                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32"
+                    d="M256 48v48M256 416v48M403.08 108.92l-33.94 33.94M142.86 369.14l-33.94 33.94M464 256h-48M96 256H48M403.08 403.08l-33.94-33.94M142.86 142.86l-33.94-33.94" />
+                <circle cx="256" cy="256" r="80" fill="none" stroke="currentColor" stroke-linecap="round"
+                    stroke-miterlimit="10" stroke-width="32" />
+            </svg>
 
             <span class="light__mode">Light</span>
             <span class="dark__mode">Dark</span>
@@ -65,197 +71,211 @@
 
     <main class="main_wrapper overflow-hidden">
 
-   <!-- animation  -->
-                <div class="header__animate bg__black">
-                    <div class="container-fluid">
-                        <div class="header__animate__wraper">
+        <!-- animation  -->
+        <div class="header__animate bg__black">
+            <div class="container-fluid">
+                <div class="header__animate__wraper">
 
-                        <div class="header__animate__item">
-                            <i class="icofont-phone"></i>
-                            <h3><a href="tel:(+92)3086582833">+92 3086582833</a></h3>
-                        </div>
+                    <div class="header__animate__item">
+                        <i class="icofont-phone"></i>
+                        <h3><a href="tel:(+92)3086582833">+92 3086582833</a></h3>
+                    </div>
 
-                        <div class="header__animate__item">
-                            <i class="icofont-email"></i>
-                            <h3><a href="mailto:info@digitalmindson.com">info@digitalmindson.com</a></h3>
-                        </div>
-                        <div class="header__animate__item">
-                            <i class="icofont-phone"></i>
-                            <h3><a href="tel:(+92)3086582833">+92 3086582833</a></h3>
-                        </div>
+                    <div class="header__animate__item">
+                        <i class="icofont-email"></i>
+                        <h3><a href="mailto:info@digitalmindson.com">info@digitalmindson.com</a></h3>
+                    </div>
+                    <div class="header__animate__item">
+                        <i class="icofont-phone"></i>
+                        <h3><a href="tel:(+92)3086582833">+92 3086582833</a></h3>
+                    </div>
 
-                        <div class="header__animate__item">
-                            <i class="icofont-email"></i>
-                            <h3><a href="mailto:info@digitalmindson.com">info@digitalmindson.com</a></h3>
-                        </div>
-                        <div class="header__animate__item">
-                            <i class="icofont-phone"></i>
-                            <h3><a href="tel:(+92)3086582833">+92 3086582833</a></h3>
-                        </div>
+                    <div class="header__animate__item">
+                        <i class="icofont-email"></i>
+                        <h3><a href="mailto:info@digitalmindson.com">info@digitalmindson.com</a></h3>
+                    </div>
+                    <div class="header__animate__item">
+                        <i class="icofont-phone"></i>
+                        <h3><a href="tel:(+92)3086582833">+92 3086582833</a></h3>
+                    </div>
 
-                        <div class="header__animate__item">
-                            <i class="icofont-email"></i>
-                            <h3><a href="mailto:info@digitalmindson.com">info@digitalmindson.com</a></h3>
-                        </div>
-                        <div class="header__animate__item">
-                            <i class="icofont-phone"></i>
-                            <h3><a href="tel:(+92)3086582833">+92 3086582833</a></h3>
-                        </div>
+                    <div class="header__animate__item">
+                        <i class="icofont-email"></i>
+                        <h3><a href="mailto:info@digitalmindson.com">info@digitalmindson.com</a></h3>
+                    </div>
+                    <div class="header__animate__item">
+                        <i class="icofont-phone"></i>
+                        <h3><a href="tel:(+92)3086582833">+92 3086582833</a></h3>
+                    </div>
 
-                        <div class="header__animate__item">
-                            <i class="icofont-email"></i>
-                            <h3><a href="mailto:info@digitalmindson.com">info@digitalmindson.com</a></h3>
-                        </div>
-                        <div class="header__animate__item">
-                            <i class="icofont-phone"></i>
-                            <h3><a href="tel:(+92)3086582833">+92 3086582833</a></h3>
-                        </div>
+                    <div class="header__animate__item">
+                        <i class="icofont-email"></i>
+                        <h3><a href="mailto:info@digitalmindson.com">info@digitalmindson.com</a></h3>
+                    </div>
+                    <div class="header__animate__item">
+                        <i class="icofont-phone"></i>
+                        <h3><a href="tel:(+92)3086582833">+92 3086582833</a></h3>
+                    </div>
 
-                        <div class="header__animate__item">
-                            <i class="icofont-email"></i>
-                            <h3><a href="mailto:info@digitalmindson.com">info@digitalmindson.com</a></h3>
-                        </div>
-                    </div> 
+                    <div class="header__animate__item">
+                        <i class="icofont-email"></i>
+                        <h3><a href="mailto:info@digitalmindson.com">info@digitalmindson.com</a></h3>
                     </div>
                 </div>
-                <header>
-                    <div class="headerarea headerarea--1 headerarea__transparent header__sticky main__header ">
-                        <div class="container desktop__menu__wrapper">
-                            <div class="headerarea__main__wrapper position-relative">
+            </div>
+        </div>
+        <header>
+            <div class="headerarea headerarea--1 headerarea__transparent header__sticky main__header ">
+                <div class="container desktop__menu__wrapper">
+                    <div class="headerarea__main__wrapper position-relative">
 
-                                <div class="headerarea__component__wrap">
-                                    <div class="headerarea__component">
-                                        <div class="headerarea__logo">
-                                            <a href="index.html"><img src="assets/img/logo/full-logo.svg" alt="Bastun Logo"></a>
-                                        </div>
-                                    </div>
-                                    <div class="headerarea__component">
-                                        <div class="headerarea__main__menu">
-                                            <nav>
-                                                <ul>
-                                                    <li
-                                                        class="headerarea__common__dropdown headerarea__mega__menu position-static">
-                                                        <a class="headerarea__has__dropdown" href="index.html">HOME
-                                                        </a>
+                        <div class="headerarea__component__wrap">
+                            <div class="headerarea__component">
+                                <div class="headerarea__logo">
+                                    <a href="index.html"><img src="assets/img/logo/full-logo.svg" alt="Bastun Logo"></a>
+                                </div>
+                            </div>
+                            <div class="headerarea__component">
+                                <div class="headerarea__main__menu">
+                                    <nav>
+                                        <ul>
+                                            <li
+                                                class="headerarea__common__dropdown headerarea__mega__menu position-static">
+                                                <a class="headerarea__has__dropdown" href="index.html">HOME
+                                                </a>
 
 
-                                                    </li>
+                                            </li>
 
-                                                    <li class="headerarea__common__dropdown"><a
-                                                            class="headerarea__has__dropdown" href="service.html">Services
-                                                            <i class="icofont-long-arrow-down"></i></a>
-                                                        <ul class="headerarea__submenu headerarea__submenu--five--wrap service-scrollbar">
+                                            <li class="headerarea__common__dropdown"><a
+                                                    class="headerarea__has__dropdown" href="service.html">Services
+                                                    <i class="icofont-long-arrow-down"></i></a>
+                                                <ul
+                                                    class="headerarea__submenu headerarea__submenu--five--wrap service-scrollbar">
 
-                                                            <li><a href="webdevelopment.html">Web Development</a></li>
-                                                            <li><a href="software.html">Software Development</a></li>
-                                                            <li><a href="appdevelop.html">App Development</a></li>
-                                                            <li><a href="GameDevelop.html">Game Development</a></li>
-                                                            <li><a href="digtalmarketing.html">Digital Marketing</a></li>
-                                                            <li><a href="uidesign.html">UI/UX Design</a></li>
-                                                            <li><a href="itexpert.html">IT Specialist</a></li>
-                                                            <li><a href="#">Content Creator</a></li>
-                                                            <li><a href="seo.html">Search Engine Optimization(SEO)</a></li>
+                                                    <li><a href="webdevelopment.html">Web Development</a></li>
+                                                    <li><a href="software.html">Software Development</a></li>
+                                                    <li><a href="appdevelop.html">App Development</a></li>
+                                                    <li><a href="GameDevelop.html">Game Development</a></li>
+                                                    <li><a href="digtalmarketing.html">Digital Marketing</a></li>
+                                                    <li><a href="uidesign.html">UI/UX Design</a></li>
+                                                    <li><a href="itexpert.html">IT Specialist</a></li>
+                                                    <li><a href="#">Content Creator</a></li>
+                                                    <li><a href="seo.html">Search Engine Optimization(SEO)</a></li>
 
-                                                        </ul>
+                                                </ul>
 
-                                                    </li>
+                                            </li>
 
-                                                    <li><a href="#">Careers </a></li>
-                                                    <li><a href="blog.html">BLOG </a></li>
-                                                    <li><a href="team.html">Team </a></li>
+                                            <li><a href="#">Careers </a></li>
+                                            <li><a href="blog.html">BLOG </a></li>
+                                            <li><a href="team.html">Team </a></li>
 
-                                                    <li class="headerarea__common__dropdown"><a
-                                                        class="headerarea__has__dropdown" href="contact.html">CONTACT
-                                                        <i class="icofont-long-arrow-down"></i></a>
-                                                    <ul class="headerarea__submenu headerarea__submenu--five--wrap">
+                                            <li class="headerarea__common__dropdown"><a
+                                                    class="headerarea__has__dropdown" href="contact.html">CONTACT
+                                                    <i class="icofont-long-arrow-down"></i></a>
+                                                <ul class="headerarea__submenu headerarea__submenu--five--wrap">
 
-                                                        <li><a href="about.html">ABOUT </a></li>
-                                                        <li><a href="project.html">Portfolio </a></li>
+                                                    <li><a href="about.html">ABOUT </a></li>
+                                                    <li><a href="project.html">Portfolio </a></li>
 
-                                                    </ul>
+                                                </ul>
 
-                                                </li>
+                                            </li>
 
-                                        </div>
-
-                                        </ul>
-                                        </nav>
-                                    </div>
-                                    <div class="headerarea__component">
-                                        <div class="headerarea__right">
-                                        
-                                            <div class="headerarea__button">
-                                                <a class="default__button" href="contact.html">GET FREE QUATE</a>
-                                            </div>
-                                        </div>
-                                    </div>
                                 </div>
 
+                                </ul>
+                                </nav>
+                            </div>
+                            <div class="headerarea__component">
+                                <div class="headerarea__right">
+
+                                    <div class="headerarea__button">
+                                        <a class="default__button" href="contact.html">GET FREE QUATE</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="mob_menu_wrapper container-fluid">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="offcanvas__header--menu__open ">
-                                <a class="offcanvas__header--menu__open--btn" href="javascript:void(0)" data-offcanvas>
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="ionicon offcanvas__header--menu__open--svg"
-                                        viewBox="0 0 512 512">
-                                        <path fill="currentColor" stroke="currentColor" stroke-linecap="round"
-                                            stroke-miterlimit="10" stroke-width="32" d="M80 160h352M80 256h352M80 352h352" />
-                                    </svg>
-                                    <span class="visually-hidden">Offcanvas Menu Open</span>
-                                </a>
-                            </div>
-                            <div class="mobile__log">
-                                <div class="mobile__log--title"><a class="mobile__log--link" href="index.html">
-                                        <img class="mobile__log--img" src="assets/img/logo/full-logo.svg" alt="logo-img">
-                                    </a></div>
-                            </div>
-
-                        
-
-                        </div>
-                    </div>
 
                     </div>
-                </header>
+                </div>
+            </div>
+
+            <div class="mob_menu_wrapper container-fluid">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="offcanvas__header--menu__open ">
+                        <a class="offcanvas__header--menu__open--btn" href="javascript:void(0)" data-offcanvas>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon offcanvas__header--menu__open--svg"
+                                viewBox="0 0 512 512">
+                                <path fill="currentColor" stroke="currentColor" stroke-linecap="round"
+                                    stroke-miterlimit="10" stroke-width="32" d="M80 160h352M80 256h352M80 352h352" />
+                            </svg>
+                            <span class="visually-hidden">Offcanvas Menu Open</span>
+                        </a>
+                    </div>
+                    <div class="mobile__log">
+                        <div class="mobile__log--title"><a class="mobile__log--link" href="index.html">
+                                <img class="mobile__log--img" src="assets/img/logo/full-logo.svg" alt="logo-img">
+                            </a></div>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+            </div>
+        </header>
         <!-- header start -->
 
-    <!-- Start Offcanvas header menu -->
-    <div class="offcanvas__header">
-        <div class="offcanvas__inner">
-            <div class="offcanvas__logo">
-                <a class="offcanvas__logo_link" href="index.html">
-                    <img src="assets/img/logo/Logo_2.png" alt="Logo-img">
-                </a>
-                <button class="offcanvas__close--btn" data-offcanvas>close</button>
-            </div>
-            <nav class="offcanvas__menu">
-                <ul class="offcanvas__menu_ul">
-                    <li class="offcanvas__menu_li"><a class="offcanvas__menu_item" href="#tb__home">HOME </a></li>
-                    <li class="offcanvas__menu_li"><a class="offcanvas__menu_item" href="#tb__service">SERVICE </a></li>
-                    <li class="offcanvas__menu_li"><a class="offcanvas__menu_item" href="#tb__about">ABOUT </a></li>
-                    <li class="offcanvas__menu_li"><a class="offcanvas__menu_item" href="#tb__projects">PROJECTS </a></li>
-                    <li class="offcanvas__menu_li"><a class="offcanvas__menu_item" href="#tb__blogs">BLOGS </a></li>
-                    <li class="offcanvas__menu_li"><a class="offcanvas__menu_item" href="#tb__contact">CONTACT </a></li>
-                </ul>
-                <div class="offcanvas__account--items">
-                    <a class="offcanvas__account--items__btn d-flex align-items-center" href="login.html">
-                        <span class="offcanvas__account--items__icon"> 
-                            <svg xmlns="http://www.w3.org/2000/svg"  width="20.51" height="19.443" viewBox="0 0 512 512"><path d="M344 144c-3.92 52.87-44 96-88 96s-84.15-43.12-88-96c-4-55 35-96 88-96s92 42 88 96z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path d="M256 304c-87 0-175.3 48-191.64 138.6C62.39 453.52 68.57 464 80 464h352c11.44 0 17.62-10.48 15.65-21.4C431.3 352 343 304 256 304z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/></svg> 
-                        </span>
-                        <span class="offcanvas__account--items__label">Login / Register</span>
+        <!-- Start Offcanvas header menu -->
+        <div class="offcanvas__header">
+            <div class="offcanvas__inner">
+                <div class="offcanvas__logo">
+                    <a class="offcanvas__logo_link" href="index.html">
+                        <img src="assets/img/logo/Logo_2.png" alt="Logo-img">
                     </a>
+                    <button class="offcanvas__close--btn" data-offcanvas>close</button>
                 </div>
-            </nav>
+                <nav class="offcanvas__menu">
+                    <ul class="offcanvas__menu_ul">
+                        <li class="offcanvas__menu_li"><a class="offcanvas__menu_item" href="#tb__home">HOME </a></li>
+                        <li class="offcanvas__menu_li"><a class="offcanvas__menu_item" href="#tb__service">SERVICE </a>
+                        </li>
+                        <li class="offcanvas__menu_li"><a class="offcanvas__menu_item" href="#tb__about">ABOUT </a></li>
+                        <li class="offcanvas__menu_li"><a class="offcanvas__menu_item" href="#tb__projects">PROJECTS
+                            </a></li>
+                        <li class="offcanvas__menu_li"><a class="offcanvas__menu_item" href="#tb__blogs">BLOGS </a></li>
+                        <li class="offcanvas__menu_li"><a class="offcanvas__menu_item" href="#tb__contact">CONTACT </a>
+                        </li>
+                    </ul>
+                    <div class="offcanvas__account--items">
+                        <a class="offcanvas__account--items__btn d-flex align-items-center" href="login.html">
+                            <span class="offcanvas__account--items__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20.51" height="19.443"
+                                    viewBox="0 0 512 512">
+                                    <path
+                                        d="M344 144c-3.92 52.87-44 96-88 96s-84.15-43.12-88-96c-4-55 35-96 88-96s92 42 88 96z"
+                                        fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="32" />
+                                    <path
+                                        d="M256 304c-87 0-175.3 48-191.64 138.6C62.39 453.52 68.57 464 80 464h352c11.44 0 17.62-10.48 15.65-21.4C431.3 352 343 304 256 304z"
+                                        fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32" />
+                                </svg>
+                            </span>
+                            <span class="offcanvas__account--items__label">Login / Register</span>
+                        </a>
+                    </div>
+                </nav>
+            </div>
         </div>
-    </div>
-    <!-- End Offcanvas header menu -->
+        <!-- End Offcanvas header menu -->
 
 
         <!-- herobanner__section__start -->
-        <div class="herobanner herobanner__with__transparent__header" id="tb__home" style="background: url(assets/img/herobaner/herobanner__1.jpg);">
+        <div class="herobanner herobanner__with__transparent__header" id="tb__home"
+            style="background: url(assets/img/herobaner/herobanner__1.jpg);">
             <div class="container">
                 <div class="herobanner__wrapper">
 
@@ -265,13 +285,15 @@
 
                             <div class="herobanner__single swiper-slide position-relative">
                                 <div class="row align-items-center height__950">
-                                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12" data-aos="fade-up" data-aos-duration="1500">
+                                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12" data-aos="fade-up"
+                                        data-aos-duration="1500">
                                         <div class="herobanner__content__wrapper">
                                             <div class="herobanner__title">
                                                 <h1>WE ARE CONSULTING AGENCY</h1>
                                             </div>
                                             <div class="herobanner__text">
-                                                <p>Sagittis purus amet volutpat consequat mauris nunc congue nisi and tortor.</p>
+                                                <p>Sagittis purus amet volutpat consequat mauris nunc congue nisi and
+                                                    tortor.</p>
                                             </div>
                                             <div class="herobanner__button">
                                                 <a class="default__button" href="#">OUR ALL SERVICES</a>
@@ -288,13 +310,15 @@
 
                             <div class="herobanner__single swiper-slide position-relative">
                                 <div class="row align-items-center height__950">
-                                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12" data-aos="fade-up" data-aos-duration="1500">
+                                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12" data-aos="fade-up"
+                                        data-aos-duration="1500">
                                         <div class="herobanner__content__wrapper">
                                             <div class="herobanner__title">
                                                 <h1>WE ARE CONSULTING AGENCY</h1>
                                             </div>
                                             <div class="herobanner__text">
-                                                <p>Sagittis purus amet volutpat consequat mauris nunc congue nisi and tortor.</p>
+                                                <p>Sagittis purus amet volutpat consequat mauris nunc congue nisi and
+                                                    tortor.</p>
                                             </div>
                                             <div class="herobanner__button">
                                                 <a class="default__button" href="#">OUR ALL SERVICES</a>
@@ -311,13 +335,15 @@
 
                             <div class="herobanner__single swiper-slide position-relative">
                                 <div class="row align-items-center height__950">
-                                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12" data-aos="fade-up" data-aos-duration="1500">
+                                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12" data-aos="fade-up"
+                                        data-aos-duration="1500">
                                         <div class="herobanner__content__wrapper">
                                             <div class="herobanner__title">
                                                 <h1>WE ARE CONSULTING AGENCY</h1>
                                             </div>
                                             <div class="herobanner__text">
-                                                <p>Sagittis purus amet volutpat consequat mauris nunc congue nisi and tortor.</p>
+                                                <p>Sagittis purus amet volutpat consequat mauris nunc congue nisi and
+                                                    tortor.</p>
                                             </div>
                                             <div class="herobanner__button">
                                                 <a class="default__button" href="#">OUR ALL SERVICES</a>
@@ -333,19 +359,26 @@
                             </div>
 
                         </div>
-                        <div class="slider__controls__wrap slider__controls__pagination slider__controls__arrows herobanner__arrow__1">
+                        <div
+                            class="slider__controls__wrap slider__controls__pagination slider__controls__arrows herobanner__arrow__1">
                             <div class="swiper-button-next arrow-btn">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M14.4297 5.92999L20.4997 12L14.4297 18.07" stroke="#fff" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M3.5 12H20.33" stroke="#fff" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                    
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.4297 5.92999L20.4997 12L14.4297 18.07" stroke="#fff" stroke-width="1.5"
+                                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M3.5 12H20.33" stroke="#fff" stroke-width="1.5" stroke-miterlimit="10"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+
                             </div>
                             <div class="swiper-button-prev arrow-btn">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M9.57031 5.92999L3.50031 12L9.57031 18.07" stroke="#fff" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M20.5 12H3.67" stroke="#fff" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.57031 5.92999L3.50031 12L9.57031 18.07" stroke="#fff" stroke-width="1.5"
+                                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M20.5 12H3.67" stroke="#fff" stroke-width="1.5" stroke-miterlimit="10"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
                             </div>
                         </div>
                     </div>
@@ -354,16 +387,21 @@
 
             </div>
             <div class="herobanner__icon">
-                <img class="herobanner__vector hero__icon__1" src="assets/img/herobaner/vector__1.png" alt="Vector photo">
-                <img class="herobanner__vector hero__icon__2" src="assets/img/herobaner/vector__4.png" alt="Vector photo">
-                <img class="herobanner__vector hero__icon__3" src="assets/img/herobaner/vector__3.png" alt="Vector photo">
-                <img class="herobanner__vector hero__icon__4" src="assets/img/herobaner/vector__4.png" alt="Vector photo">
+                <img class="herobanner__vector hero__icon__1" src="assets/img/herobaner/vector__1.png"
+                    alt="Vector photo">
+                <img class="herobanner__vector hero__icon__2" src="assets/img/herobaner/vector__4.png"
+                    alt="Vector photo">
+                <img class="herobanner__vector hero__icon__3" src="assets/img/herobaner/vector__3.png"
+                    alt="Vector photo">
+                <img class="herobanner__vector hero__icon__4" src="assets/img/herobaner/vector__4.png"
+                    alt="Vector photo">
             </div>
         </div>
         <!-- herobanner__section__end -->
 
-         <!-- service__section__start -->
-        <div class="service sp_top_140 sp_bottom_330 special__spacing" id="tb__service" style="background: var(--pinkcolor) url(assets/img/service/service__bg__img.png);" data-aos="fade-up">
+        <!-- service__section__start -->
+        <div class="service sp_top_140 sp_bottom_330 special__spacing" id="tb__service"
+            style="background: var(--pinkcolor) url(assets/img/service/service__bg__img.png);" data-aos="fade-up">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-12">
@@ -372,13 +410,15 @@
                                 <h3>WE OFFER CONSULTANCY SERVICES.</h3>
                             </div>
                             <div class="section__title__text">
-                                <p>Sagittis purus sit amet volutpat consequat mauris nunc congue and tortor dignissim</p>
+                                <p>Sagittis purus sit amet volutpat consequat mauris nunc congue and tortor dignissim
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12" data-aos="fade-up" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12" data-aos="fade-up" data-aos="fade-up"
+                        data-aos-duration="1500">
                         <div class="service__single__wraper common__gradient__bg single__transform">
                             <div class="service__single__inner">
                                 <div class="service__img">
@@ -393,11 +433,16 @@
                                         <p>Sagittis purus sit amet volutpat consequat mauris nunc congue nisi</p>
                                     </div>
                                     <div class="service__icon">
-                                        <a href="service-details.html"><svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M14.4258 10.9897L23.0101 10.9897L23.0101 19.574" stroke="#0A0624" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M10.9902 23.0107L22.8908 11.1101" stroke="#0A0624" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <a href="service-details.html"><svg width="34" height="34" viewBox="0 0 34 34"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M14.4258 10.9897L23.0101 10.9897L23.0101 19.574"
+                                                    stroke="#0A0624" stroke-width="1.5" stroke-miterlimit="10"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M10.9902 23.0107L22.8908 11.1101" stroke="#0A0624"
+                                                    stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
                                             </svg>
-                                            </a>
+                                        </a>
                                     </div>
                                 </div>
 
@@ -411,57 +456,67 @@
                     <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12" data-aos="fade-up" data-aos-duration="1700">
                         <div class="service__single__wraper common__gradient__bg single__transform">
                             <div class="service__single__inner">
-                            <div class="service__img">
-                                <img src="assets/img/service/service__2.png" alt="">
-                            </div>
-                            <div class="service__content">
-                                <div class="service__heading">
-                                    <h5><a href="service-details.html">HR Consulting</a></h5>
+                                <div class="service__img">
+                                    <img src="assets/img/service/service__2.png" alt="">
                                 </div>
-                                <div class="service__text">
-                                    <p>Sagittis purus sit amet volutpat consequat mauris nunc congue nisi</p>
-                                </div>
-                                <div class="service__icon">
-                                    <a href="service-details.html"><svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M14.4258 10.9897L23.0101 10.9897L23.0101 19.574" stroke="#0A0624" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M10.9902 23.0107L22.8908 11.1101" stroke="#0A0624" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
+                                <div class="service__content">
+                                    <div class="service__heading">
+                                        <h5><a href="service-details.html">HR Consulting</a></h5>
+                                    </div>
+                                    <div class="service__text">
+                                        <p>Sagittis purus sit amet volutpat consequat mauris nunc congue nisi</p>
+                                    </div>
+                                    <div class="service__icon">
+                                        <a href="service-details.html"><svg width="34" height="34" viewBox="0 0 34 34"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M14.4258 10.9897L23.0101 10.9897L23.0101 19.574"
+                                                    stroke="#0A0624" stroke-width="1.5" stroke-miterlimit="10"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M10.9902 23.0107L22.8908 11.1101" stroke="#0A0624"
+                                                    stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
                                         </a>
+                                    </div>
                                 </div>
                             </div>
+                            <div class="service__img__bg">
+                                <img src="assets/img/service/service__1__img__bg.svg" alt="">
+                            </div>
                         </div>
-                        <div class="service__img__bg">
-                            <img src="assets/img/service/service__1__img__bg.svg" alt="">
-                        </div>
-                    </div>
                     </div>
 
                     <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12" data-aos="fade-up" data-aos-duration="1900">
                         <div class="service__single__wraper common__gradient__bg single__transform">
                             <div class="service__single__inner">
-                            <div class="service__img">
-                                <img src="assets/img/service/service__3.png" alt="">
-                            </div>
-                            <div class="service__content">
-                                <div class="service__heading">
-                                    <h5><a href="service-details.html">IT Consulting</a></h5>
+                                <div class="service__img">
+                                    <img src="assets/img/service/service__3.png" alt="">
                                 </div>
-                                <div class="service__text">
-                                    <p>Sagittis purus sit amet volutpat consequat mauris nunc congue nisi</p>
-                                </div>
-                                <div class="service__icon">
-                                    <a href="service-details.html"><svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M14.4258 10.9897L23.0101 10.9897L23.0101 19.574" stroke="#0A0624" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M10.9902 23.0107L22.8908 11.1101" stroke="#0A0624" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
+                                <div class="service__content">
+                                    <div class="service__heading">
+                                        <h5><a href="service-details.html">IT Consulting</a></h5>
+                                    </div>
+                                    <div class="service__text">
+                                        <p>Sagittis purus sit amet volutpat consequat mauris nunc congue nisi</p>
+                                    </div>
+                                    <div class="service__icon">
+                                        <a href="service-details.html"><svg width="34" height="34" viewBox="0 0 34 34"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M14.4258 10.9897L23.0101 10.9897L23.0101 19.574"
+                                                    stroke="#0A0624" stroke-width="1.5" stroke-miterlimit="10"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M10.9902 23.0107L22.8908 11.1101" stroke="#0A0624"
+                                                    stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
                                         </a>
+                                    </div>
                                 </div>
                             </div>
+                            <div class="service__img__bg">
+                                <img src="assets/img/service/service__1__img__bg.svg" alt="">
+                            </div>
                         </div>
-                        <div class="service__img__bg">
-                            <img src="assets/img/service/service__1__img__bg.svg" alt="">
-                        </div>
-                    </div>
                     </div>
 
                     <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12" data-aos="fade-up" data-aos-duration="2100">
@@ -478,11 +533,16 @@
                                         <p>Sagittis purus sit amet volutpat consequat mauris nunc congue nisi</p>
                                     </div>
                                     <div class="service__icon">
-                                        <a href="service-details.html"><svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M14.4258 10.9897L23.0101 10.9897L23.0101 19.574" stroke="#0A0624" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M10.9902 23.0107L22.8908 11.1101" stroke="#0A0624" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <a href="service-details.html"><svg width="34" height="34" viewBox="0 0 34 34"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M14.4258 10.9897L23.0101 10.9897L23.0101 19.574"
+                                                    stroke="#0A0624" stroke-width="1.5" stroke-miterlimit="10"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M10.9902 23.0107L22.8908 11.1101" stroke="#0A0624"
+                                                    stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
                                             </svg>
-                                            </a>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -494,51 +554,54 @@
                 </div>
             </div>
             <div class="section__strock__line__animation">
-                <img class="ssla__animation service__line__animation" src="assets/img/service/service__small__img.png" alt="">
+                <img class="ssla__animation service__line__animation" src="assets/img/service/service__small__img.png"
+                    alt="">
             </div>
         </div>
-         <!-- service__section__end -->
+        <!-- service__section__end -->
 
 
 
-         <!-- video__section__start -->
-            <div class="video sp_bottom_140 video__nmt" id="video__area" data-aos="fade-up">
-                <div class="container-fluid full__width__padding">
-                    <div class="row">
-                        <div class="col-xl-12">
-                            <div class="video__img position-relative">
+        <!-- video__section__start -->
+        <div class="video sp_bottom_140 video__nmt" id="video__area" data-aos="fade-up">
+            <div class="container-fluid full__width__padding">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="video__img position-relative">
 
-                                <div class="video__text video__text--1">
-                                    <h2>INTRO</h2>
-                                </div>
+                            <div class="video__text video__text--1">
+                                <h2>INTRO</h2>
+                            </div>
 
-                                <img src="assets/img/video/video__1.png" alt="">
-                                <div class="video__small__img">
-                                    <img src="assets/img/video/video__2.png" alt="">
-                                </div>
-                                <div class="video__button">
-                                    <a class="video__card--link glightbox" data-gallery="video_popup" href="https://www.youtube.com/watch?v=gLb2Gbo_bbs">
-                                        <svg width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M13 7.5L0.250002 14.8612L0.250003 0.138783L13 7.5Z" fill="#F8422E"/>
-                                        </svg>
-                                    </a>
-
-                                </div>
-
-                                <div class="video__text video__text--2">
-                                    <h2>VIDEO</h2>
-                                </div>
+                            <img src="assets/img/video/video__1.png" alt="">
+                            <div class="video__small__img">
+                                <img src="assets/img/video/video__2.png" alt="">
+                            </div>
+                            <div class="video__button">
+                                <a class="video__card--link glightbox" data-gallery="video_popup"
+                                    href="https://www.youtube.com/watch?v=gLb2Gbo_bbs">
+                                    <svg width="13" height="15" viewBox="0 0 13 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13 7.5L0.250002 14.8612L0.250003 0.138783L13 7.5Z" fill="#F8422E" />
+                                    </svg>
+                                </a>
 
                             </div>
+
+                            <div class="video__text video__text--2">
+                                <h2>VIDEO</h2>
+                            </div>
+
                         </div>
                     </div>
                 </div>
             </div>
-         <!-- video__section__end -->
+        </div>
+        <!-- video__section__end -->
 
 
 
-         <!-- about__section__start -->
+        <!-- about__section__start -->
         <div class="about position-relative sp_bottom_140" id="tb__about">
             <div class="container">
                 <div class="row">
@@ -550,17 +613,24 @@
                                     <span>29</span>
                                     <p>Years Experience</p>
                                     <div class="about__number__icon">
-                                        <a href="#">  <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                          <path d="M14.4258 10.9897L23.0101 10.9897L23.0101 19.574" stroke="#0A0624" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
-                                          <path d="M10.9902 23.0107L22.8908 11.1101" stroke="#0A0624" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
-                                          </svg></a>
-                                      </div>
+                                        <a href="#"> <svg width="34" height="34" viewBox="0 0 34 34" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M14.4258 10.9897L23.0101 10.9897L23.0101 19.574"
+                                                    stroke="#0A0624" stroke-width="1.5" stroke-miterlimit="10"
+                                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path d="M10.9902 23.0107L22.8908 11.1101" stroke="#0A0624"
+                                                    stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                                    stroke-linejoin="round"></path>
+                                            </svg></a>
+                                    </div>
                                 </div>
-                            
+
                             </div>
                             <div class="section__strock__line__animation">
-                                <img class="ssla__animation ssl__img__1" src="assets/img/about/about__small__img__1.png" alt="">
-                                <img class="ssla__animation ssl__img__2" src="assets/img/about/about__small__img__2.png" alt="">
+                                <img class="ssla__animation ssl__img__1" src="assets/img/about/about__small__img__1.png"
+                                    alt="">
+                                <img class="ssla__animation ssl__img__2" src="assets/img/about/about__small__img__2.png"
+                                    alt="">
                             </div>
                         </div>
                     </div>
@@ -569,10 +639,12 @@
 
                             <div class="section__title section__title--2 sp_bottom_30">
                                 <div class="section__title__heading">
-                                    <h3>WE PROVIDE ALL KIND OF CONSULTING SERVICE FROMS  <span class="text__gradient">1998.</span>  </h3>
+                                    <h3>WE PROVIDE ALL KIND OF CONSULTING SERVICE FROMS <span
+                                            class="text__gradient">1998.</span> </h3>
                                 </div>
                                 <div class="section__title__text">
-                                    <p>Sagittis purus sit amet volutpat consequat mauris nunc congue and tortor dignissim</p>
+                                    <p>Sagittis purus sit amet volutpat consequat mauris nunc congue and tortor
+                                        dignissim</p>
                                 </div>
                             </div>
 
@@ -580,10 +652,12 @@
                                 <h6>Our Mission & Vision</h6>
                             </div>
                             <div class="about__text__2">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.</p>
                             </div>
                             <div class="about__text__3">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.</p>
                             </div>
                             <div class="about__button">
                                 <a class="default__button" href="#">LEARN MORE ABOUT</a>
@@ -593,213 +667,246 @@
                 </div>
             </div>
         </div>
-         <!-- about__section__end-->
+        <!-- about__section__end-->
 
 
-         <!-- team__section__start -->
-            <div class="team sp_bottom_100 sp_top_100 position-relative" style="background: url(assets/img/team/team_bg.png);">
-                <div class="container-fluid">
-                    <div class="row">
+        <!-- team__section__start -->
+        <div class="team sp_bottom_100 sp_top_100 position-relative"
+            style="background: url(assets/img/team/team_bg.png);">
+            <div class="container-fluid">
+                <div class="row">
 
 
-                            <div class="team__left sp_50">
-                                <div class="team__left__wrap">
-                                    <div class="section__title section__title--2"  data-aos="fade-up" data-aos-duration="1500">
-                                        <div class="section__title__heading">
-                                            <h3>CONTUATION EXPERTISE! YOU CAN TRUST.</h3>
-                                        </div>
-                                        <div class="section__title__text">
-                                            <p>Sagittis purus sit amet volutpat consequat mauris nunc congue nisi and tortor dignissim.</p>
-                                        </div>
-                                    </div>
-                                    <div class="team__left__img">
-                                        <img src="assets/img/team/team_left_bg.png" alt="Team Left BG">
-                                    </div>
+                    <div class="team__left sp_50">
+                        <div class="team__left__wrap">
+                            <div class="section__title section__title--2" data-aos="fade-up" data-aos-duration="1500">
+                                <div class="section__title__heading">
+                                    <h3>CONTUATION EXPERTISE! YOU CAN TRUST.</h3>
+                                </div>
+                                <div class="section__title__text">
+                                    <p>Sagittis purus sit amet volutpat consequat mauris nunc congue nisi and tortor
+                                        dignissim.</p>
                                 </div>
                             </div>
-
-                        <div class="col-xl-8 offset-xl-4 col-lg-7 offset-lg-5  col-md-12 col-sm-12 team__right">
-                            <div class="row">
-                                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12"  data-aos="fade-up" data-aos-duration="1500">
-                                    <div class="team__single single__transform">
-                                        <div class="team__img">
-                                            <img src="assets/img/team/team_1.png" alt="">
-                                        </div>
-                                        <div class="team__name">
-                                            <h6><a href="team-details.html">D. Tasha</a></h6>
-                                            <span>Founder & CEO</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12"  data-aos="fade-up" data-aos-duration="1800">
-                                    <div class="team__single single__transform">
-                                        <div class="team__img">
-                                            <img src="assets/img/team/team_2.png" alt="">
-                                        </div>
-                                        <div class="team__name">
-                                            <h6><a href="team-details.html">R. Mckinney</a></h6>
-                                            <span>Project Manager</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12"  data-aos="fade-up" data-aos-duration="2100">
-                                    <div class="team__single single__transform">
-                                        <div class="team__img">
-                                            <img src="assets/img/team/team_3.png" alt="">
-                                        </div>
-                                        <div class="team__name">
-                                            <h6><a href="team-details.html">M. Lambert</a></h6>
-                                            <span>Senior Consultant</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12"  data-aos="fade-up" data-aos-duration="2400">
-                                    <div class="team__single single__transform">
-                                        <div class="team__img">
-                                            <img src="assets/img/team/team_4.png" alt="">
-                                        </div>
-                                        <div class="team__name">
-                                            <h6><a href="team-details.html">G. Thompson</a></h6>
-                                            <span>Junior Consultant</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="team__icon">
-                                <img src="assets/img/team/team_icon.png" alt="">
+                            <div class="team__left__img">
+                                <img src="assets/img/team/team_left_bg.png" alt="Team Left BG">
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-         <!-- team__section__end -->
 
-
-         <!-- pink__color__start -->
-         <div class="pink__color">  </div>
-          <!-- pink__color__end -->
-
-
-         <!-- project__section__start -->
-            <div class="project special__spacing" id="tb__projects" data-aos="fade-up" data-aos-duration="1500">
-                <div class="project__margin">
-                    <div class="container  sp_bottom_60 sp_top_70 ">
-                        <div class="row align-items-center sp_bottom_80">
-                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-8 col-12">
-        
-                                <div class="section__title section__title--2">
-                                    <div class="section__title__heading">
-                                        <h3 class="mb-0"> OUR TRACK RECORD OF COMPLETED <span class=" text__unerline">CONSULTING </span> PROJECTS. </h3>
-                                    </div>
-                                </div>
-        
-                            </div>
-                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-4 col-12">
-                                <div class="project__section__img text__end">
-                                    <div class="bastun__brand__badge">
-                                        <div class="bastun__brand__badge__inner position-relative">
-                                            <a href="index.html">
-                                                <img class="bbb__animate" src="assets/img/project/project__1.png" alt="Footer badge">
-                                                <img class="bbb__icon" src="assets/img/project/project__1__icon.png" alt="Footer icon badge">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="col-xl-8 offset-xl-4 col-lg-7 offset-lg-5  col-md-12 col-sm-12 team__right">
                         <div class="row">
-                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12"  data-aos="fade-up" data-aos-duration="1500">
-                                <div class="project__single single__transform">
-                                    <div class="project__img">
-                                        <img src="assets/img/project/project__2.png" alt="">
+                            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12" data-aos="fade-up"
+                                data-aos-duration="1500">
+                                <div class="team__single single__transform">
+                                    <div class="team__img">
+                                        <img src="assets/img/team/team_1.png" alt="">
                                     </div>
-                                    <div class="project__content">
-                                        <div class="project__heading">
-                                        <h3><a href="project-details.html">Business Process Optimization</a></h3>
-                                        </div>
-                                        <div class="project__icon">
-                                            <a class="direction__btn" href="project-details.html"><svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M14.4258 10.9897L23.0101 10.9897L23.0101 19.574" stroke="#0A0624" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <path d="M10.9902 23.0107L22.8908 11.1101" stroke="#0A0624" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
-                                                </a>
-                                        </div>
+                                    <div class="team__name">
+                                        <h6><a href="team-details.html">D. Tasha</a></h6>
+                                        <span>Founder & CEO</span>
                                     </div>
                                 </div>
                             </div>
-
-                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12"  data-aos="fade-up" data-aos-duration="1800">
-                                <div class="project__single single__transform">
-                                    <div class="project__img">
-                                        <img src="assets/img/project/project__3.png" alt="">
+                            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12" data-aos="fade-up"
+                                data-aos-duration="1800">
+                                <div class="team__single single__transform">
+                                    <div class="team__img">
+                                        <img src="assets/img/team/team_2.png" alt="">
                                     </div>
-                                    <div class="project__content">
-                                        <div class="project__heading">
-                                        <h3><a href="project-details.html">Market Research
-                                            and Analysis</a></h3>
-                                        </div>
-                                        <div class="project__icon">
-                                            <a class="direction__btn" href="project-details.html"><svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M14.4258 10.9897L23.0101 10.9897L23.0101 19.574" stroke="#0A0624" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <path d="M10.9902 23.0107L22.8908 11.1101" stroke="#0A0624" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
-                                                </a>
-                                        </div>
+                                    <div class="team__name">
+                                        <h6><a href="team-details.html">R. Mckinney</a></h6>
+                                        <span>Project Manager</span>
                                     </div>
                                 </div>
                             </div>
-
-                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12"  data-aos="fade-up" data-aos-duration="2100">
-                                <div class="project__single single__transform">
-                                    <div class="project__img">
-                                        <img src="assets/img/project/project__4.png" alt="">
+                            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12" data-aos="fade-up"
+                                data-aos-duration="2100">
+                                <div class="team__single single__transform">
+                                    <div class="team__img">
+                                        <img src="assets/img/team/team_3.png" alt="">
                                     </div>
-                                    <div class="project__content">
-                                        <div class="project__heading">
-                                        <h3><a href="project-details.html">Risk Assessment and Management</a></h3>
-                                        </div>
-                                        <div class="project__icon">
-                                            <a class="direction__btn" href="project-details.html"><svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M14.4258 10.9897L23.0101 10.9897L23.0101 19.574" stroke="#0A0624" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <path d="M10.9902 23.0107L22.8908 11.1101" stroke="#0A0624" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
-                                                </a>
-                                        </div>
+                                    <div class="team__name">
+                                        <h6><a href="team-details.html">M. Lambert</a></h6>
+                                        <span>Senior Consultant</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12" data-aos="fade-up"
+                                data-aos-duration="2400">
+                                <div class="team__single single__transform">
+                                    <div class="team__img">
+                                        <img src="assets/img/team/team_4.png" alt="">
+                                    </div>
+                                    <div class="team__name">
+                                        <h6><a href="team-details.html">G. Thompson</a></h6>
+                                        <span>Junior Consultant</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="project__small__img">
-                            <img class="project__img__1" src="assets/img/project/project__small__img.png" alt="">
-                            <img class="project__img__2" src="assets/img/project/project__small__img__1.png" alt="">
+                        <div class="team__icon">
+                            <img src="assets/img/team/team_icon.png" alt="">
                         </div>
                     </div>
-                    <div class="container project__bottom"  data-aos="fade-up" data-aos-duration="1500">
-                        <div class="row align-items-center">
-                            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
-                                <div class="project__bottom__button">
-                                    <a class="default__button" href="#">VIEW OTHER PROJECT</a>
+                </div>
+            </div>
+        </div>
+        <!-- team__section__end -->
+
+
+        <!-- pink__color__start -->
+        <div class="pink__color"> </div>
+        <!-- pink__color__end -->
+
+
+        <!-- project__section__start -->
+        <div class="project special__spacing" id="tb__projects" data-aos="fade-up" data-aos-duration="1500">
+            <div class="project__margin">
+                <div class="container  sp_bottom_60 sp_top_70 ">
+                    <div class="row align-items-center sp_bottom_80">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-8 col-12">
+
+                            <div class="section__title section__title--2">
+                                <div class="section__title__heading">
+                                    <h3 class="mb-0"> OUR TRACK RECORD OF COMPLETED <span
+                                            class=" text__unerline">CONSULTING </span> PROJECTS. </h3>
                                 </div>
                             </div>
-                            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
-                                <div class="project__bottom__img text-center">
-                                    <img src="assets/img/project/project__small__img__2.png" alt="">
+
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-4 col-12">
+                            <div class="project__section__img text__end">
+                                <div class="bastun__brand__badge">
+                                    <div class="bastun__brand__badge__inner position-relative">
+                                        <a href="index.html">
+                                            <img class="bbb__animate" src="assets/img/project/project__1.png"
+                                                alt="Footer badge">
+                                            <img class="bbb__icon" src="assets/img/project/project__1__icon.png"
+                                                alt="Footer icon badge">
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-                                <div class="project__bottom__text">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor <a href="#">incididunt ut labore et dolore magna aliqua.</a> Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12" data-aos="fade-up"
+                            data-aos-duration="1500">
+                            <div class="project__single single__transform">
+                                <div class="project__img">
+                                    <img src="assets/img/project/project__2.png" alt="">
                                 </div>
+                                <div class="project__content">
+                                    <div class="project__heading">
+                                        <h3><a href="project-details.html">Business Process Optimization</a></h3>
+                                    </div>
+                                    <div class="project__icon">
+                                        <a class="direction__btn" href="project-details.html"><svg width="34"
+                                                height="34" viewBox="0 0 34 34" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M14.4258 10.9897L23.0101 10.9897L23.0101 19.574"
+                                                    stroke="#0A0624" stroke-width="1.5" stroke-miterlimit="10"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M10.9902 23.0107L22.8908 11.1101" stroke="#0A0624"
+                                                    stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12" data-aos="fade-up"
+                            data-aos-duration="1800">
+                            <div class="project__single single__transform">
+                                <div class="project__img">
+                                    <img src="assets/img/project/project__3.png" alt="">
+                                </div>
+                                <div class="project__content">
+                                    <div class="project__heading">
+                                        <h3><a href="project-details.html">Market Research
+                                                and Analysis</a></h3>
+                                    </div>
+                                    <div class="project__icon">
+                                        <a class="direction__btn" href="project-details.html"><svg width="34"
+                                                height="34" viewBox="0 0 34 34" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M14.4258 10.9897L23.0101 10.9897L23.0101 19.574"
+                                                    stroke="#0A0624" stroke-width="1.5" stroke-miterlimit="10"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M10.9902 23.0107L22.8908 11.1101" stroke="#0A0624"
+                                                    stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12" data-aos="fade-up"
+                            data-aos-duration="2100">
+                            <div class="project__single single__transform">
+                                <div class="project__img">
+                                    <img src="assets/img/project/project__4.png" alt="">
+                                </div>
+                                <div class="project__content">
+                                    <div class="project__heading">
+                                        <h3><a href="project-details.html">Risk Assessment and Management</a></h3>
+                                    </div>
+                                    <div class="project__icon">
+                                        <a class="direction__btn" href="project-details.html"><svg width="34"
+                                                height="34" viewBox="0 0 34 34" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M14.4258 10.9897L23.0101 10.9897L23.0101 19.574"
+                                                    stroke="#0A0624" stroke-width="1.5" stroke-miterlimit="10"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M10.9902 23.0107L22.8908 11.1101" stroke="#0A0624"
+                                                    stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project__small__img">
+                        <img class="project__img__1" src="assets/img/project/project__small__img.png" alt="">
+                        <img class="project__img__2" src="assets/img/project/project__small__img__1.png" alt="">
+                    </div>
+                </div>
+                <div class="container project__bottom" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="row align-items-center">
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+                            <div class="project__bottom__button">
+                                <a class="default__button" href="#">VIEW OTHER PROJECT</a>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+                            <div class="project__bottom__img text-center">
+                                <img src="assets/img/project/project__small__img__2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                            <div class="project__bottom__text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor <a
+                                        href="#">incididunt ut labore et dolore magna aliqua.</a> Ut enim ad minim
+                                    veniam, quis nostrud exercitation.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
         <!-- project__section__end -->
 
 
         <!-- testimonial__section__start -->
-        <div class="testimonial sp_bottom_110 sp_top_100" id="tb__testimonial" data-aos="fade-up" data-aos-duration="1500">
+        <div class="testimonial sp_bottom_110 sp_top_100" id="tb__testimonial" data-aos="fade-up"
+            data-aos-duration="1500">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-12">
@@ -891,23 +998,32 @@
                                     </div>
                                 </div>
 
-                                
+
 
 
                             </div>
-                            <div class="slider__controls__wrap slider__controls__pagination slider__controls__arrows slider__controls__arrows--2">
+                            <div
+                                class="slider__controls__wrap slider__controls__pagination slider__controls__arrows slider__controls__arrows--2">
                                 <div class="swiper-button-next arrow-btn arrow-btn-2">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M14.4297 5.92999L20.4997 12L14.4297 18.07" stroke="#fff" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M3.5 12H20.33" stroke="#fff" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                        
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14.4297 5.92999L20.4997 12L14.4297 18.07" stroke="#fff"
+                                            stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M3.5 12H20.33" stroke="#fff" stroke-width="1.5" stroke-miterlimit="10"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+
                                 </div>
                                 <div class="swiper-button-prev arrow-btn arrow-btn-2">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M9.57031 5.92999L3.50031 12L9.57031 18.07" stroke="#fff" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M20.5 12H3.67" stroke="#fff" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.57031 5.92999L3.50031 12L9.57031 18.07" stroke="#fff"
+                                            stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M20.5 12H3.67" stroke="#fff" stroke-width="1.5" stroke-miterlimit="10"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
                                 </div>
                                 <!-- <div class="swiper-pagination"></div> -->
                             </div>
@@ -933,7 +1049,7 @@
                             <div class="section__title__heading">
                                 <h3>CONSULTING SUPPORT IS JUST A CALL OR EMAIL AWAY.</h3>
                             </div>
-                        
+
                         </div>
                     </div>
 
@@ -966,48 +1082,57 @@
                                         <option value="saab">Saab</option>
                                         <option value="mercedes">Mercedes</option>
                                         <option value="audi">Audi</option>
-                                      </select>
+                                    </select>
                                 </div>
                                 <div class="col-xl-12">
-                                    <textarea class="contact__common__input" name="" id="" cols="30" rows="10">write a message....</textarea>
+                                    <textarea class="contact__common__input" name="" id="" cols="30"
+                                        rows="10">write a message....</textarea>
                                 </div>
                                 <div class="col-xl-12">
-                                 <div class="contact__button">
-                                    <a class="default__button" href="#">SEND MESSAGE</a>
-                                 </div>
+                                    <div class="contact__button">
+                                        <a class="default__button" href="#">SEND MESSAGE</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 contact__info__right" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 contact__info__right" data-aos="fade-up"
+                        data-aos-duration="1500">
                         <div class="contact__info">
                             <div class="contact__single__item" data-aos="fade-up" data-aos-duration="1500">
                                 <div class="contact__icon">
                                     <span>
-                                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
                                             <g clip-path="url(#clip0_1501_3784)">
-                                            <path d="M21.3388 3.66116C18.9779 1.30024 15.8388 0 12.5 0C9.16119 0 6.02207 1.30024 3.66116 3.66116C1.30024 6.02207 0 9.16119 0 12.5C0 15.8388 1.30024 18.9779 3.66116 21.3388C6.02207 23.6998 9.16119 25 12.5 25C15.8388 25 18.9779 23.6998 21.3388 21.3388C23.6998 18.9779 25 15.8388 25 12.5C25 9.16119 23.6998 6.02207 21.3388 3.66116ZM13.2257 23.5107V22.0125C13.2257 21.608 12.8979 21.2801 12.4933 21.2801C12.089 21.2801 11.7609 21.608 11.7609 22.0125V23.5098C6.26163 23.1443 1.85204 18.7326 1.48983 13.2324H3.11508C3.51944 13.2324 3.8475 12.9045 3.8475 12.5C3.8475 12.0955 3.51944 11.7676 3.11508 11.7676H1.48983C1.85223 6.26297 6.26869 1.8486 11.7743 1.48926V3.0365C11.7743 3.44105 12.1021 3.76892 12.5067 3.76892C12.911 3.76892 13.2391 3.44105 13.2391 3.0365V1.49021C18.7384 1.85566 23.148 6.26736 23.5102 11.7676H22.0022C21.5979 11.7676 21.2698 12.0955 21.2698 12.5C21.2698 12.9045 21.5979 13.2324 22.0022 13.2324H23.5102C23.1478 18.737 18.7313 23.1514 13.2257 23.5107Z" fill="url(#paint0_linear_1501_3784)"/>
-                                            <path d="M14.4014 13.5136C14.5632 13.2111 14.6553 12.8663 14.6553 12.5001C14.6553 12.2529 14.613 12.0152 14.5359 11.794L17.1404 9.18948C17.4263 8.90356 17.4263 8.4397 17.1404 8.15379C16.8543 7.86768 16.3906 7.86768 16.1045 8.15379L13.607 10.6513C13.283 10.4565 12.9042 10.3442 12.4994 10.3442C11.3108 10.3442 10.3438 11.3114 10.3438 12.5001C10.3438 13.6887 11.3108 14.6557 12.4994 14.6557C12.7871 14.6557 13.0615 14.5987 13.3125 14.4961L18.4605 19.644C18.6035 19.7871 18.791 19.8586 18.9783 19.8586C19.1658 19.8586 19.3533 19.7871 19.4964 19.644C19.7823 19.3581 19.7823 18.8943 19.4964 18.6083L14.4014 13.5136ZM11.8084 12.5001C11.8084 12.119 12.1185 11.809 12.4994 11.809C12.8803 11.809 13.1905 12.1192 13.1905 12.5001C13.1905 12.881 12.8803 13.1911 12.4994 13.1911C12.1185 13.1911 11.8084 12.8811 11.8084 12.5001Z" fill="url(#paint1_linear_1501_3784)"/>
+                                                <path
+                                                    d="M21.3388 3.66116C18.9779 1.30024 15.8388 0 12.5 0C9.16119 0 6.02207 1.30024 3.66116 3.66116C1.30024 6.02207 0 9.16119 0 12.5C0 15.8388 1.30024 18.9779 3.66116 21.3388C6.02207 23.6998 9.16119 25 12.5 25C15.8388 25 18.9779 23.6998 21.3388 21.3388C23.6998 18.9779 25 15.8388 25 12.5C25 9.16119 23.6998 6.02207 21.3388 3.66116ZM13.2257 23.5107V22.0125C13.2257 21.608 12.8979 21.2801 12.4933 21.2801C12.089 21.2801 11.7609 21.608 11.7609 22.0125V23.5098C6.26163 23.1443 1.85204 18.7326 1.48983 13.2324H3.11508C3.51944 13.2324 3.8475 12.9045 3.8475 12.5C3.8475 12.0955 3.51944 11.7676 3.11508 11.7676H1.48983C1.85223 6.26297 6.26869 1.8486 11.7743 1.48926V3.0365C11.7743 3.44105 12.1021 3.76892 12.5067 3.76892C12.911 3.76892 13.2391 3.44105 13.2391 3.0365V1.49021C18.7384 1.85566 23.148 6.26736 23.5102 11.7676H22.0022C21.5979 11.7676 21.2698 12.0955 21.2698 12.5C21.2698 12.9045 21.5979 13.2324 22.0022 13.2324H23.5102C23.1478 18.737 18.7313 23.1514 13.2257 23.5107Z"
+                                                    fill="url(#paint0_linear_1501_3784)" />
+                                                <path
+                                                    d="M14.4014 13.5136C14.5632 13.2111 14.6553 12.8663 14.6553 12.5001C14.6553 12.2529 14.613 12.0152 14.5359 11.794L17.1404 9.18948C17.4263 8.90356 17.4263 8.4397 17.1404 8.15379C16.8543 7.86768 16.3906 7.86768 16.1045 8.15379L13.607 10.6513C13.283 10.4565 12.9042 10.3442 12.4994 10.3442C11.3108 10.3442 10.3438 11.3114 10.3438 12.5001C10.3438 13.6887 11.3108 14.6557 12.4994 14.6557C12.7871 14.6557 13.0615 14.5987 13.3125 14.4961L18.4605 19.644C18.6035 19.7871 18.791 19.8586 18.9783 19.8586C19.1658 19.8586 19.3533 19.7871 19.4964 19.644C19.7823 19.3581 19.7823 18.8943 19.4964 18.6083L14.4014 13.5136ZM11.8084 12.5001C11.8084 12.119 12.1185 11.809 12.4994 11.809C12.8803 11.809 13.1905 12.1192 13.1905 12.5001C13.1905 12.881 12.8803 13.1911 12.4994 13.1911C12.1185 13.1911 11.8084 12.8811 11.8084 12.5001Z"
+                                                    fill="url(#paint1_linear_1501_3784)" />
                                             </g>
                                             <defs>
-                                            <linearGradient id="paint0_linear_1501_3784" x1="5.10511e-08" y1="14.6552" x2="25" y2="14.6552" gradientUnits="userSpaceOnUse">
-                                            <stop stop-color="#00229E"/>
-                                            <stop offset="0.479167" stop-color="#6E1299"/>
-                                            <stop offset="1" stop-color="#FE0094"/>
-                                            </linearGradient>
-                                            <linearGradient id="paint1_linear_1501_3784" x1="10.3438" y1="14.9264" x2="19.7108" y2="14.9264" gradientUnits="userSpaceOnUse">
-                                            <stop stop-color="#00229E"/>
-                                            <stop offset="0.479167" stop-color="#6E1299"/>
-                                            <stop offset="1" stop-color="#FE0094"/>
-                                            </linearGradient>
-                                            <clipPath id="clip0_1501_3784">
-                                            <rect width="25" height="25" fill="white"/>
-                                            </clipPath>
+                                                <linearGradient id="paint0_linear_1501_3784" x1="5.10511e-08"
+                                                    y1="14.6552" x2="25" y2="14.6552" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#00229E" />
+                                                    <stop offset="0.479167" stop-color="#6E1299" />
+                                                    <stop offset="1" stop-color="#FE0094" />
+                                                </linearGradient>
+                                                <linearGradient id="paint1_linear_1501_3784" x1="10.3438" y1="14.9264"
+                                                    x2="19.7108" y2="14.9264" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#00229E" />
+                                                    <stop offset="0.479167" stop-color="#6E1299" />
+                                                    <stop offset="1" stop-color="#FE0094" />
+                                                </linearGradient>
+                                                <clipPath id="clip0_1501_3784">
+                                                    <rect width="25" height="25" fill="white" />
+                                                </clipPath>
                                             </defs>
-                                            </svg>
-                                            
-                                        </span>
+                                        </svg>
+
+                                    </span>
                                 </div>
                                 <div class="contact__text">
                                     <h6>Hours:</h6>
@@ -1019,36 +1144,46 @@
                             <div class="contact__single__item" data-aos="fade-up" data-aos-duration="1500">
                                 <div class="contact__icon">
                                     <span>
-                                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
                                             <g clip-path="url(#clip0_1501_3772)">
-                                            <path d="M19.7592 15.4866C19.2474 14.9537 18.6301 14.6688 17.9758 14.6688C17.3268 14.6688 16.7042 14.9484 16.1713 15.4813L14.5039 17.1434C14.3667 17.0695 14.2295 17.0009 14.0976 16.9323C13.9077 16.8374 13.7283 16.7477 13.5753 16.6527C12.0134 15.6607 10.5941 14.368 9.23277 12.6954C8.57321 11.8617 8.13 11.1599 7.80813 10.4476C8.2408 10.0519 8.64181 9.64033 9.03226 9.24459C9.18 9.09685 9.32774 8.94384 9.47548 8.7961C10.5835 7.68805 10.5835 6.25286 9.47548 5.14482L8.03502 3.70435C7.87145 3.54078 7.70261 3.37194 7.54431 3.20309C7.22773 2.87596 6.89531 2.53826 6.55235 2.22168C6.04053 1.71514 5.42847 1.44604 4.78474 1.44604C4.14102 1.44604 3.5184 1.71514 2.99076 2.22168C2.98549 2.22696 2.98549 2.22696 2.98021 2.23223L1.18623 4.04204C0.510844 4.71743 0.125666 5.54055 0.0412429 6.49558C-0.0853912 8.03629 0.368381 9.47148 0.716625 10.4107C1.5714 12.7165 2.8483 14.8534 4.75309 17.1434C7.06416 19.903 9.84483 22.0821 13.0212 23.6176C14.2348 24.1927 15.8547 24.8734 17.6645 24.9894C17.7753 24.9947 17.8914 25 17.9969 25C19.2158 25 20.2394 24.562 21.0414 23.6914C21.0467 23.6809 21.0572 23.6756 21.0625 23.6651C21.3369 23.3326 21.6535 23.0319 21.9859 22.71C22.2128 22.4937 22.4449 22.2668 22.6718 22.0294C23.1942 21.4859 23.4685 20.8527 23.4685 20.2037C23.4685 19.5494 23.1889 18.9216 22.656 18.3939L19.7592 15.4866ZM21.6482 21.0427C21.6429 21.0427 21.6429 21.0479 21.6482 21.0427C21.4424 21.2643 21.2313 21.4648 21.0045 21.6864C20.6615 22.0135 20.3133 22.3565 19.9861 22.7417C19.4532 23.3115 18.8253 23.5806 18.0022 23.5806C17.923 23.5806 17.8386 23.5806 17.7595 23.5754C16.1924 23.4751 14.7361 22.863 13.6439 22.3407C10.6574 20.8949 8.03502 18.8424 5.85586 16.2411C4.0566 14.0725 2.85358 12.0675 2.05684 9.9147C1.56613 8.60087 1.38673 7.57725 1.46588 6.61166C1.51864 5.99432 1.75608 5.48251 2.19402 5.04456L3.99328 3.2453C4.25183 3.00259 4.5262 2.87068 4.7953 2.87068C5.12771 2.87068 5.39681 3.07118 5.56566 3.24003C5.57093 3.2453 5.57621 3.25058 5.58148 3.25586C5.90335 3.55661 6.20938 3.86792 6.53124 4.20034C6.69481 4.36918 6.86365 4.53803 7.0325 4.71215L8.47296 6.15261C9.03226 6.71191 9.03226 7.229 8.47296 7.7883C8.31995 7.94132 8.17221 8.09434 8.01919 8.24207C7.57597 8.69585 7.15386 9.11796 6.69481 9.52952C6.68426 9.54007 6.6737 9.54535 6.66843 9.5559C6.21465 10.0097 6.29908 10.4529 6.39405 10.7537C6.39933 10.7695 6.40461 10.7853 6.40988 10.8011C6.78451 11.7087 7.31215 12.5635 8.11417 13.5818L8.11944 13.5871C9.57574 15.3811 11.1112 16.7793 12.8049 17.8504C13.0212 17.9876 13.2428 18.0984 13.4539 18.204C13.6439 18.2989 13.8233 18.3886 13.9763 18.4836C13.9974 18.4942 14.0185 18.51 14.0396 18.5205C14.219 18.6102 14.3878 18.6525 14.562 18.6525C14.9999 18.6525 15.2743 18.3781 15.364 18.2884L17.1685 16.4838C17.3479 16.3044 17.6328 16.0881 17.9652 16.0881C18.2924 16.0881 18.5615 16.2939 18.725 16.4733C18.7303 16.4786 18.7303 16.4786 18.7356 16.4838L21.6429 19.3912C22.1864 19.9293 22.1864 20.4834 21.6482 21.0427Z" fill="url(#paint0_linear_1501_3772)"/>
-                                            <path d="M13.5121 5.94676C14.8945 6.17892 16.1503 6.83319 17.1528 7.83571C18.1554 8.83823 18.8044 10.094 19.0418 11.4764C19.0998 11.8247 19.4006 12.0674 19.7436 12.0674C19.7858 12.0674 19.8227 12.0621 19.8649 12.0569C20.2554 11.9935 20.5139 11.6242 20.4506 11.2337C20.1657 9.5611 19.3742 8.03622 18.1659 6.82792C16.9576 5.61962 15.4327 4.82815 13.7601 4.54323C13.3696 4.47991 13.0056 4.73846 12.937 5.12363C12.8684 5.50881 13.1217 5.88344 13.5121 5.94676Z" fill="url(#paint1_linear_1501_3772)"/>
-                                            <path d="M24.9734 11.028C24.5038 8.27374 23.2058 5.76744 21.2114 3.77295C19.2169 1.77846 16.7106 0.480461 13.9563 0.0108597C13.5711 -0.0577338 13.207 0.206087 13.1384 0.591266C13.0751 0.981721 13.3337 1.34579 13.7241 1.41439C16.1829 1.83123 18.4254 2.99731 20.2088 4.77547C21.9923 6.5589 23.1531 8.80138 23.5699 11.2602C23.628 11.6084 23.9287 11.8511 24.2717 11.8511C24.3139 11.8511 24.3508 11.8459 24.393 11.8406C24.7782 11.7826 25.042 11.4132 24.9734 11.028Z" fill="url(#paint2_linear_1501_3772)"/>
+                                                <path
+                                                    d="M19.7592 15.4866C19.2474 14.9537 18.6301 14.6688 17.9758 14.6688C17.3268 14.6688 16.7042 14.9484 16.1713 15.4813L14.5039 17.1434C14.3667 17.0695 14.2295 17.0009 14.0976 16.9323C13.9077 16.8374 13.7283 16.7477 13.5753 16.6527C12.0134 15.6607 10.5941 14.368 9.23277 12.6954C8.57321 11.8617 8.13 11.1599 7.80813 10.4476C8.2408 10.0519 8.64181 9.64033 9.03226 9.24459C9.18 9.09685 9.32774 8.94384 9.47548 8.7961C10.5835 7.68805 10.5835 6.25286 9.47548 5.14482L8.03502 3.70435C7.87145 3.54078 7.70261 3.37194 7.54431 3.20309C7.22773 2.87596 6.89531 2.53826 6.55235 2.22168C6.04053 1.71514 5.42847 1.44604 4.78474 1.44604C4.14102 1.44604 3.5184 1.71514 2.99076 2.22168C2.98549 2.22696 2.98549 2.22696 2.98021 2.23223L1.18623 4.04204C0.510844 4.71743 0.125666 5.54055 0.0412429 6.49558C-0.0853912 8.03629 0.368381 9.47148 0.716625 10.4107C1.5714 12.7165 2.8483 14.8534 4.75309 17.1434C7.06416 19.903 9.84483 22.0821 13.0212 23.6176C14.2348 24.1927 15.8547 24.8734 17.6645 24.9894C17.7753 24.9947 17.8914 25 17.9969 25C19.2158 25 20.2394 24.562 21.0414 23.6914C21.0467 23.6809 21.0572 23.6756 21.0625 23.6651C21.3369 23.3326 21.6535 23.0319 21.9859 22.71C22.2128 22.4937 22.4449 22.2668 22.6718 22.0294C23.1942 21.4859 23.4685 20.8527 23.4685 20.2037C23.4685 19.5494 23.1889 18.9216 22.656 18.3939L19.7592 15.4866ZM21.6482 21.0427C21.6429 21.0427 21.6429 21.0479 21.6482 21.0427C21.4424 21.2643 21.2313 21.4648 21.0045 21.6864C20.6615 22.0135 20.3133 22.3565 19.9861 22.7417C19.4532 23.3115 18.8253 23.5806 18.0022 23.5806C17.923 23.5806 17.8386 23.5806 17.7595 23.5754C16.1924 23.4751 14.7361 22.863 13.6439 22.3407C10.6574 20.8949 8.03502 18.8424 5.85586 16.2411C4.0566 14.0725 2.85358 12.0675 2.05684 9.9147C1.56613 8.60087 1.38673 7.57725 1.46588 6.61166C1.51864 5.99432 1.75608 5.48251 2.19402 5.04456L3.99328 3.2453C4.25183 3.00259 4.5262 2.87068 4.7953 2.87068C5.12771 2.87068 5.39681 3.07118 5.56566 3.24003C5.57093 3.2453 5.57621 3.25058 5.58148 3.25586C5.90335 3.55661 6.20938 3.86792 6.53124 4.20034C6.69481 4.36918 6.86365 4.53803 7.0325 4.71215L8.47296 6.15261C9.03226 6.71191 9.03226 7.229 8.47296 7.7883C8.31995 7.94132 8.17221 8.09434 8.01919 8.24207C7.57597 8.69585 7.15386 9.11796 6.69481 9.52952C6.68426 9.54007 6.6737 9.54535 6.66843 9.5559C6.21465 10.0097 6.29908 10.4529 6.39405 10.7537C6.39933 10.7695 6.40461 10.7853 6.40988 10.8011C6.78451 11.7087 7.31215 12.5635 8.11417 13.5818L8.11944 13.5871C9.57574 15.3811 11.1112 16.7793 12.8049 17.8504C13.0212 17.9876 13.2428 18.0984 13.4539 18.204C13.6439 18.2989 13.8233 18.3886 13.9763 18.4836C13.9974 18.4942 14.0185 18.51 14.0396 18.5205C14.219 18.6102 14.3878 18.6525 14.562 18.6525C14.9999 18.6525 15.2743 18.3781 15.364 18.2884L17.1685 16.4838C17.3479 16.3044 17.6328 16.0881 17.9652 16.0881C18.2924 16.0881 18.5615 16.2939 18.725 16.4733C18.7303 16.4786 18.7303 16.4786 18.7356 16.4838L21.6429 19.3912C22.1864 19.9293 22.1864 20.4834 21.6482 21.0427Z"
+                                                    fill="url(#paint0_linear_1501_3772)" />
+                                                <path
+                                                    d="M13.5121 5.94676C14.8945 6.17892 16.1503 6.83319 17.1528 7.83571C18.1554 8.83823 18.8044 10.094 19.0418 11.4764C19.0998 11.8247 19.4006 12.0674 19.7436 12.0674C19.7858 12.0674 19.8227 12.0621 19.8649 12.0569C20.2554 11.9935 20.5139 11.6242 20.4506 11.2337C20.1657 9.5611 19.3742 8.03622 18.1659 6.82792C16.9576 5.61962 15.4327 4.82815 13.7601 4.54323C13.3696 4.47991 13.0056 4.73846 12.937 5.12363C12.8684 5.50881 13.1217 5.88344 13.5121 5.94676Z"
+                                                    fill="url(#paint1_linear_1501_3772)" />
+                                                <path
+                                                    d="M24.9734 11.028C24.5038 8.27374 23.2058 5.76744 21.2114 3.77295C19.2169 1.77846 16.7106 0.480461 13.9563 0.0108597C13.5711 -0.0577338 13.207 0.206087 13.1384 0.591266C13.0751 0.981721 13.3337 1.34579 13.7241 1.41439C16.1829 1.83123 18.4254 2.99731 20.2088 4.77547C21.9923 6.5589 23.1531 8.80138 23.5699 11.2602C23.628 11.6084 23.9287 11.8511 24.2717 11.8511C24.3139 11.8511 24.3508 11.8459 24.393 11.8406C24.7782 11.7826 25.042 11.4132 24.9734 11.028Z"
+                                                    fill="url(#paint2_linear_1501_3772)" />
                                             </g>
                                             <defs>
-                                            <linearGradient id="paint0_linear_1501_3772" x1="0.0195313" y1="15.2535" x2="23.4685" y2="15.2535" gradientUnits="userSpaceOnUse">
-                                            <stop stop-color="#00229E"/>
-                                            <stop offset="0.479167" stop-color="#6E1299"/>
-                                            <stop offset="1" stop-color="#FE0094"/>
-                                            </linearGradient>
-                                            <linearGradient id="paint1_linear_1501_3772" x1="12.9258" y1="8.95" x2="20.4601" y2="8.95" gradientUnits="userSpaceOnUse">
-                                            <stop stop-color="#00229E"/>
-                                            <stop offset="0.479167" stop-color="#6E1299"/>
-                                            <stop offset="1" stop-color="#FE0094"/>
-                                            </linearGradient>
-                                            <linearGradient id="paint2_linear_1501_3772" x1="13.1289" y1="6.94722" x2="24.9843" y2="6.94722" gradientUnits="userSpaceOnUse">
-                                            <stop stop-color="#00229E"/>
-                                            <stop offset="0.479167" stop-color="#6E1299"/>
-                                            <stop offset="1" stop-color="#FE0094"/>
-                                            </linearGradient>
-                                            <clipPath id="clip0_1501_3772">
-                                            <rect width="25" height="25" fill="white"/>
-                                            </clipPath>
+                                                <linearGradient id="paint0_linear_1501_3772" x1="0.0195313" y1="15.2535"
+                                                    x2="23.4685" y2="15.2535" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#00229E" />
+                                                    <stop offset="0.479167" stop-color="#6E1299" />
+                                                    <stop offset="1" stop-color="#FE0094" />
+                                                </linearGradient>
+                                                <linearGradient id="paint1_linear_1501_3772" x1="12.9258" y1="8.95"
+                                                    x2="20.4601" y2="8.95" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#00229E" />
+                                                    <stop offset="0.479167" stop-color="#6E1299" />
+                                                    <stop offset="1" stop-color="#FE0094" />
+                                                </linearGradient>
+                                                <linearGradient id="paint2_linear_1501_3772" x1="13.1289" y1="6.94722"
+                                                    x2="24.9843" y2="6.94722" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#00229E" />
+                                                    <stop offset="0.479167" stop-color="#6E1299" />
+                                                    <stop offset="1" stop-color="#FE0094" />
+                                                </linearGradient>
+                                                <clipPath id="clip0_1501_3772">
+                                                    <rect width="25" height="25" fill="white" />
+                                                </clipPath>
                                             </defs>
-                                            </svg>
-                                            
+                                        </svg>
 
-                                        </span>
+
+                                    </span>
                                 </div>
                                 <div class="contact__text">
                                     <h6>Call Us:</h6>
@@ -1060,23 +1195,30 @@
 
                             <div class="contact__single__item" data-aos="fade-up" data-aos-duration="1500">
                                 <div class="contact__icon">
-                                    <span><svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M19.9763 3.09698C17.9792 1.09986 15.3239 0 12.4995 0C9.67521 0 7.01983 1.09986 5.02276 3.09698C3.02564 5.09415 1.92578 7.74943 1.92578 10.5737C1.92578 16.2872 7.32804 21.0394 10.2303 23.5924C10.6337 23.9472 10.982 24.2536 11.2594 24.5128C11.6071 24.8375 12.0533 25 12.4995 25C12.9457 25 13.3919 24.8375 13.7396 24.5128C14.0171 24.2536 14.3654 23.9472 14.7687 23.5924C17.671 21.0393 23.0732 16.2872 23.0732 10.5737C23.0732 7.74943 21.9734 5.09415 19.9763 3.09698ZM13.8014 22.4929C13.3892 22.8555 13.0333 23.1686 12.7399 23.4427C12.6051 23.5685 12.3939 23.5686 12.2591 23.4427C11.9656 23.1685 11.6097 22.8554 11.1975 22.4929C8.46901 20.0927 3.39014 15.625 3.39014 10.5738C3.39014 5.55089 7.47652 1.4645 12.4994 1.4645C17.5223 1.4645 21.6087 5.55089 21.6087 10.5738C21.6087 15.625 16.5299 20.0927 13.8014 22.4929Z" fill="url(#paint0_linear_1501_3759)"/>
-                                        <path d="M12.4996 5.51465C9.93018 5.51465 7.83984 7.60494 7.83984 10.1743C7.83984 12.7437 9.93018 14.834 12.4996 14.834C15.069 14.834 17.1592 12.7437 17.1592 10.1743C17.1592 7.60494 15.069 5.51465 12.4996 5.51465ZM12.4996 13.3695C10.7377 13.3695 9.3043 11.9361 9.3043 10.1743C9.3043 8.41246 10.7377 6.97906 12.4996 6.97906C14.2614 6.97906 15.6948 8.41246 15.6948 10.1743C15.6948 11.9361 14.2614 13.3695 12.4996 13.3695Z" fill="url(#paint1_linear_1501_3759)"/>
-                                        <defs>
-                                        <linearGradient id="paint0_linear_1501_3759" x1="1.92578" y1="14.6551" x2="23.0732" y2="14.6551" gradientUnits="userSpaceOnUse">
-                                        <stop stop-color="#00229E"/>
-                                        <stop offset="0.479167" stop-color="#6E1299"/>
-                                        <stop offset="1" stop-color="#FE0094"/>
-                                        </linearGradient>
-                                        <linearGradient id="paint1_linear_1501_3759" x1="7.83984" y1="10.9777" x2="17.1592" y2="10.9777" gradientUnits="userSpaceOnUse">
-                                        <stop stop-color="#00229E"/>
-                                        <stop offset="0.479167" stop-color="#6E1299"/>
-                                        <stop offset="1" stop-color="#FE0094"/>
-                                        </linearGradient>
-                                        </defs>
+                                    <span><svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M19.9763 3.09698C17.9792 1.09986 15.3239 0 12.4995 0C9.67521 0 7.01983 1.09986 5.02276 3.09698C3.02564 5.09415 1.92578 7.74943 1.92578 10.5737C1.92578 16.2872 7.32804 21.0394 10.2303 23.5924C10.6337 23.9472 10.982 24.2536 11.2594 24.5128C11.6071 24.8375 12.0533 25 12.4995 25C12.9457 25 13.3919 24.8375 13.7396 24.5128C14.0171 24.2536 14.3654 23.9472 14.7687 23.5924C17.671 21.0393 23.0732 16.2872 23.0732 10.5737C23.0732 7.74943 21.9734 5.09415 19.9763 3.09698ZM13.8014 22.4929C13.3892 22.8555 13.0333 23.1686 12.7399 23.4427C12.6051 23.5685 12.3939 23.5686 12.2591 23.4427C11.9656 23.1685 11.6097 22.8554 11.1975 22.4929C8.46901 20.0927 3.39014 15.625 3.39014 10.5738C3.39014 5.55089 7.47652 1.4645 12.4994 1.4645C17.5223 1.4645 21.6087 5.55089 21.6087 10.5738C21.6087 15.625 16.5299 20.0927 13.8014 22.4929Z"
+                                                fill="url(#paint0_linear_1501_3759)" />
+                                            <path
+                                                d="M12.4996 5.51465C9.93018 5.51465 7.83984 7.60494 7.83984 10.1743C7.83984 12.7437 9.93018 14.834 12.4996 14.834C15.069 14.834 17.1592 12.7437 17.1592 10.1743C17.1592 7.60494 15.069 5.51465 12.4996 5.51465ZM12.4996 13.3695C10.7377 13.3695 9.3043 11.9361 9.3043 10.1743C9.3043 8.41246 10.7377 6.97906 12.4996 6.97906C14.2614 6.97906 15.6948 8.41246 15.6948 10.1743C15.6948 11.9361 14.2614 13.3695 12.4996 13.3695Z"
+                                                fill="url(#paint1_linear_1501_3759)" />
+                                            <defs>
+                                                <linearGradient id="paint0_linear_1501_3759" x1="1.92578" y1="14.6551"
+                                                    x2="23.0732" y2="14.6551" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#00229E" />
+                                                    <stop offset="0.479167" stop-color="#6E1299" />
+                                                    <stop offset="1" stop-color="#FE0094" />
+                                                </linearGradient>
+                                                <linearGradient id="paint1_linear_1501_3759" x1="7.83984" y1="10.9777"
+                                                    x2="17.1592" y2="10.9777" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#00229E" />
+                                                    <stop offset="0.479167" stop-color="#6E1299" />
+                                                    <stop offset="1" stop-color="#FE0094" />
+                                                </linearGradient>
+                                            </defs>
                                         </svg>
-                                        </span>
+                                    </span>
                                 </div>
                                 <div class="contact__text">
                                     <h6>Location:</h6>
@@ -1095,8 +1237,8 @@
         <!-- contact__section__end -->
 
 
-         <!-- brand__section__start -->
-         <div class="brand sp_40" id="brand__area">
+        <!-- brand__section__start -->
+        <div class="brand sp_40" id="brand__area">
             <div class="container">
                 <div class="brand__inner">
                     <div class="brand__single">
@@ -1122,18 +1264,20 @@
                     </div>
                 </div>
             </div>
-         </div>
-           <!-- brand__section__end -->
+        </div>
+        <!-- brand__section__end -->
 
-         <!-- blog__section__start -->
-        <div class="blog sp_bottom_140 sp_top_140 pink__bg__color" id="tb__blogs"  data-aos="fade-up" data-aos-duration="1500">
+        <!-- blog__section__start -->
+        <div class="blog sp_bottom_140 sp_top_140 pink__bg__color" id="tb__blogs" data-aos="fade-up"
+            data-aos-duration="1500">
             <div class="container">
                 <div class="row align-items-center sp_bottom_80">
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
 
                         <div class="section__title section__title--2">
                             <div class="section__title__heading">
-                                <h3 class="mb-0">ULTIMATE INSIGHTS INSPIRATION, AWESOME BLOG <span class="text__gradient text__unerline">INNOVATION</span> ARTICLES. </h3>
+                                <h3 class="mb-0">ULTIMATE INSIGHTS INSPIRATION, AWESOME BLOG <span
+                                        class="text__gradient text__unerline">INNOVATION</span> ARTICLES. </h3>
                             </div>
                         </div>
 
@@ -1158,14 +1302,19 @@
                         </div>
                         <div class="blog__content">
                             <h6><a href="blog-details.html">ESSENTAIL TRIPS FOR PLANNING A...</a></h6>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt.</p>
                         </div>
                         <div class="blog__icon">
-                            <a class="direction__btn" href="blog-details.html"><svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M14.4258 10.9897L23.0101 10.9897L23.0101 19.574" stroke="#0A0624" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M10.9902 23.0107L22.8908 11.1101" stroke="#0A0624" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <a class="direction__btn" href="blog-details.html"><svg width="34" height="34"
+                                    viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.4258 10.9897L23.0101 10.9897L23.0101 19.574" stroke="#0A0624"
+                                        stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M10.9902 23.0107L22.8908 11.1101" stroke="#0A0624" stroke-width="1.5"
+                                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
-                                </a>
+                            </a>
                         </div>
                     </div>
 
@@ -1181,14 +1330,19 @@
                         </div>
                         <div class="blog__content">
                             <h6><a href="blog-details.html">HOW TO CHOOSE THE RIGHT CONSULTING...</a></h6>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt.</p>
                         </div>
                         <div class="blog__icon">
-                            <a class="direction__btn" href="blog-details.html"><svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M14.4258 10.9897L23.0101 10.9897L23.0101 19.574" stroke="#0A0624" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M10.9902 23.0107L22.8908 11.1101" stroke="#0A0624" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <a class="direction__btn" href="blog-details.html"><svg width="34" height="34"
+                                    viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.4258 10.9897L23.0101 10.9897L23.0101 19.574" stroke="#0A0624"
+                                        stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M10.9902 23.0107L22.8908 11.1101" stroke="#0A0624" stroke-width="1.5"
+                                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
-                                </a>
+                            </a>
                         </div>
                     </div>
 
@@ -1204,14 +1358,19 @@
                         </div>
                         <div class="blog__content">
                             <h6><a href="blog-details.html">10 lANDSCAPING IDEAS TO ENHANCE...</a></h6>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt.</p>
                         </div>
                         <div class="blog__icon">
-                            <a class="direction__btn" href="blog-details.html"><svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M14.4258 10.9897L23.0101 10.9897L23.0101 19.574" stroke="#0A0624" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M10.9902 23.0107L22.8908 11.1101" stroke="#0A0624" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <a class="direction__btn" href="blog-details.html"><svg width="34" height="34"
+                                    viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.4258 10.9897L23.0101 10.9897L23.0101 19.574" stroke="#0A0624"
+                                        stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M10.9902 23.0107L22.8908 11.1101" stroke="#0A0624" stroke-width="1.5"
+                                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
-                                </a>
+                            </a>
                         </div>
                     </div>
 
@@ -1221,191 +1380,208 @@
         <!-- blog__section__end -->
 
 
- 
-         <!--whattapp-icon-->
-            <div class="whatsapp-icons">
-                <a href="https://wa.me/923086582833" class="w-inline-block floatingg-icon" target="_blank" aria-label="whatsapp"><span style="display:none">Whatsup</span>
-                    <div class="tochatbe-icon-whatsapp">
-                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1em" height="1em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 448 512">
-                            <path fill="#ffffff" d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z">
-                            </path>
-                        </svg>
-                    </div>
-                </a>
-            </div>
-            <!--whattappicon-->
-            <div class="footer position-relative sp_top_250 pink__bg__color" id="footer__area" style="background-image: url(img/footer/footer_1.png);">
 
-                <div class="bastun__brand__badge bastun__brand__badge__footer">
-                    <div class="bastun__brand__badge__inner position-relative">
-                        <a href="index.html">
-
-                            <img class="bbb__animate" src="assets/img/footer/brand__badge.png" alt="Footer badge">
-                            <img class="bbb__icon" src="assets/img/footer/brand__badge__inner.png" alt="Footer icon badge">
-                        </a>
-                    </div>
+        <!--whattapp-icon-->
+        <div class="whatsapp-icons">
+            <a href="https://wa.me/923086582833" class="w-inline-block floatingg-icon" target="_blank"
+                aria-label="whatsapp"><span style="display:none">Whatsup</span>
+                <div class="tochatbe-icon-whatsapp">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        aria-hidden="true" focusable="false" width="1em" height="1em"
+                        style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
+                        preserveAspectRatio="xMidYMid meet" viewBox="0 0 448 512">
+                        <path fill="#ffffff"
+                            d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z">
+                        </path>
+                    </svg>
                 </div>
+            </a>
+        </div>
+        <!--whattappicon-->
+        <div class="footer position-relative sp_top_250 pink__bg__color" id="footer__area"
+            style="background-image: url(img/footer/footer_1.png);">
 
-                <div class="container">
-                    <div class="footer__wrapper sp_bottom_110">
-                        <div class="row">
-                            <div class="col-xl-4 col-lg-6 col-md-6" data-aos="fade-up" data-aos-duration="1500">
-                                <div class="footer__widget footer__left">
-                                    <div class="footer__logo">
-                                        <img src="assets/img/logo/full-logo.svg" alt="">
-                                    </div>
-                                    <div class="footer__text">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua</p>
-                                    </div>
-                                    <div class="footer__icon">
-                                        <ul>
-                                            <li>
-                                                <a href="#"><i class="icofont-facebook"></i></a>
-                                            </li>
-                                            <li>
-                                                <a href="#"><i class="icofont-twitter"></i></a>
-                                            </li>
-                                            <li>
-                                                <a href="#"><i class="icofont-skype"></i></a>
-                                            </li>
-                                            <li>
-                                                <a href="#"><i class="icofont-linkedin"></i></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-2 col-lg-6 col-md-6 col-sm-6" data-aos="fade-up" data-aos-duration="2000">
-                                <div class="footer__widget footer__support">
-                                    <div class="footer__menu__title">
-                                        <h6>SUPPORT :</h6>
-                                    </div>
-                                    <div class="footer__menu">
-                                        <ul>
-                                            <li>
-                                                <a href="#">Home</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">About us</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Blog update</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Our services</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Testimonial</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-2 col-lg-6 col-md-6 col-sm-6" data-aos="fade-up" data-aos-duration="2500">
-                                <div class="footer__widget footer__quick">
-                                    <div class="footer__menu__title">
-                                        <h6>QUICK LINKS :</h6>
-                                    </div>
-                                    <div class="footer__menu">
-                                        <ul>
-                                            <li>
-                                                <a href="#">Privacy & policy</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Terms & conditions</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">FAQ</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Customer support</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Contact us</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12" data-aos="fade-up" data-aos-duration="3000">
-                                <div class="footer__widget footer__right">
-                                    <div class="footer__menu__title">
-                                        <h6>SUBSCRIP NEWSLETTER :</h6>
-                                    </div>
-                                    <div class="footer__input">
-                                        <input type="text" placeholder="Enter your email:">
-                                    </div>
-                                    <div class="footer__bottom">
-                                        <a class="default__button" href="#">SUBSCRIBE NOW</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="bastun__brand__badge bastun__brand__badge__footer">
+                <div class="bastun__brand__badge__inner position-relative">
+                    <a href="index.html">
 
-                    <div class="copyright">
+                        <img class="bbb__animate" src="assets/img/footer/brand__badge.png" alt="Footer badge">
+                        <img class="bbb__icon" src="assets/img/footer/brand__badge__inner.png" alt="Footer icon badge">
+                    </a>
+                </div>
+            </div>
 
-                        <div class="row align-items-center">
-                            <div class="col-xl-6 col-lg-6 col-md-6 col-12">
-                                <div class="copyright__left">
-                          <p>Copyright © 2024 <a href="index.html">Digitalminds on.</a> All Right Reserved</p>
+            <div class="container">
+                <div class="footer__wrapper sp_bottom_110">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-6 col-md-6" data-aos="fade-up" data-aos-duration="1500">
+                            <div class="footer__widget footer__left">
+                                <div class="footer__logo">
+                                    <img src="assets/img/logo/full-logo.svg" alt="">
                                 </div>
-                            </div>
-                            <div class="col-xl-6 col-lg-6 col-md-6 col-12">
-                                <div class="copyright__right">
+                                <div class="footer__text">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt labore et dolore magna aliqua</p>
+                                </div>
+                                <div class="footer__icon">
                                     <ul>
                                         <li>
-                                            <a href="#">Privacy & Policy ||</a>
+                                            <a href="#"><i class="icofont-facebook"></i></a>
                                         </li>
                                         <li>
-                                            <a href="#">Terms & Conditions</a>
+                                            <a href="#"><i class="icofont-twitter"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="icofont-skype"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="icofont-linkedin"></i></a>
                                         </li>
                                     </ul>
-                                 
                                 </div>
                             </div>
                         </div>
-
+                        <div class="col-xl-2 col-lg-6 col-md-6 col-sm-6" data-aos="fade-up" data-aos-duration="2000">
+                            <div class="footer__widget footer__support">
+                                <div class="footer__menu__title">
+                                    <h6>SUPPORT :</h6>
+                                </div>
+                                <div class="footer__menu">
+                                    <ul>
+                                        <li>
+                                            <a href="#">Home</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">About us</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Blog update</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Our services</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Testimonial</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-6 col-md-6 col-sm-6" data-aos="fade-up" data-aos-duration="2500">
+                            <div class="footer__widget footer__quick">
+                                <div class="footer__menu__title">
+                                    <h6>QUICK LINKS :</h6>
+                                </div>
+                                <div class="footer__menu">
+                                    <ul>
+                                        <li>
+                                            <a href="#">Privacy & policy</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Terms & conditions</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">FAQ</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Customer support</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Contact us</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12" data-aos="fade-up" data-aos-duration="3000">
+                            <div class="footer__widget footer__right">
+                                <div class="footer__menu__title">
+                                    <h6>SUBSCRIP NEWSLETTER :</h6>
+                                </div>
+                                <div class="footer__input">
+                                    <input type="text" placeholder="Enter your email:">
+                                </div>
+                                <div class="footer__bottom">
+                                    <a class="default__button" href="#">SUBSCRIBE NOW</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
+                <div class="copyright">
+
+                    <div class="row align-items-center">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-12">
+                            <div class="copyright__left">
+                                <p>Copyright © 2024 <a href="index.html">Digitalminds on.</a> All Right Reserved</p>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-12">
+                            <div class="copyright__right">
+                                <ul>
+                                    <li>
+                                        <a href="#">Privacy & Policy ||</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Terms & Conditions</a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
-         <!-- footer__section__end -->
-              <!-- back to top -->
-              <a href="#top" class="back-to-top" id="backToTop">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up">
-                    <path d="M12 19V6M5 12l7-7 7 7"/>
-                </svg>
-            </a>
-                   <!-- back to top -->
+        </div>
+        <!-- footer__section__end -->
+        <!-- back to top -->
+        <a class="back-to-top" id="backToTop">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up">
+                <path d="M12 19V6M5 12l7-7 7 7" />
+            </svg>
+        </a>
+        <!-- back to top -->
     </main>
     <!-- JS here -->
-    <!-- <script src="js/vendor/modernizr-3.5.0.min.js"></script>
-    <script src="js/vendor/jquery-3.6.0.min.js"></script> -->
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
-    <!-- <script src="js/isotope.pkgd.min.js"></script> -->
-    <!-- <script src="js/jquery.meanmenu.min.js"></script> -->
-    <!-- <script src="js/ajax-form.js"></script> -->
-    <!-- <script src="js/wow.min.js"></script>
-    <script src="js/jquery.scrollUp.min.js"></script>
-    <script src="js/imagesloaded.pkgd.min.js"></script> -->
-    <!-- <script src="js/jquery.magnific-popup.min.js"></script> -->
-    <!-- <script src="js/waypoints.min.js"></script>
-    <script src="js/jquery.counterup.min.js"></script> -->
     <script src="assets/js/glightbox.min.js"></script>
     <script src="assets/js/plugins.js"></script>
     <script src="assets/js/swiper-bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
-
+    <!-- back to top -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const backToTopButton = document.getElementById("backToTop");
+            window.addEventListener("scroll", () => {
+                if (window.scrollY > 200) {
+                    backToTopButton.classList.add("show");
+                } else {
+                    backToTopButton.classList.remove("show");
+                }
+            });
+            backToTopButton.addEventListener("click", (e) => {
+                e.preventDefault();
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth",
+                });
+            });
+        });
+    </script>
     <script>
         // On page load or when changing themes, best to add inline in `head` to avoid FOUC
         if (localStorage.getItem("theme-color") === "dark" || (!("theme-color" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
-          document.getElementById("light--to-dark-button")?.classList.add("dark--mode");
-        } 
+            document.getElementById("light--to-dark-button")?.classList.add("dark--mode");
+        }
         if (localStorage.getItem("theme-color") === "light") {
-          document.getElementById("light--to-dark-button")?.classList.remove("dark--mode");
+            document.getElementById("light--to-dark-button")?.classList.remove("dark--mode");
         } 
     </script>
 
 </body>
+
 </html>
