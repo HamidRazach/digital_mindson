@@ -8924,6 +8924,7 @@ p.mt-2 {
 }
 .card {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  height: 226px;
 }
 .card-text {
   font-size: 17px;
@@ -8933,6 +8934,7 @@ p.mt-2 {
 .horizontal-card .card img {
   height: 100%;
   width: 100%;
+  min-height: 226px;
   object-fit: cover;
 }
 .horizontal-card {
