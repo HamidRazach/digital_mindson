@@ -427,11 +427,10 @@
         <!-- End Offcanvas header menu -->
 
         <!-- breadcrumbarea__start -->
-        <div class="breadcrumbarea aos-init aos-animate" data-aos="fade-up"
-            style="background: url(assets/img/about/about__bg__1.jpg);">
+        <div class="breadcrumbarea">
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-12" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="col-xl-12">
                         <div class="breadcrumbarea__content__wraper">
                             <div class="breadcrumbarea__title">
                                 <h2 class="heading">Service Page</h2>
@@ -439,20 +438,14 @@
                             <div class="breadcrumbarea__inner">
                                 <ul>
                                     <li><a href="index.html">Home</a></li>
-                                    <li>// </li>
-                                    <li> About us </li>
+                                    <li>//</li>
+                                    <li> Service</li>
                                 </ul>
                             </div>
                         </div>
-
-
-
                     </div>
                 </div>
             </div>
-
-
-
         </div>
         <!-- breadcrumbarea__end -->
 
@@ -1092,6 +1085,16 @@
     <script src="assets/js/plugins.js"></script>
     <script src="assets/js/swiper-bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+        $(document).ready(function () {
+            var $breadcrumbArea = $('.breadcrumbarea');
+
+            $(window).scroll(function () {
+                var scrollTop = $(this).scrollTop();
+                $breadcrumbArea.css('background-position', 'center ' + (scrollTop * 0.5) + 'px');
+            });
+        });
+    </script>
     <!-- back to top -->
     <script>
         document.addEventListener("DOMContentLoaded", () => {

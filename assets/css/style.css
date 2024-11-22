@@ -8906,13 +8906,18 @@ p.mt-2 {
 .card-body .card-title {
   margin-bottom: 0px;
 }
-.card:hover {
-  transform: scale(1.1); 
-  transition: transform 0.3s ease-in-out; 
+.card {
+  overflow: hidden; 
 }
 
-.img-fluid {
-  transition: transform 0.3s ease-in-out;
+.card img {
+  transition: transform 0.3s ease, filter 0.3s ease; 
+  display: block; 
+}
+
+.card img:hover {
+  transform: scale(1.1); 
+  filter: brightness(1.1);
 }
 .dark-mode-card {
   color: #212529;
@@ -8943,6 +8948,13 @@ p.mt-2 {
 .horizontal-card {
   justify-content: center;
 }
+/* bgimage */
+.breadcrumbarea {
+  background: url(../img/about/about__bg__1.jpg) no-repeat center center fixed;
+  position: relative;
+}
+
+
 
 
 
