@@ -8931,6 +8931,13 @@ p.mt-2 {
   font-weight: 500;
   color: #5f6c76;
 }
+.common-button {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
 .horizontal-card .card img {
   height: 100%;
   width: 100%;
