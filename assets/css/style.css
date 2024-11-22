@@ -8931,8 +8931,9 @@ p.mt-2 {
   color: #5f6c76;
 }
 .horizontal-card .card img {
-  height: 227px;
+  height: 100%;
   width: 100%;
+  object-fit: cover;
 }
 .horizontal-card {
   padding: 50px 0px;
