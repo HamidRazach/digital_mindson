@@ -6054,7 +6054,7 @@ img.herobanner__vector.hero__icon__3 {
 }
 
 .breadcrumbarea {
-  padding: 20px 0;
+  padding: 120px 0;
   background-position: center center !important;
 }
 
@@ -9039,7 +9039,7 @@ p.mt-2 {
 }
 
 /* video */
-.breadcrumbarea {
+.breadcrumbarea-video {
   position: relative;
   height: 100vh;
   width: 100%;
