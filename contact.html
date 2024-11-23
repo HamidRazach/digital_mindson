@@ -474,7 +474,7 @@
                     <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12" data-aos="fade-up" data-aos-duration="1500">
                         <div class="contact__input__wrapper contact__grident__bg">
                             <form id="contact-form" class="contact-form"
-                                action="https://html.themewin.com/bastun-preview/bastun/mail.php" method="post">
+                                 action="email.php">
                                 <div class="row">
                                     <div class="col-xl-12">
                                         <div class="contact__input">
@@ -485,22 +485,22 @@
                                     <div class="col-xl-6">
                                         <div class="contact__input">
                                             <input class="contact__common__input" type="text" name="con_email"
-                                                id="con_email" placeholder="Email">
+                                                id="con_email" placeholder="Email" required>
                                         </div>
                                     </div>
                                     <div class="col-xl-6">
                                         <div class="contact__input">
                                             <input class="contact__common__input" type="text" name="phone"
-                                                placeholder="Phone">
+                                                placeholder="Phone" required>
                                         </div>
                                     </div>
                                     <div class="col-xl-12">
-                                        <select class="contact__common__input" name="subject" id="subject">
+                                        <!-- <select class="contact__common__input" name="subject" id="subject">
                                             <option value="volvo">Subject:</option>
                                             <option value="saab">Saab</option>
                                             <option value="mercedes">Mercedes</option>
                                             <option value="audi">Audi</option>
-                                        </select>
+                                        </select> -->
                                     </div>
                                     <div class="col-xl-12">
                                         <textarea class="contact__common__input" name="con_message" id="con_message"
@@ -509,7 +509,7 @@
                                     <div class="col-xl-12">
                                         <div class="contact__button">
                                             <button type="submit" value="submit" class="default__button"
-                                                name="submit">SEND MESSAGE</button>
+                                               >SEND MESSAGE</button>
                                             <p class="form-messege"></p>
                                         </div>
 
@@ -891,7 +891,8 @@
     <script src="assets/js/ajax-form.js"></script>
     <script src="assets/js/main.js"></script>
         <!-- back to top -->
-        <script>
+        <script type="text/javascript">
+
             document.addEventListener("DOMContentLoaded", () => {
                 const backToTopButton = document.getElementById("backToTop");
                 window.addEventListener("scroll", () => {
@@ -918,6 +919,8 @@
         if (localStorage.getItem("theme-color") === "light") {
             document.getElementById("light--to-dark-button")?.classList.remove("dark--mode");
         } 
+
+       
     </script>
 </body>
 
