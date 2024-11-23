@@ -9058,6 +9058,7 @@ p.mt-2 {
 /* Content on top of the video */
 .breadcrumbarea__content__wraper {
   position: relative;
+  top: 10px;
   z-index: 1;
   color: #fff;
   padding-top: 20px;
