@@ -47,16 +47,16 @@ $mail = new PHPMailer(true);
 		$mail->Host = 'smtp.gmail.com'; //Set the SMTP server to send through
 		$mail->SMTPSecure = 'ssl'; // secure transfer enabled REQUIRED for Gmail
 		$mail->SMTPAuth = true; //Enable SMTP authentication
-		$mail->Username = 'hamidraza7614@gmail.com'; //SMTP username
-		$mail->Password = 'Hamid@7645'; //SMTP password
+		$mail->Username = 'muhammedahmadraza72@gmail.com'; //SMTP username
+		$mail->Password = 'ezwdsrcywryiwjfa'; //SMTP password
 		$mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS; //Enable implicit TLS encryption
 		$mail->Port = 465; //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 		
 
 		//Recipients
-		$mail->setFrom('hamidraza7614@gmail.com', 'Digital Mindson Website');
-		$mail->addAddress('info@digitalmindson.com');
-		$mail->addBCC('muhammedahmadraza72@gmail.com');
+		$mail->setFrom('muhammedahmadraza72@gmail.com', 'Digital Mindson Website');
+		$mail->addAddress('muhammedahmadraza72@gmail.com');
+		$mail->addBCC('hamidraza7614@gmail.com');
 		if(trim(@$_POST['con_email'])!='')
 			$mail->addReplyTo(trim($_POST['con_email']), ' '.$_POST['con_name']);
 
@@ -73,7 +73,7 @@ $mail = new PHPMailer(true);
 	}
 	catch(Exception $e)
 	{
-		echo json_encode('Message could not be sent');die;
+		echo $e;die;
 	}
 // }
 // else
