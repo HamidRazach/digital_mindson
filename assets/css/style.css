@@ -8962,6 +8962,7 @@ p.mt-2 {
 .breadcrumbarea {
   /* background: url(../img/about/about__bg__1.jpg) no-repeat center center fixed; */
   position: relative;
+  background-repeat: no-repeat !important;
 }
 .breadcrumbarea__content__wraper {
   position: absolute;
