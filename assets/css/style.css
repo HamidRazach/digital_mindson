@@ -9078,6 +9078,7 @@ p.mt-2 {
   height: 100%;
   background: rgba(0, 0, 0, 0.7);
 }
+
 .breadcrumbarea__overlay-video {
   position: absolute;
   top: 0;
@@ -9086,11 +9087,13 @@ p.mt-2 {
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
 }
+
 .breadcrumbarea-video-small {
   position: relative;
-  height: 100%;
+  height: calc(100vh - 120px);
   width: 100%;
 }
+
 #brand__area .brand__single img {
   width: 100%;
   height: 90px;
