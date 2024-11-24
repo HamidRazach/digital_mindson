@@ -156,10 +156,11 @@
                                                     <li><a href="software.html">Software Development</a></li>
                                                     <li><a href="appdevelop.html">App Development</a></li>
                                                     <li><a href="GameDevelop.html">Game Development</a></li>
-                                                    <li><a href="digtalmarketing.html">Digital Marketing</a></li>
+                                                    <!-- <li><a href="digtalmarketing.html">Digital Marketing</a></li> -->
                                                     <li><a href="uidesign.html">UI/UX Design</a></li>
                                                     <li><a href="itexpert.html">IT Specialist</a></li>
-                                                    <li><a href="#">Content Creator</a></li>
+                                                    <li><a href="wordpress.html">WordPress Development </a></li>
+                                                    <li><a href="Content_Creater.html">Content Creator</a></li>
                                                     <li><a href="seo.html">Search Engine Optimization(SEO)</a></li>
 
                                                 </ul>
@@ -473,8 +474,7 @@
                     </div>
                     <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12" data-aos="fade-up" data-aos-duration="1500">
                         <div class="contact__input__wrapper contact__grident__bg">
-                            <form id="contact-form" class="contact-form"
-                                 action="email.php">
+                            <form id="contact-form" class="contact-form" action="email.php">
                                 <div class="row">
                                     <div class="col-xl-12">
                                         <div class="contact__input">
@@ -495,13 +495,14 @@
                                         </div>
                                     </div>
                                     <div class="col-xl-12">
-                                        <textarea class="contact__common__input" name="con_message"   placeholder="write a message...." id="con_message"
-                                            cols="30" rows="10"></textarea>
+                                        <textarea class="contact__common__input" name="con_message"
+                                            placeholder="write a message...." id="con_message" cols="30"
+                                            rows="10"></textarea>
                                     </div>
                                     <div class="col-xl-12">
                                         <div class="contact__button">
-                                            <button type="submit" value="submit" class="default__button"
-                                               >SEND MESSAGE</button>
+                                            <button type="submit" value="submit" class="default__button">SEND
+                                                MESSAGE</button>
                                             <p class="form-messege"></p>
                                         </div>
 
@@ -836,7 +837,7 @@
                         <div class="row align-items-center">
                             <div class="col-xl-6 col-lg-6 col-md-6 col-12">
                                 <div class="copyright__left">
-                          <p>Copyright © 2024 <a href="index.html">Digitalminds on.</a> All Right Reserved</p>
+                                    <p>Copyright © 2024 <a href="index.html">Digitalminds on.</a> All Right Reserved</p>
                                 </div>
                             </div>
                             <div class="col-xl-6 col-lg-6 col-md-6 col-12">
@@ -858,14 +859,14 @@
                 </div>
             </div>
             <!-- footer__section__end -->
-                 <!-- back to top -->
-                 <a class="back-to-top" id="backToTop">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up">
-                        <path d="M12 19V6M5 12l7-7 7 7" />
-                    </svg>
-                </a>
-                       <!-- back to top -->
+            <!-- back to top -->
+            <a class="back-to-top" id="backToTop">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up">
+                    <path d="M12 19V6M5 12l7-7 7 7" />
+                </svg>
+            </a>
+            <!-- back to top -->
     </main>
 
 
@@ -881,27 +882,27 @@
     <script src="assets/js/swiper-bundle.min.js"></script>
     <script src="assets/js/ajax-form.js"></script>
     <script src="assets/js/main.js"></script>
-        <!-- back to top -->
-        <script type="text/javascript">
+    <!-- back to top -->
+    <script type="text/javascript">
 
-            document.addEventListener("DOMContentLoaded", () => {
-                const backToTopButton = document.getElementById("backToTop");
-                window.addEventListener("scroll", () => {
-                    if (window.scrollY > 200) {
-                        backToTopButton.classList.add("show");
-                    } else {
-                        backToTopButton.classList.remove("show");
-                    }
-                });
-                backToTopButton.addEventListener("click", (e) => {
-                    e.preventDefault();
-                    window.scrollTo({
-                        top: 0,
-                        behavior: "smooth",
-                    });
+        document.addEventListener("DOMContentLoaded", () => {
+            const backToTopButton = document.getElementById("backToTop");
+            window.addEventListener("scroll", () => {
+                if (window.scrollY > 200) {
+                    backToTopButton.classList.add("show");
+                } else {
+                    backToTopButton.classList.remove("show");
+                }
+            });
+            backToTopButton.addEventListener("click", (e) => {
+                e.preventDefault();
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth",
                 });
             });
-        </script>
+        });
+    </script>
     <script>
         // On page load or when changing themes, best to add inline in `head` to avoid FOUC
         if (localStorage.getItem("theme-color") === "dark" || (!("theme-color" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
@@ -909,9 +910,9 @@
         }
         if (localStorage.getItem("theme-color") === "light") {
             document.getElementById("light--to-dark-button")?.classList.remove("dark--mode");
-        } 
+        }
 
-       
+
     </script>
 </body>
 
