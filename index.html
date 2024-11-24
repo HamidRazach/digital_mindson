@@ -22,7 +22,7 @@
 
 
     <script>
-         if (
+        if (
             localStorage.getItem("theme-color") === "dark" ||
             (!("theme-color" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)
         ) {
@@ -278,6 +278,7 @@
                                                     <li><a href="digtalmarketing.html">Digital Marketing</a></li>
                                                     <li><a href="uidesign.html">UI/UX Design</a></li>
                                                     <li><a href="itexpert.html">IT Specialist</a></li>
+                                                    <li><a href="wordpress.html">WordPress Development </a></li>
                                                     <li><a href="#">Content Creator</a></li>
                                                     <li><a href="seo.html">Search Engine Optimization(SEO)</a></li>
 
@@ -535,7 +536,8 @@
                             <div class="card mb-3">
                                 <div class="row g-0">
                                     <div class="col-md-4">
-                                        <img src="assets/img/services-home/wb.jpg" class="img-fluid rounded-start" alt="...">
+                                        <img src="assets/img/services-home/wb.jpg" class="img-fluid rounded-start"
+                                            alt="...">
                                     </div>
                                     <div class="col-md-8">
                                         <div class="card-body">
@@ -552,12 +554,14 @@
                             <div class="card mb-3">
                                 <div class="row g-0">
                                     <div class="col-md-4">
-                                        <img src="assets/img/services-home/soft.jpg" class="img-fluid rounded-start" alt="...">
+                                        <img src="assets/img/services-home/soft.jpg" class="img-fluid rounded-start"
+                                            alt="...">
                                     </div>
                                     <div class="col-md-8">
                                         <div class="card-body">
                                             <h5 class="card-title">Software Development</h5>
-                                            <span class="card-text">Build reusable, effective software solutions enhancing
+                                            <span class="card-text">Build reusable, effective software solutions
+                                                enhancing
                                                 organization’s performance and revenue using modern technologies and
                                                 solutions.</span>
                                         </div>
@@ -569,12 +573,14 @@
                             <div class="card mb-3">
                                 <div class="row g-0">
                                     <div class="col-md-4">
-                                        <img src="assets/img/services-home/game.jpg" class="img-fluid rounded-start" alt="...">
+                                        <img src="assets/img/services-home/game.jpg" class="img-fluid rounded-start"
+                                            alt="...">
                                     </div>
                                     <div class="col-md-8">
                                         <div class="card-body">
                                             <h5 class="card-title">Game Development</h5>
-                                            <span class="card-text">Play exciting games with our professional team, using
+                                            <span class="card-text">Play exciting games with our professional team,
+                                                using
                                                 the most efficient tools, such as Unreal Engine for GUl.</span>
                                         </div>
                                     </div>
@@ -585,7 +591,8 @@
                             <div class="card mb-3">
                                 <div class="row g-0">
                                     <div class="col-md-4">
-                                        <img src="assets/img/services-home/app.jpg" class="img-fluid rounded-start" alt="...">
+                                        <img src="assets/img/services-home/app.jpg" class="img-fluid rounded-start"
+                                            alt="...">
                                     </div>
                                     <div class="col-md-8">
                                         <div class="card-body">
@@ -602,7 +609,8 @@
                             <div class="card mb-3">
                                 <div class="row g-0">
                                     <div class="col-md-4">
-                                        <img src="assets/img/services-home/seo.jpg" class="img-fluid rounded-start" alt="...">
+                                        <img src="assets/img/services-home/seo.jpg" class="img-fluid rounded-start"
+                                            alt="...">
                                     </div>
                                     <div class="col-md-8">
                                         <div class="card-body">
@@ -619,12 +627,14 @@
                             <div class="card mb-3">
                                 <div class="row g-0">
                                     <div class="col-md-4">
-                                        <img src="assets/img/services-home/ui.png" class="img-fluid rounded-start" alt="...">
+                                        <img src="assets/img/services-home/ui.png" class="img-fluid rounded-start"
+                                            alt="...">
                                     </div>
                                     <div class="col-md-8">
                                         <div class="card-body">
                                             <h5 class="card-title">UI/UX Design</h5>
-                                            <span class="card-text">Improve the client experience with seamless, beautiful
+                                            <span class="card-text">Improve the client experience with seamless,
+                                                beautiful
                                                 UI/UX designs that resonate with your brand or target consumer by the
                                                 best UI/UX designers.</span>
                                         </div>
@@ -636,7 +646,8 @@
                             <div class="card mb-3">
                                 <div class="row g-0">
                                     <div class="col-md-4">
-                                        <img src="assets/img/services-home/it.jpg" class="img-fluid rounded-start" alt="...">
+                                        <img src="assets/img/services-home/it.jpg" class="img-fluid rounded-start"
+                                            alt="...">
                                     </div>
                                     <div class="col-md-8">
                                         <div class="card-body">
@@ -653,7 +664,8 @@
                             <div class="card mb-3">
                                 <div class="row g-0">
                                     <div class="col-md-4">
-                                        <img src="assets/img/services-home/Content.jpg" class="img-fluid rounded-start" alt="...">
+                                        <img src="assets/img/services-home/Content.jpg" class="img-fluid rounded-start"
+                                            alt="...">
                                     </div>
                                     <div class="col-md-8">
                                         <div class="card-body">
@@ -1596,7 +1608,7 @@
                 <path d="M12 19V6M5 12l7-7 7 7" />
             </svg>
         </a>
-        
+
         <!-- back to top -->
     </main>
     <!-- JS here -->
@@ -1609,25 +1621,25 @@
     <!-- back to top -->
     <script>
         document.addEventListener("DOMContentLoaded", () => {
-        const backToTopButton = document.getElementById("backToTop");
-        window.addEventListener("scroll", () => {
-            if (window.scrollY > 200) {
-                backToTopButton.classList.add("show");
-            } else {
-                backToTopButton.classList.remove("show");
-            }
-        });
-        backToTopButton.addEventListener("click", (e) => {
-            e.preventDefault(); 
-            window.scrollTo({
-                top: 0,
-                behavior: "smooth",
+            const backToTopButton = document.getElementById("backToTop");
+            window.addEventListener("scroll", () => {
+                if (window.scrollY > 200) {
+                    backToTopButton.classList.add("show");
+                } else {
+                    backToTopButton.classList.remove("show");
+                }
+            });
+            backToTopButton.addEventListener("click", (e) => {
+                e.preventDefault();
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth",
+                });
             });
         });
-    });
-   </script>
+    </script>
 
-   <script>
+    <script>
 
         // On page load or when changing themes, best to add inline in `head` to avoid FOUC
         if (localStorage.getItem("theme-color") === "dark" || (!("theme-color" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
@@ -1635,7 +1647,7 @@
         }
         if (localStorage.getItem("theme-color") === "#4a179b") {
             document.getElementById("light--to-dark-button")?.classList.remove("dark--mode");
-        } 
+        }
 
     </script>
 
