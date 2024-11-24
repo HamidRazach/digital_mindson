@@ -254,8 +254,6 @@
                         </div>
                         <div class="headerarea__component">
                             <div class="headerarea__right">
-
-                                
                                 <div class="headerarea__button">
                                     <a class="default__button" href="request.html">GET FREE QUATE</a>
                                 </div>
@@ -320,7 +318,44 @@
     </div>
     <div class="request-quote__area section-padding">
         <div class="container">
-            <form action="#">
+            <div class="col-md-12">
+                <form id="contact-form" class="contact-form" action="email.php">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="contact__input">
+                                <input class="contact__common__input" type="text" name="con_name" id="con_name"
+                                    placeholder="Your Name">
+                            </div>
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="contact__input">
+                                <input class="contact__common__input" type="text" name="con_email" id="con_email"
+                                    placeholder="Email" required>
+                            </div>
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="contact__input">
+                                <input class="contact__common__input" type="text" name="phone" placeholder="Phone"
+                                    required>
+                            </div>
+                        </div>
+                        <div class="col-xl-12">
+                            <textarea class="contact__common__input" name="con_message"
+                                placeholder="write a message...." id="con_message" cols="30" rows="10"></textarea>
+                        </div>
+                        <div class="col-xl-12">
+                            <div class="contact__button">
+                                <button type="submit" value="submit" class="default__button">SEND
+                                    MESSAGE</button>
+                                <p class="form-messege"></p>
+                            </div>
+
+                        </div>
+                    
+                    </div>
+                </form>
+            </div>
+            <!-- <form action="#">
                 <div class="request-quote__area-inputs">
                     <div class="request-quote__area-input-field">
                         <label for="first-name">First Name *</label>
@@ -347,29 +382,11 @@
                         <input type="text" id="website" placeholder="http://envato.com/">
                     </div>
                 </div>
-                <div class="request-quote__area-service-input">
-                    <span>What services can we provide you? *</span>
-                    <div class="request-quote__area-service-input-single">
-                        <input type="checkbox" id="seo">
-                        <label for="seo">Optimization (SEO)</label>
-                    </div>
-                    <div class="request-quote__area-service-input-single">
-                        <input type="checkbox" id="web-design">
-                        <label for="web-design">Web Design</label>
-                    </div>
-                    <div class="request-quote__area-service-input-single">
-                        <input type="checkbox" id="web-hosting">
-                        <label for="web-hosting">Web Hosting</label>
-                    </div>
-                    <div class="request-quote__area-service-input-single">
-                        <input type="checkbox" id="maintenance">
-                        <label for="maintenance">Maintenance</label>
-                    </div>
-                </div>
+         
                 <label for="message" class="mb-2">Message *</label>
                 <textarea id="message" placeholder="Type Here"></textarea>
                 <input type="submit" value="Submit Now" class="default__button">
-            </form>
+            </form> -->
         </div>
     </div>
 

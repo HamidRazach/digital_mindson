@@ -4796,12 +4796,6 @@ img.herobanner__vector.hero__icon__3 {
   border: none;
 }
 
-.project__details__get__quote__input textarea {
-  height: 250px;
-  width: 100%;
-  border: none;
-}
-
 .project__details__get__quote__button {
   margin-top: 10px;
 }
@@ -8931,7 +8925,7 @@ p.mt-2 {
 }
 
 .request-quote__area-input-field {
-  width: 49%;
+  width: 100%;
 }
 
 .service-page .container .col-md-6 .col-md-4 {
@@ -9107,3 +9101,8 @@ p.mt-2 {
 .specialty-card {
   height: 100%;
 }
+#checkbox-section .request-quote__area-service-input-single input {
+  width: 20px;
+  height: auto;
+}
+
