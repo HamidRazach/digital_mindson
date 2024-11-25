@@ -64,6 +64,7 @@ body {
   font-weight: 400;
   line-height: 32px;
   position: relative;
+  overflow-x: hidden;
 }
 
 p {
@@ -9104,5 +9105,51 @@ p.mt-2 {
 #checkbox-section .request-quote__area-service-input-single input {
   width: 20px;
   height: auto;
+}
+
+/* intel phone */
+/* styles.css */
+.phone-input-container {
+  text-align: center;
+  width: 100%;
+}
+
+.phone-input-container label {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+#phone {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+#phone:focus {
+  border-color: #fff;
+}
+
+.iti {
+  width: 100%;
+}
+
+.iti__flag {
+  margin-top: 5px; /* Adjust flag alignment */
+}
+
+.intel-hidden {
+  display: none !important;
+}
+.iti__country-list {
+  max-width: 493px; 
+  transition: width 0.3s ease;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.iti--separate-dial-code.iti--show-flags .iti__selected-dial-code {
+  color: #FFF !important;
 }
 

@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.css">
 
     <script>
         // On page load or when changing themes, best to add inline in `head` to avoid FOUC
@@ -476,17 +476,22 @@
                                                 id="con_name" placeholder="Your Name">
                                         </div>
                                     </div>
-                                    <div class="col-xl-6">
+                                    <div class="col-xl-12">
                                         <div class="contact__input">
                                             <input class="contact__common__input" type="text" name="con_email"
                                                 id="con_email" placeholder="Email" required>
                                         </div>
                                     </div>
-                                    <div class="col-xl-6">
-                                        <div class="contact__input">
+                                    <div class="col-xl-12">
+                                        <div class="phone-input-container mb-4">
+                                            <label for="phone" class="intel-hidden">Phone Number</label>
+                                            <input id="phone" type="tel" class="contact__common__input"
+                                                placeholder="Enter your phone number" required />
+                                        </div>
+                                        <!-- <div class="contact__input">
                                             <input class="contact__common__input" type="text" name="phone"
                                                 placeholder="Phone" required>
-                                        </div>
+                                        </div> -->
                                     </div>
                                     <div class="col-xl-12">
                                         <textarea class="contact__common__input" name="con_message"
@@ -678,7 +683,6 @@
         </div>
         <!--whattappicon-->
         <div class="footer__3 position-relative sp_top_200 bg__black">
-
             <!-- brand__start -->
             <div class="brand__4 brand__3 " data-aos="fade-up" data-aos-duration="1500">
                 <div class="container">
@@ -709,8 +713,6 @@
                 </div>
             </div>
             <!-- brand__start -->
-
-
             <div class="footer position-relative sp_top_250 pink__bg__color" id="footer__area"
                 style="background-image: url(assets/img/footer/footer_1.png);">
 
@@ -853,14 +855,15 @@
                 </div>
             </div>
             <!-- footer__section__end -->
-            <!-- back to top -->
-            <a class="back-to-top" id="backToTop">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up">
-                    <path d="M12 19V6M5 12l7-7 7 7" />
-                </svg>
-            </a>
-            <!-- back to top -->
+        </div>
+        <!-- back to top -->
+        <a class="back-to-top" id="backToTop">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up">
+                <path d="M12 19V6M5 12l7-7 7 7" />
+            </svg>
+        </a>
+        <!-- back to top -->
     </main>
 
 
@@ -876,7 +879,49 @@
     <script src="assets/js/swiper-bundle.min.js"></script>
     <script src="assets/js/ajax-form.js"></script>
     <script src="assets/js/main.js"></script>
+    <!-- intel phone -->
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/intlTelInput.min.js"></script>
     <!-- back to top -->
+    <script type="text/javascript">
+
+        // script.js
+
+        // Function to adjust the dropdown width dynamically
+        function adjustDropdownWidth() {
+            const phoneInput = document.querySelector("#phone");
+            const countryList = document.querySelector(".iti__country-list");
+
+            if (phoneInput && countryList) {
+                // Set the dropdown width equal to the phone input's width
+                const inputWidth = phoneInput.offsetWidth;
+                countryList.style.width = `${inputWidth}px`;
+            }
+        }
+
+        // Initialize intl-tel-input
+        const phoneInputField = document.querySelector("#phone");
+        const iti = intlTelInput(phoneInputField, {
+            initialCountry: "auto",
+            geoIpLookup: (callback) => {
+                fetch('https://ipinfo.io?token=your_token')
+                    .then((resp) => resp.json())
+                    .then((data) => callback(data.country || "us"))
+                    .catch(() => callback("us"));
+            },
+            utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js",
+            separateDialCode: true,
+            dropdownContainer: document.body,
+        });
+
+        // Adjust dropdown width on window resize
+        window.addEventListener("resize", adjustDropdownWidth);
+
+        // Adjust dropdown width on page load
+        document.addEventListener("DOMContentLoaded", adjustDropdownWidth);
+
+
+    </script>
+    <!-- intel phone end -->
     <script type="text/javascript">
 
         document.addEventListener("DOMContentLoaded", () => {
