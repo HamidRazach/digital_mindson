@@ -4488,7 +4488,7 @@ img.herobanner__vector.hero__icon__3 {
 
 .project__img img {
   max-width: 100%;
-  border-radius: 15px;
+  border-radius: 10px;
 }
 
 .project__section__img.text__end {
@@ -8940,7 +8940,7 @@ p.mt-2 {
 
 .service-page .col-md-6 .col-md-4 img {
   width: 100%;
-  height: 224px;
+  height: 227px;
 }
 
 .card-hover {
@@ -9152,4 +9152,3 @@ p.mt-2 {
 .iti--separate-dial-code.iti--show-flags .iti__selected-dial-code {
   color: #FFF !important;
 }
-
