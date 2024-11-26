@@ -4488,6 +4488,7 @@ img.herobanner__vector.hero__icon__3 {
 
 .project__img img {
   max-width: 100%;
+  border-radius: 15px;
 }
 
 .project__section__img.text__end {
@@ -4508,7 +4509,7 @@ img.herobanner__vector.hero__icon__3 {
 }
 
 .project__heading {
-  max-width: 55%;
+  max-width:  100%;
 }
 
 .project__heading h3 a {
@@ -9000,7 +9001,6 @@ p.mt-2 {
   height: 100%;
   width: 100%;
   min-height: 226px;
-  object-fit: cover;
 }
 
 .horizontal-card {
