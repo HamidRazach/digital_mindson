@@ -3851,6 +3851,7 @@ img.herobanner__vector.hero__icon__3 {
 
 .headerarea__logo a img {
   width: 100%;
+  max-width: 300px;
 }
 
 .contact__icon span {
