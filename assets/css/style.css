@@ -9111,6 +9111,12 @@ p.mt-2 {
   width: 20px;
   height: auto;
 }
+.star-wrapper i.icofont-star.star-rating {
+    margin-right: 4px;
+    color: #ffc53d;
+    font-size: 1.7rem;
+    line-height: 1.1;
+}
 
 /* intel phone */
 /* styles.css */
