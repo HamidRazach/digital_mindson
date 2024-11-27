@@ -2131,7 +2131,9 @@ img.herobanner__vector.hero__icon__3 {
 }
 
 .offcanvas__logo img {
-  max-width: 130px;
+  max-width: 190px;
+  height: auto;
+  width: 100%;
 }
 
 .offcanvas__close--btn {
@@ -3852,6 +3854,7 @@ img.herobanner__vector.hero__icon__3 {
 .headerarea__logo a img {
   width: 100%;
   max-width: 300px;
+  height: 78.2px;
 }
 
 .contact__icon span {
@@ -9139,7 +9142,7 @@ p.mt-2 {
 }
 
 .iti__flag {
-  margin-top: 5px; /* Adjust flag alignment */
+  margin-top: 5px; 
 }
 
 .intel-hidden {
@@ -9153,4 +9156,22 @@ p.mt-2 {
 }
 .iti--separate-dial-code.iti--show-flags .iti__selected-dial-code {
   color: #FFF !important;
+}
+
+
+/* logo-header */
+.dark-mode {
+  display: none;
+}
+.light_mode .light-mode {
+  display: block;
+}
+.light_mode .dark-mode {
+  display: none;
+}
+.is_dark .dark-mode {
+  display: block;
+}
+.is_dark .light-mode {
+  display: none;
 }
