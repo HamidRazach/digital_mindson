@@ -5334,6 +5334,8 @@ img.herobanner__vector.hero__icon__3 {
 
 .testimonial__bottom {
   position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .testimonial__small__img {
@@ -9117,7 +9119,11 @@ p.mt-2 {
     font-size: 1.7rem;
     line-height: 1.1;
 }
-
+.testimonial__3__img img {
+  width: 80px;
+  height: auto;
+  border-radius: 50px;
+}
 /* intel phone */
 /* styles.css */
 .phone-input-container {
