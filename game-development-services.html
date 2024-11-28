@@ -21,7 +21,18 @@
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
-
+    <!-- title scrollbar -->
+    <script>
+        // Text for the title
+        let titleText = "Game Development Services | Unity Game Development | Digital Minds On";
+        let index = 0;
+        function scrollTitle() {
+            document.title = titleText.slice(index) + titleText.slice(0, index);
+            index = (index + 1) % titleText.length;
+        }
+        setInterval(scrollTitle, 200); 
+    </script>
+    <!-- title scrollbar -->
 
 
     <script>
