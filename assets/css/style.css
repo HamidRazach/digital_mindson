@@ -4514,7 +4514,7 @@ img.herobanner__vector.hero__icon__3 {
 }
 
 .project__heading {
-  max-width:  100%;
+  max-width: 100%;
 }
 
 .project__heading h3 a {
@@ -9008,6 +9008,7 @@ p.mt-2 {
   height: 100%;
   width: 100%;
   min-height: 226px;
+  cursor: pointer;
 }
 
 .horizontal-card {
@@ -9022,6 +9023,11 @@ p.mt-2 {
 
 .horizontal-card .col-md-6 .col-md-8 {
   padding-left: 0px;
+  cursor: auto;
+}
+
+.col-md-8.large-card .col-md-8 {
+  cursor: auto;
 }
 
 .horizontal-card {
@@ -9109,21 +9115,25 @@ p.mt-2 {
 .specialty-card {
   height: 100%;
 }
+
 #checkbox-section .request-quote__area-service-input-single input {
   width: 20px;
   height: auto;
 }
+
 .star-wrapper i.icofont-star.star-rating {
-    margin-right: 4px;
-    color: #ffc53d;
-    font-size: 1.7rem;
-    line-height: 1.1;
+  margin-right: 4px;
+  color: #ffc53d;
+  font-size: 1.7rem;
+  line-height: 1.1;
 }
+
 .testimonial__3__img img {
   width: 80px;
   height: auto;
   border-radius: 50px;
 }
+
 /* intel phone */
 /* styles.css */
 .phone-input-container {
@@ -9154,18 +9164,20 @@ p.mt-2 {
 }
 
 .iti__flag {
-  margin-top: 5px; 
+  margin-top: 5px;
 }
 
 .intel-hidden {
   display: none !important;
 }
+
 .iti__country-list {
-  max-width: 493px; 
+  max-width: 493px;
   transition: width 0.3s ease;
   overflow-x: hidden;
   overflow-y: auto;
 }
+
 .iti--separate-dial-code.iti--show-flags .iti__selected-dial-code {
   color: #FFF !important;
 }
@@ -9175,15 +9187,19 @@ p.mt-2 {
 .dark-mode {
   display: none;
 }
+
 .light_mode .light-mode {
   display: block;
 }
+
 .light_mode .dark-mode {
   display: none;
 }
+
 .is_dark .dark-mode {
   display: block;
 }
+
 .is_dark .light-mode {
   display: none;
 }
