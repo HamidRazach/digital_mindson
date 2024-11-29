@@ -65,6 +65,7 @@ body {
   line-height: 32px;
   position: relative;
   overflow-x: hidden;
+  user-select: none;
 }
 
 p {
