@@ -9141,8 +9141,16 @@ p.mt-2 {
 #accordionPanelsStayOpenExample h2:focus {
   box-shadow: none !important;
 }
+/* =====start===== */
+.star-wrapper .star-rating {
+  color: #000 !important;
+}
+.is_dark .star-wrapper .star-rating {
+  color: #fff !important; 
+}
+
+
 /* intel phone */
-/* styles.css */
 .phone-input-container {
   text-align: center;
   width: 100%;

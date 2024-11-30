@@ -23,14 +23,26 @@
     <link rel="stylesheet" href="assets/css/responsive.css">
 
     <script>
-        // On page load or when changing themes, best to add inline in `head` to avoid FOUC
-        if (localStorage.getItem("theme-color") === "dark" || (!("theme-color" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
-            document.documentElement.classList.add("is_dark");
+        // Check and apply the theme on page load
+        document.addEventListener("DOMContentLoaded", () => {
+            const themeColor = localStorage.getItem("theme-color");
+            const isDarkMode =
+                themeColor === "dark" ||
+                (!themeColor && window.matchMedia("(prefers-color-scheme: dark)").matches);
+
+            document.documentElement.classList.toggle("is_dark", isDarkMode);
+        });
+
+        // Example function to toggle themes dynamically
+        function toggleTheme() {
+            const isCurrentlyDark = document.documentElement.classList.contains("is_dark");
+            document.documentElement.classList.toggle("is_dark", !isCurrentlyDark);
+
+            // Save the theme preference
+            localStorage.setItem("theme-color", isCurrentlyDark ? "light" : "dark");
         }
-        if (localStorage.getItem("theme-color") === "light") {
-            document.documentElement.classList.remove("is_dark");
-        } 
     </script>
+
 
 </head>
 
@@ -229,7 +241,7 @@
                             <span class="visually-hidden">Offcanvas Menu Open</span>
                         </a>
                     </div>
-                 
+
 
 
 
@@ -711,7 +723,7 @@
 
                             <div class="testimonial__3__single__wraper swiper-slide col-md-4">
                                 <div class="testimonial__3__single__inner">
-                                  
+
                                     <div class="testimonial__3__content bg__pink common__gradient__bg ">
                                         <div class="star-wrapper s-m-b-8 mb-3">
                                             <i class="icofont-star star-rating"></i>
@@ -793,7 +805,7 @@
 
                             <div class="testimonial__3__single__wraper swiper-slide col-md-4">
                                 <div class="testimonial__3__single__inner">
-                                 
+
                                     <div class="testimonial__3__content bg__pink common__gradient__bg ">
                                         <div class="star-wrapper s-m-b-8 mb-3">
                                             <i class="icofont-star star-rating"></i>
