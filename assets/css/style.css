@@ -9134,7 +9134,10 @@ p.mt-2 {
   height: auto;
   border-radius: 50px;
 }
-
+.mobile__log .offcanvas__logo_link img {
+  width: 100%;
+  height: 50px;
+}
 /* intel phone */
 /* styles.css */
 .phone-input-container {
