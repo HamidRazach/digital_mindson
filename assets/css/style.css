@@ -9138,6 +9138,9 @@ p.mt-2 {
   width: 100%;
   height: 50px;
 }
+#accordionPanelsStayOpenExample h2:focus {
+  box-shadow: none !important;
+}
 /* intel phone */
 /* styles.css */
 .phone-input-container {
