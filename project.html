@@ -889,6 +889,25 @@
     <script src="assets/js/plugins.js"></script>
     <script src="assets/js/swiper-bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js" async></script>
+    <!-- lazay load -->
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+            const lazyImages = document.querySelectorAll(".lazy-image");
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const img = entry.target;
+                    img.src = img.dataset.src; 
+                    img.classList.remove("lazy-image");
+                    observer.unobserve(img);
+                }
+                });
+            });
+        
+            lazyImages.forEach(img => observer.observe(img));
+            });
+        </script>
     <!-- back to top -->
     <script>
         document.addEventListener("DOMContentLoaded", () => {
