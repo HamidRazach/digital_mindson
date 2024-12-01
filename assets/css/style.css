@@ -4498,13 +4498,21 @@ img.herobanner__vector.hero__icon__3 {
   box-shadow: 1px 1px 6px 0 rgba(0, 0, 0, .57);
 }
 
-
+.project__img:hover {
+  border: 5px solid #ac0b97;
+}
 
 .project__img img {
   max-width: 100%;
   position: relative;
   z-index: 1;
-  min-height: 100%;
+  transform: translateY(0);
+  transition: transform 5s linear;
+  height: auto;
+}
+
+.project__img:hover img {
+  transform: translateY(-100%); 
 }
 
 .project__section__img.text__end {
@@ -9144,19 +9152,23 @@ p.mt-2 {
   height: auto;
   border-radius: 50px;
 }
+
 .mobile__log .offcanvas__logo_link img {
   width: 100%;
   height: 50px;
 }
+
 #accordionPanelsStayOpenExample h2:focus {
   box-shadow: none !important;
 }
+
 /* =====start===== */
 .star-wrapper .star-rating {
   color: #000 !important;
 }
+
 .is_dark .star-wrapper .star-rating {
-  color: #fff !important; 
+  color: #fff !important;
 }
 
 
