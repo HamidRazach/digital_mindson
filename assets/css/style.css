@@ -4488,13 +4488,23 @@ img.herobanner__vector.hero__icon__3 {
 
 .project__img {
   margin-bottom: 30px;
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+  height: auto;
+  max-height: 300px;
+  border: 5px solid #707279;
+  border-radius: 4px;
+  box-shadow: 1px 1px 6px 0 rgba(0, 0, 0, .57);
 }
 
 
 
 .project__img img {
   max-width: 100%;
-  border-radius: 10px;
+  position: relative;
+  z-index: 1;
+  min-height: 100%;
 }
 
 .project__section__img.text__end {
