@@ -956,21 +956,15 @@
     <!-- lazay load -->
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            // Select all project image containers
             const projectImages = document.querySelectorAll('.project__img');
 
             projectImages.forEach((projectImg) => {
-                const img = projectImg.querySelector('img'); // Select the image inside the container
-
-                // Ensure the image is fully loaded
+                const img = projectImg.querySelector('img');
                 img.addEventListener('load', function () {
-                    const containerHeight = projectImg.offsetHeight; // Height of the container
-                    const imgHeight = img.offsetHeight; // Height of the image
-
-                    // Add hover effect
+                    const containerHeight = projectImg.offsetHeight;
+                    const imgHeight = img.offsetHeight;
                     projectImg.addEventListener('mouseenter', function () {
                         if (imgHeight > containerHeight) {
-                            // Translate the image up to the visible height difference
                             const translateValue = -(imgHeight - containerHeight);
                             img.style.transform = `translateY(${translateValue}px)`;
                             img.style.transition = 'transform 5s linear';
@@ -978,13 +972,10 @@
                     });
 
                     projectImg.addEventListener('mouseleave', function () {
-                        // Reset the image position on hover end
                         img.style.transform = 'translateY(0)';
                         img.style.transition = 'transform 5s linear';
                     });
                 });
-
-                // Fallback for already loaded images
                 if (img.complete) {
                     img.dispatchEvent(new Event('load'));
                 }
