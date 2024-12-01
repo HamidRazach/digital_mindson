@@ -953,23 +953,42 @@
     <script src="assets/js/plugins.js"></script>
     <script src="assets/js/swiper-bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js" async></script>
     <!-- lazay load -->
     <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const lazyImages = document.querySelectorAll(".lazy-image");
-            const observer = new IntersectionObserver((entries, observer) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        const img = entry.target;
-                        img.src = img.dataset.src;
-                        img.classList.remove("lazy-image");
-                        observer.unobserve(img);
-                    }
-                });
-            });
+        document.addEventListener('DOMContentLoaded', function () {
+            // Select all project image containers
+            const projectImages = document.querySelectorAll('.project__img');
 
-            lazyImages.forEach(img => observer.observe(img));
+            projectImages.forEach((projectImg) => {
+                const img = projectImg.querySelector('img'); // Select the image inside the container
+
+                // Ensure the image is fully loaded
+                img.addEventListener('load', function () {
+                    const containerHeight = projectImg.offsetHeight; // Height of the container
+                    const imgHeight = img.offsetHeight; // Height of the image
+
+                    // Add hover effect
+                    projectImg.addEventListener('mouseenter', function () {
+                        if (imgHeight > containerHeight) {
+                            // Translate the image up to the visible height difference
+                            const translateValue = -(imgHeight - containerHeight);
+                            img.style.transform = `translateY(${translateValue}px)`;
+                            img.style.transition = 'transform 5s linear';
+                        }
+                    });
+
+                    projectImg.addEventListener('mouseleave', function () {
+                        // Reset the image position on hover end
+                        img.style.transform = 'translateY(0)';
+                        img.style.transition = 'transform 5s linear';
+                    });
+                });
+
+                // Fallback for already loaded images
+                if (img.complete) {
+                    img.dispatchEvent(new Event('load'));
+                }
+            });
         });
     </script>
     <!-- back to top -->

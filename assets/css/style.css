@@ -4511,10 +4511,6 @@ img.herobanner__vector.hero__icon__3 {
   height: auto;
 }
 
-.project__img:hover img {
-  transform: translateY(-100%); 
-}
-
 .project__section__img.text__end {
   text-align: end;
 }
