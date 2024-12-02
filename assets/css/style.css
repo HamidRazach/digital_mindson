@@ -9138,7 +9138,7 @@ p.mt-2 {
 
 .star-wrapper i.icofont-star.star-rating {
   margin-right: 4px;
-  color: #ffc53d;
+  color: #ffc53d !important;
   font-size: 1.7rem;
   line-height: 1.1;
 }
@@ -9157,7 +9157,12 @@ p.mt-2 {
 #accordionPanelsStayOpenExample h2:focus {
   box-shadow: none !important;
 }
-
+.card.specialty-card:hover  h5 {
+  color: #fff !important;
+}  
+.card.specialty-card:hover p {
+  color: #fff !important;
+}
 /* =====start===== */
 .star-wrapper .star-rating {
   color: #000 !important;
@@ -9166,7 +9171,11 @@ p.mt-2 {
 .is_dark .star-wrapper .star-rating {
   color: #fff !important;
 }
-
+.star-wrapper i.icofont-star.star-rating {
+  opacity: 1;
+  z-index: 99;
+  position: relative;
+}
 
 /* intel phone */
 .phone-input-container {
