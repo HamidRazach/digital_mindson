@@ -4928,7 +4928,7 @@
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 480px) {
   .project__img {
     max-height: 200px;
   }
