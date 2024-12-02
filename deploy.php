@@ -9,6 +9,8 @@
 <span style="color: #6BE234;">Git:</span> <span style="color: #729FCF;">Updating</span><BR>
 <pre>
 <?php 
+
+
     // deploy.php
 
     // Set the project directory path
@@ -17,14 +19,25 @@
     // Change to the project directory
     chdir($project_dir);
 
-    // Run Git pull to fetch the latest code from GitHub
-    exec('git pull origin main', $output, $status);
+    // Run Git fetch to check for updates (without merging)
+    exec('git fetch', $output, $status);
 
-    // Check if the pull was successful
-    if ($status === 0) {
-        echo "Deployment successful!";
+    // Run Git status to check if there are changes to pull
+    exec('git status -uno', $status_output, $status_code);
+
+    // Check if the pull was successful and if there are any changes
+    if ($status_code === 0 && strpos($status_output[0], 'Your branch is up to date') !== false) {
+        echo "Already deployed: No new changes to pull.";
     } else {
-        echo "Deployment failed: " . implode("\n", $output);
+        // Run Git pull to fetch the latest code from GitHub
+        exec('git pull origin main', $output, $status);
+
+        // Check if the pull was successful
+        if ($status === 0) {
+            echo "Deployment successful!";
+        } else {
+            echo "Deployment failed: " . implode("\n", $output);
+        }
     }
 
 ?>
