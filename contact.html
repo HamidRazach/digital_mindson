@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Contact | Customer Support | Digital Minds on</title>
+    <title>Contact | Customer Support | Digital Minds On </title>
     <meta name="description" content="To begin a live chat, click on "Chat with the Help Assistant" on the Digital
         Minds On Support homepage. Please note, live chat is available in English only.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,7 +21,18 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.css">
-
+    <!-- title scrollbar -->
+    <script>
+        // Text for the title
+        let titleText = "Contact | Customer Support | Digital Minds On ";
+        let index = 0;
+        function scrollTitle() {
+            document.title = titleText.slice(index) + titleText.slice(0, index);
+            index = (index + 1) % titleText.length;
+        }
+        setInterval(scrollTitle, 200); 
+    </script>
+    <!-- title scrollbar -->
     <script>
         // On page load or when changing themes, best to add inline in `head` to avoid FOUC
         if (localStorage.getItem("theme-color") === "dark" || (!("theme-color" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
