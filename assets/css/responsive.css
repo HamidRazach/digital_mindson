@@ -4874,30 +4874,87 @@
   }
 }
 
+/* custom css add by hamid */
 @media (max-width: 990px) {
   .horizontal-card .col-md-6 {
     width: 100%;
   }
+
   .horizontal-card .large-card {
     width: 100%;
   }
+
   .service__details__planning .col-xl-6.col-lg-6.col-md-6.col-sm-12 {
     width: 100%;
   }
+
   .horizontal-card {
     padding: 10px 0px !important;
   }
 }
+
 @media (max-width: 480px) {
   .horizontal-card .col-md-6 .col-md-8 {
     padding-left: 15px !important;
   }
 }
+
+
+@media (max-width: 768px) {
+  .special__spacing .col-md-6 {
+    width: 100%;
+  }
+
+  .container {
+    max-width: 100% !important;
+    padding: 0px 50px;
+  }
+
+  .specialties-section .container .row .col-md-4 {
+    width: 50%;
+  }
+
+  .team .row .col-md-6 {
+    width: 100%;
+  }
+
+  .list-unstyled-2 {
+    margin-bottom: 20px;
+  }
+    #project__area .project__margin .row .col-xl-4.col-lg-4.col-md-4.col-sm-12.col-12 {
+      width: 100%;
+  }
+  #project__area .project__margin .row .col-xl-8.col-lg-8.col-md-8.col-sm-12.col-12 {
+    width: 100%;
+  }
+  .project__img img {
+    width: 100%;
+  }
+}
+
 @media (max-width: 425px) {
   .project__img {
-      max-height: 200px; /* Adjust max height for smaller screens */
+    max-height: 200px;
   }
+
   .all__project .col-xl-6.col-lg-6.col-md-6.col-sm-6.col-12 {
     margin-bottom: 20px;
-}
+  }
+
+  .horizontal-card .card {
+    height: auto;
+  }
+
+  .service-page .card {
+    height: auto;
+  }
+
+  .container {
+    max-width: 100% !important;
+    padding: 0px 20px;
+  }
+
+  .specialties-section .container .row .col-md-4 {
+    width: 100%;
+  }
 }
