@@ -2427,7 +2427,7 @@ img.herobanner__vector.hero__icon__3 {
   font-style: normal;
   font-weight: 500;
   line-height: 40px;
-  max-width: 84%;
+  max-width: 100%;
 }
 
 
@@ -9099,7 +9099,7 @@ p.mt-2 {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.7);
 }
 
 .breadcrumbarea__overlay-video {
