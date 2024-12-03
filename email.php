@@ -65,7 +65,7 @@ $mail = new PHPMailer(true);
 		//Content
 		$mail->isHTML(true); //Set email format to HTML
 		$mail->Subject = 'Digital Mindson Website: Contact Form';
-		$mail->Body = 'Name: <b>' . $_POST['con_name'] . '</b><br />Email: <b>' . $_POST['con_email'] . '</b><br />Mobile Number: <b>'.$_POST['phone'].'</b><br />Message: ' . $_POST['con_message'];
+		$mail->Body = 'Name: <b>' . $_POST['con_name'] . '</b><br />Email: <b>' . $_POST['con_email'] . '</b><br />Mobile Number: <b>'.$_POST['countryCode'].''.$_POST['phone'].'</b><br />Message: ' . $_POST['con_message'];
 		$mail->AltBody = $_POST['con_name'] . ' ' . $_POST['con_email'] . ' '.$_POST['phone'].' ' . $_POST['con_message'];
 
 		$mail->send();

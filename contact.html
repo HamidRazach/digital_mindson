@@ -372,8 +372,9 @@
                                     <div class="col-xl-12">
                                         <div class="phone-input-container mb-4">
                                             <label for="phone" class="intel-hidden">Phone Number</label>
-                                            <input id="phone" type="tel" class="contact__common__input"
+                                            <input id="phone" name="phone" type="tel" class="contact__common__input"
                                                 placeholder="Enter your phone number" required />
+                                                <input type="hidden" id="countryCode" name="countryCode">
                                         </div>
                                         <!-- <div class="contact__input">
                                             <input class="contact__common__input" type="text" name="phone"
@@ -387,7 +388,7 @@
                                     </div>
                                     <div class="col-xl-12">
                                         <div class="contact__button">
-                                            <button type="submit" value="submit" class="default__button">SEND
+                                            <button type="submit" onclick="handleSubmit()" value="submit" class="default__button">SEND
                                                 MESSAGE</button>
                                             <p class="form-messege"></p>
                                         </div>
@@ -801,6 +802,22 @@
             separateDialCode: true,
             dropdownContainer: document.body,
         });
+
+        function handleSubmit() {
+            // Get the full phone number with the country code
+            // const fullPhoneNumber = iti.getNumber(); // This returns the full number with the country code
+            
+            // Get the country code separately if you need it
+            const countryCode = iti.getSelectedCountryData().dialCode;
+            
+            // Set the hidden fields in your form (add hidden fields to your HTML form)
+            // document.querySelector("#fullPhoneNumber").value = fullPhoneNumber;
+            
+            document.querySelector("#countryCode").value = countryCode;
+
+            // If you are submitting via a form, you can trigger the form submit here
+            // document.querySelector("#contact-form").submit(); // Change the form id if it's different
+        }
 
         // Adjust dropdown width on window resize
         window.addEventListener("resize", adjustDropdownWidth);
