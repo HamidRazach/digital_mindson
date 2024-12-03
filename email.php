@@ -56,7 +56,7 @@ $mail = new PHPMailer(true);
 		//Recipients
 		$mail->setFrom('muhammedahmadraza72@gmail.com', 'Digital Mindson Website');
 		$mail->addAddress('muhammedahmadraza72@gmail.com');
-		$mail->addBCC('hamidraza7614@gmail.com');
+		$mail->addBCC('mawaisraza628@gmail.com');
 		if(trim(@$_POST['con_email'])!='')
 			$mail->addReplyTo(trim($_POST['con_email']), ' '.$_POST['con_name']);
 
