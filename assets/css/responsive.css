@@ -4917,14 +4917,20 @@
   .list-unstyled-2 {
     margin-bottom: 20px;
   }
-    #project__area .project__margin .row .col-xl-4.col-lg-4.col-md-4.col-sm-12.col-12 {
-      width: 100%;
+
+  #project__area .project__margin .row .col-xl-4.col-lg-4.col-md-4.col-sm-12.col-12 {
+    width: 100%;
   }
+
   #project__area .project__margin .row .col-xl-8.col-lg-8.col-md-8.col-sm-12.col-12 {
     width: 100%;
   }
+
   .project__img img {
     width: 100%;
+  }
+  .breadcrumbarea-video-small {
+    margin-bottom: 20px;
   }
 }
 
@@ -4953,4 +4959,14 @@
   .specialties-section .container .row .col-md-4 {
     width: 100%;
   }
+
+  .footer__icon ul li {
+    margin-right: 25px;
+  }
+
+  .horizontal-card .card img {
+    border-radius: 0px !important;
+  }
+
+ 
 }
