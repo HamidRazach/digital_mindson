@@ -14,7 +14,7 @@
     // deploy.php
 
     // Set the project directory path
-    $project_dir = '/home/digimdts/repositories/digital_mindson'; // Update with the correct path to your project
+    $project_dir = '/home/digimdts/public_html'; // Update with the correct path to your project
 
     // Change to the project directory
     chdir($project_dir);
