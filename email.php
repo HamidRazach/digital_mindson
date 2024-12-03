@@ -69,7 +69,8 @@ $mail = new PHPMailer(true);
 		$mail->AltBody = $_POST['con_name'] . ' ' . $_POST['con_email'] . ' '.$_POST['phone'].' ' . $_POST['con_message'];
 
 		$mail->send();
-		echo json_encode('Message has been sent');die;
+		// echo json_encode('Message has been sent');
+		die;
 	}
 	catch(Exception $e)
 	{

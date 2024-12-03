@@ -5,7 +5,8 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Contact | Customer Support | Digital Minds On </title>
-    <meta name="description" content="To begin a live chat, click on 'Chat with the Help Assistant' on the Digital Minds On Support homepage. Please note, live chat is available in English only.">
+    <meta name="description"
+        content="To begin a live chat, click on 'Chat with the Help Assistant' on the Digital Minds On Support homepage. Please note, live chat is available in English only.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/icon.svg">
@@ -137,7 +138,7 @@
 
         <!-- header start -->
 
-  
+
         <header>
             <div class="headerarea headerarea--1 headerarea__transparent header__sticky main__header ">
                 <div class="container desktop__menu__wrapper">
@@ -371,7 +372,7 @@
                                             <label for="phone" class="intel-hidden">Phone Number</label>
                                             <input id="phone" name="phone" type="tel" class="contact__common__input"
                                                 placeholder="Enter your phone number" required />
-                                                <input type="hidden" id="countryCode" name="countryCode">
+                                            <input type="hidden" id="countryCode" name="countryCode">
                                         </div>
                                         <!-- <div class="contact__input">
                                             <input class="contact__common__input" type="text" name="phone"
@@ -385,7 +386,9 @@
                                     </div>
                                     <div class="col-xl-12">
                                         <div class="contact__button">
-                                            <button type="submit" onclick="handleSubmit()" value="submit" class="default__button">SEND
+                                            <button type="submit" onclick="handleSubmit()" value="submit"
+                                                class="default__button" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal">SEND
                                                 MESSAGE</button>
                                             <p class="form-messege"></p>
                                         </div>
@@ -549,6 +552,31 @@
             </div>
 
         </div>
+        <!-- footer in contact -->
+        <!-- Modal Structure -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog  modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body" style="display: flex; flex-direction: column; align-items: center;">
+                        <h2 style="color: #000; font-size: 25px;">We received your message. Please wait, and we reply
+                            you as soon as possible.</h2>
+                        <div class="checkmark-container">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+                                <path d="M17 26l7 7 15-15" fill="none" stroke="#4CAF50" stroke-width="4" />
+                            </svg>
+                        </div>
+
+
+                    </div>
+                    <div class="modal-footer" style="justify-content: center;">
+                        <button type="button" class="default__button" data-bs-dismiss="modal">OK</button>
+                        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer in contact -->
 
         <!--whattapp-icon-->
         <div class="whatsapp-icons">
@@ -803,13 +831,13 @@
         function handleSubmit() {
             // Get the full phone number with the country code
             // const fullPhoneNumber = iti.getNumber(); // This returns the full number with the country code
-            
+
             // Get the country code separately if you need it
             const countryCode = iti.getSelectedCountryData().dialCode;
-            
+
             // Set the hidden fields in your form (add hidden fields to your HTML form)
             // document.querySelector("#fullPhoneNumber").value = fullPhoneNumber;
-            
+
             document.querySelector("#countryCode").value = countryCode;
 
             // If you are submitting via a form, you can trigger the form submit here
