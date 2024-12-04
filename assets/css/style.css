@@ -2384,7 +2384,7 @@ img.herobanner__vector.hero__icon__3 {
   background: var(--gradientColor);
 }
 
-.offcanvas__header--menu__open--svg {
+.is_dark .offcanvas__header--menu__open--svg {
   color: var(--whiteColor);
 }
 
@@ -9153,6 +9153,7 @@ p.mt-2 {
 .mobile__log .offcanvas__logo_link img {
   width: 100%;
   height: 50px;
+  max-width: 190px;
 }
 
 #accordionPanelsStayOpenExample h2:focus {
