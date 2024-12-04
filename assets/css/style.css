@@ -9178,7 +9178,18 @@ p.mt-2 {
   z-index: 99;
   position: relative;
 }
+.offcanvas__menu_ul::-webkit-scrollbar {
+  width: 8px;
+}
+.offcanvas__menu_ul::-webkit-scrollbar-track {
+  background-color: rgba(255, 240, 250, 0.05);
+  border-radius: 10px;
+}
 
+.offcanvas__menu_ul::-webkit-scrollbar-thumb {
+  background-color: #fe0094;
+  border-radius: 10px;
+}
 /* intel phone */
 .phone-input-container {
   text-align: center;
