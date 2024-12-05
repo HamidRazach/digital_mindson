@@ -8771,8 +8771,10 @@ i.icofont-phone {
 }
 
 .back-to-top.show {
-  display: block;
+  display: flex;
   opacity: 1;
+  justify-content: center;
+  align-items: center;
   transform: translateY(0);
 }
 
