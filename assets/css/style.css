@@ -9208,13 +9208,14 @@ p.mt-2 {
 
 #phone {
   width: 100%;
-  border: 1px solid #ccc;
+  border: 1px solid var(--borderColor);
   border-radius: 5px;
   outline: none;
 }
 
 #phone:focus {
-  border-color: #fff;
+  /* border-color: #fff; */
+  border: 1px solid var(--borderColor);
 }
 
 .iti {
