@@ -694,35 +694,3 @@ lightToDarkButton?.addEventListener("click", function () {
 });
 
 
-// ==============hamid===========//
-
-// Function to load the image
-function loadImage(image) {
-    const src = image.getAttribute('data-src'); // Get the image source from the data-src attribute
-    image.src = src;  // Set the actual source to load the image
-    image.classList.remove('lazy');  // Optionally remove the lazy class
-}
-
-// Create an IntersectionObserver to observe when images enter the viewport
-const observer = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-        // If the image is in the viewport, load it
-        if (entry.isIntersecting) {
-            loadImage(entry.target);
-            observer.unobserve(entry.target); // Stop observing this image
-        }
-    });
-}, {
-    rootMargin: '0px', // You can set a margin if you want to start loading the image before it's fully in the viewport
-    threshold: 0.1 // 10% of the image must be in the viewport to trigger loading
-});
-
-// Select all lazy-loaded images
-const images = document.querySelectorAll('.lazy');
-
-// Start observing each image
-images.forEach(image => {
-    observer.observe(image);
-});
-
-
