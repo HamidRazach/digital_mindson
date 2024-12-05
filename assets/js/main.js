@@ -638,3 +638,39 @@ lightToDarkButton?.addEventListener("click", function () {
     }
   }
 });
+
+
+// ========
+// $(document).ready(function () {
+//   $("img").each(function (index) {
+//     $(this).attr("loading", "lazy");
+//     $(this).attr("id", "image-" + index);
+//     $(this).attr("class", "lazay-load");
+//   });
+// });
+// $(document).ready(function () {
+//   function isInViewport(element) {
+//     const rect = element.getBoundingClientRect();
+//     return (
+//       rect.top >= 0 &&
+//       rect.left >= 0 &&
+//       rect.bottom <=
+//         (window.innerHeight || document.documentElement.clientHeight) &&
+//       rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+//     );
+//   }
+
+//   function loadImages() {
+//     $(".lazay-load").each(function () {
+//       if (isInViewport(this) && $(this).attr("data-src")) {
+//         $(this).attr("src", $(this).attr("data-src"));
+//         $(this).removeAttr("data-src"); // Remove the data-src after loading
+//       }
+//     });
+//   }
+
+//   // Run on page load and scroll
+//   loadImages();
+//   $(window).on("scroll resize", loadImages);
+// });
+
