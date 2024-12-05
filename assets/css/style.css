@@ -9130,6 +9130,7 @@ p.mt-2 {
 
 .specialty-card {
   height: 100%;
+  cursor: auto;
 }
 
 #checkbox-section .request-quote__area-service-input-single input {
