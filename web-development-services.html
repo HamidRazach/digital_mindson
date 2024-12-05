@@ -609,11 +609,11 @@
                 </div>
 
                 <div class="row g-4 horizontal-card">
-                    <div class="col-md-6">
+                    <div class="col-md-6" data-aos="fade-right" data-aos-duration="1000">
                         <div class="card mb-3">
                             <div class="row g-0">
                                 <div class="col-md-4">
-                                    <img src="assets/img/service/33.jpg" class="img-fluid rounded-start" alt="...">
+                                    <img src="assets/img/service/33.jpg" class="img-fluid rounded-start" alt="img">
                                 </div>
                                 <div class="col-md-8">
                                     <div class="card-body">
@@ -628,7 +628,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6" data-aos="fade-left" data-aos-duration="1000">
                         <div class="card mb-3">
                             <div class="row g-0">
                                 <div class="col-md-4">
@@ -647,7 +647,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6" data-aos="fade-right" data-aos-duration="1000">
                         <div class="card mb-3">
                             <div class="row g-0">
                                 <div class="col-md-4">
@@ -666,7 +666,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6" data-aos="fade-left" data-aos-duration="1000">
                         <div class="card mb-3">
                             <div class="row g-0">
                                 <div class="col-md-4">
@@ -688,7 +688,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6" data-aos="fade-right" data-aos-duration="1000">
                         <div class="card mb-3">
                             <div class="row g-0">
                                 <div class="col-md-4">
@@ -707,7 +707,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6" data-aos="fade-left" data-aos-duration="1000">
                         <div class="card mb-3">
                             <div class="row g-0">
                                 <div class="col-md-4">
@@ -725,7 +725,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6" data-aos="fade-right" data-aos-duration="1000">
                         <div class="card mb-3">
                             <div class="row g-0">
                                 <div class="col-md-4">
@@ -745,7 +745,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6" data-aos="fade-left" data-aos-duration="1000">
                         <div class="card mb-3">
                             <div class="row g-0">
                                 <div class="col-md-4">
@@ -766,7 +766,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-8 large-card">
+                    <div class="col-md-8 large-card" data-aos="fade-right" data-aos-duration="1000">
                         <div class="card mb-3">
                             <div class="row g-0">
                                 <div class="col-md-4">
@@ -838,10 +838,12 @@
                             <div class="row">
                                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                                     <div class="breadcrumbarea-video-small">
-                                        <video class="breadcrumbarea__video__element" autoplay="" muted="" loop="">
+                                        <div class="breadcrumbarea__overlay-video">
+                                        <video class="breadcrumbarea__video__element" autoplay="" muted="" loop="" style="border-radius: 20px;">
                                             <source src="assets/img/service/Video/webdesign.mov" type="video/mp4">
                                             Your browser does not support the video tag.
                                         </video>
+                                    </div>
                                     </div>
                                 </div>
                                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
@@ -850,7 +852,7 @@
                                             <h6>Why is Digital Minds On the Right Web App Development Agency for
                                                 You?</h6>
                                         </div>
-                                        <div class="service__details__planning__text">
+                                        <div class="service__details__planning__text" data-aos="fade-up" data-aos-duration="1500">
                                             <p>When you partner with Digital Minds On web design and development
                                                 agency for your custom web application, you get:</p>
                                             <p><br><b> Innovation:</b> There is also the ability to extend using modern
@@ -1105,6 +1107,9 @@
     <script src="assets/js/swiper-bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
     <!-- back to top -->
+    <script>
+        AOS.init();
+    </script>
     <script>
         document.addEventListener("DOMContentLoaded", () => {
             const backToTopButton = document.getElementById("backToTop");
