@@ -5550,6 +5550,8 @@ img.herobanner__vector.hero__icon__3 {
   background: var(--gradientColor);
   padding: 40px 60px;
   border-radius: 10px;
+  flex-wrap: wrap;
+  row-gap: 15px;
 }
 
 
