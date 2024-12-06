@@ -4454,6 +4454,7 @@ img.herobanner__vector.hero__icon__3 {
   background: var(--whiteColor);
   text-align: center;
   border-radius: 100%;
+  cursor: pointer;
 }
 
 .blog__details__social__icon ul li a:hover span {
