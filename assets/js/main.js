@@ -640,7 +640,20 @@ lightToDarkButton?.addEventListener("click", function () {
 });
 
 
-// ========
+// ========images loading
+document.addEventListener("DOMContentLoaded", function () {
+  const images = document.querySelectorAll("img");
+
+  images.forEach((img) => {
+    // Add lazy loading attribute
+    img.setAttribute("loading", "lazy");
+
+    // Add a class to images
+    img.classList.add("lazy-load");
+  });
+});
+
+
 // $(document).ready(function () {
 //   $("img").each(function (index) {
 //     $(this).attr("loading", "lazy");
