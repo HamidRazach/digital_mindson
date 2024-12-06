@@ -3854,7 +3854,7 @@ img.herobanner__vector.hero__icon__3 {
 
 .headerarea__logo a img {
   width: 100%;
-  max-width: 300px;
+  max-width: 220px;
   height: 78.2px;
 }
 
@@ -4139,6 +4139,7 @@ img.herobanner__vector.hero__icon__3 {
 
 .blog__img img {
   width: 100%;
+  border-radius: 10px;
 }
 
 .blog__content {
