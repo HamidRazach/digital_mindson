@@ -8842,7 +8842,7 @@ i.icofont-phone {
 
 .specialty-card:hover {
   transform: translateY(-5px);
-  background-color: #6378c4;
+  background: var(--gradientColor3);
 }
 
 .icon {
@@ -8906,7 +8906,7 @@ p.mt-2 {
 }
 
 .specialties-section {
-  background: lightgray;
+  background: #170f2f;
 }
 
 .headerarea__logo a svg {
