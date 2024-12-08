@@ -4932,6 +4932,9 @@
   .breadcrumbarea-video-small {
     margin-bottom: 20px;
   }
+  .team.sp_bottom_50.sp_top_100.position-relative .contact__input__wrapper {
+    margin-top: 30px;
+}
 }
 
 @media (max-width: 480px) {
