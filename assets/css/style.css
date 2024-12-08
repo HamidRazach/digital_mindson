@@ -1320,8 +1320,9 @@ img.herobanner__vector.hero__icon__3 {
 }
 
 .herobanner__img.herobanner__img--position img {
-  height: 80%;
+  height: 70%;
   top: 81px;
+  max-width: 600px;
   animation: dot-anim-2 3s linear 0s infinite alternate;
 }
 
