@@ -1263,7 +1263,7 @@
 
 @media (min-width: 1366px) and (max-width: 1499px) {
   .herobanner__img--position img {
-    max-width: 600px;
+    max-width: 500px;
     bottom: auto;
     top: 0;
   }
