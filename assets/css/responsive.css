@@ -4967,6 +4967,10 @@
   .horizontal-card .card img {
     border-radius: 0px !important;
   }
-
+  .herobanner__img.herobanner__img--position img {
+    height: 60%;
+    top: 240px;
+    animation: dot-anim-2 3s linear 0s infinite alternate;
+}
  
 }
