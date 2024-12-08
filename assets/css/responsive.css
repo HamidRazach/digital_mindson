@@ -1261,9 +1261,9 @@
   }
 }
 
-@media (min-width: 1366px) and (max-width: 1499px) {
+/* @media (min-width: 1366px) and (max-width: 1499px) {
   .herobanner__img--position img {
-    max-width: 500px;
+    max-width: 600px;
     bottom: auto;
     top: 0;
   }
@@ -1276,7 +1276,7 @@
     top: 0;
     right: 50px;
   }
-}
+} */
 
 @media (min-width: 768px) and (max-width: 991px) {
   .herobanner__img--position img {

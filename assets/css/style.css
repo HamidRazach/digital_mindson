@@ -9241,11 +9241,15 @@ p.mt-2 {
   overflow-x: hidden;
   overflow-y: auto;
 }
-
+/* Light Mode (Default) */
 .iti--separate-dial-code.iti--show-flags .iti__selected-dial-code {
-  color: #FFF !important;
+  color: #000; 
 }
 
+/* Dark Mode */
+.is_dark .iti--separate-dial-code.iti--show-flags .iti__selected-dial-code {
+  color: #FFF;
+}
 
 /* logo-header */
 .dark-mode {
@@ -9293,5 +9297,10 @@ p.mt-2 {
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
   border-radius: 20px;
+}
+
+/*  */
+.herobanner__img--position img {
+  max-width: 500px;
 }
 
