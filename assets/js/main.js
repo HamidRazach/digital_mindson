@@ -653,7 +653,12 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// ===============
+
+
+
+
+
+// ===============hamid lazay load images code add new 
 // Add lazy loading attributes and IDs to all images
 document.addEventListener("DOMContentLoaded", function () {
   const images = document.querySelectorAll("img");
