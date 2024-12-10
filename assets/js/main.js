@@ -653,38 +653,40 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+// ===============
+// Add lazy loading attributes and IDs to all images
+document.addEventListener("DOMContentLoaded", function () {
+  const images = document.querySelectorAll("img");
+  images.forEach((img, index) => {
+    img.setAttribute("loading", "lazy"); // Set lazy loading
+    img.setAttribute("id", "image-" + index); // Assign unique ID
+    img.classList.add("lazy-load"); // Add lazy-load class
+  });
 
-// $(document).ready(function () {
-//   $("img").each(function (index) {
-//     $(this).attr("loading", "lazy");
-//     $(this).attr("id", "image-" + index);
-//     $(this).attr("class", "lazay-load");
-//   });
-// });
-// $(document).ready(function () {
-//   function isInViewport(element) {
-//     const rect = element.getBoundingClientRect();
-//     return (
-//       rect.top >= 0 &&
-//       rect.left >= 0 &&
-//       rect.bottom <=
-//         (window.innerHeight || document.documentElement.clientHeight) &&
-//       rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-//     );
-//   }
+  // Function to check if an element is in the viewport
+  function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+  }
 
-//   function loadImages() {
-//     $(".lazay-load").each(function () {
-//       if (isInViewport(this) && $(this).attr("data-src")) {
-//         $(this).attr("src", $(this).attr("data-src"));
-//         $(this).removeAttr("data-src"); // Remove the data-src after loading
-//       }
-//     });
-//   }
+  // Function to load images
+  function loadImages() {
+    const lazyImages = document.querySelectorAll(".lazy-load[data-src]");
+    lazyImages.forEach((img) => {
+      if (isInViewport(img)) {
+        img.setAttribute("src", img.getAttribute("data-src")); // Set the src
+        img.removeAttribute("data-src"); // Remove data-src after loading
+      }
+    });
+  }
 
-//   // Run on page load and scroll
-//   loadImages();
-//   $(window).on("scroll resize", loadImages);
-// });
-
-
+  // Load images on page load and during scroll/resize
+  loadImages();
+  window.addEventListener("scroll", loadImages);
+  window.addEventListener("resize", loadImages);
+});
