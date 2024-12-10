@@ -686,4 +686,33 @@ document.addEventListener("DOMContentLoaded", function () {
 //   loadImages();
 //   $(window).on("scroll resize", loadImages);
 // });
+document.addEventListener("DOMContentLoaded", function () {
+  // Function to check if an element is in the viewport
+  function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+  }
+
+  // Function to load images lazily
+  function loadImages() {
+    const lazyImages = document.querySelectorAll(".lazy-load");
+    lazyImages.forEach((img) => {
+      if (isInViewport(img) && img.getAttribute("data-src")) {
+        img.src = img.getAttribute("data-src");
+        img.removeAttribute("data-src");
+        console.log("Image loaded:", img.src); // Debugging log
+      }
+    });
+  }
+
+  // Run the loadImages function on page load and on scroll/resize events
+  loadImages();
+  window.addEventListener("scroll", loadImages);
+  window.addEventListener("resize", loadImages);
+});
 
