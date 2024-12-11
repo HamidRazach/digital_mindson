@@ -659,7 +659,7 @@ lightToDarkButton?.addEventListener("click", function () {
 // Add lazy loading attributes and IDs to all images
 document.addEventListener("DOMContentLoaded", function () {
   const images = document.querySelectorAll("img");
-  images.forEach((img, index) => {
+  images.forEach((img) => {
     img.setAttribute("loading", "lazy"); // Set lazy loading
     img.classList.add("lazy-load"); // Add lazy-load class
   });
