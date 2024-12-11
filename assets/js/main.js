@@ -641,17 +641,14 @@ lightToDarkButton?.addEventListener("click", function () {
 
 
 // ========images loading
-document.addEventListener("DOMContentLoaded", function () {
-  const images = document.querySelectorAll("img");
+// document.addEventListener("DOMContentLoaded", function () {
+//   const images = document.querySelectorAll("img");
 
-  images.forEach((img) => {
-    // Add lazy loading attribute
-    img.setAttribute("loading", "lazy");
-
-    // Add a class to images
-    img.classList.add("lazy-load");
-  });
-});
+//   images.forEach((img) => {
+//     img.setAttribute("loading", "lazy");
+//     img.classList.add("lazy-load");
+//   });
+// });
 
 
 
@@ -664,7 +661,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const images = document.querySelectorAll("img");
   images.forEach((img, index) => {
     img.setAttribute("loading", "lazy"); // Set lazy loading
-    img.setAttribute("id", "image-" + index); // Assign unique ID
     img.classList.add("lazy-load"); // Add lazy-load class
   });
 
