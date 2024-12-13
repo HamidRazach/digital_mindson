@@ -19,7 +19,57 @@
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
+    <style>
+        .header__animate__item i {
+            font-size: 21px;
+            color: #fff;
+        }
+        .header__animate {
+            overflow: hidden;
+            white-space: nowrap;
+            position: relative;
+        }
 
+        .header__animate__wraper {
+            display: flex;
+        }
+
+        .header__animate__content {
+            display: flex;
+            gap: 50px;
+            /* Space between items */
+            animation: marquee 60s linear infinite;
+            will-change: transform;
+            /* Optimize rendering */
+        }
+
+        @keyframes marquee {
+            0% {
+                transform: translateX(0);
+                /* Start position */
+            }
+
+            100% {
+                transform: translateX(-50%);
+                /* End position */
+            }
+        }
+
+        .header__animate__item {
+            display: flex;
+            align-items: center;
+            white-space: nowrap;
+        }
+
+        .header__animate__item i {
+            margin-right: 10px;
+        }
+
+        .header__animate__content {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+    </style>
     <script>
         if (
             localStorage.getItem("theme-color") === "dark" ||
@@ -96,51 +146,37 @@
         <div class="header__animate bg__black">
             <div class="container-fluid">
                 <div class="header__animate__wraper">
-
-                    <div class="header__animate__item">
-                        <i class="icofont-phone"></i>
-                        <h3><a href="tel:(+92)3086582833">+92 3086582833</a></h3>
-                    </div>
-
-                    <div class="header__animate__item">
-                        <i class="icofont-email"></i>
-                        <h3><a href="mailto:muhammedahmadraza72@gmail.com">muhammedahmadraza72@gmail.com</a></h3>
-                    </div>
-                    <div class="header__animate__item">
-                        <i class="icofont-phone"></i>
-                        <h3><a href="tel:(+92)3086582833">+92 3086582833</a></h3>
-                    </div>
-
-                    <div class="header__animate__item">
-                        <i class="icofont-email"></i>
-                        <h3><a href="mailto:muhammedahmadraza72@gmail.com">muhammedahmadraza72@gmail.com</a></h3>
-                    </div>
-                    <div class="header__animate__item">
-                        <i class="icofont-phone"></i>
-                        <h3><a href="tel:(+92)3086582833">+92 3086582833</a></h3>
-                    </div>
-
-                    <div class="header__animate__item">
-                        <i class="icofont-email"></i>
-                        <h3><a href="mailto:muhammedahmadraza72@gmail.com">muhammedahmadraza72@gmail.com</a></h3>
-                    </div>
-                    <div class="header__animate__item">
-                        <i class="icofont-phone"></i>
-                        <h3><a href="tel:(+92)3086582833">+92 3086582833</a></h3>
-                    </div>
-
-                    <div class="header__animate__item">
-                        <i class="icofont-email"></i>
-                        <h3><a href="mailto:muhammedahmadraza72@gmail.com">muhammedahmadraza72@gmail.com</a></h3>
-                    </div>
-                    <div class="header__animate__item">
-                        <i class="icofont-phone"></i>
-                        <h3><a href="tel:(+92)3086582833">+92 3086582833</a></h3>
-                    </div>
-
-                    <div class="header__animate__item">
-                        <i class="icofont-email"></i>
-                        <h3><a href="mailto:muhammedahmadraza72@gmail.com">muhammedahmadraza72@gmail.com</a></h3>
+                    <div class="header__animate__content">
+                        <div class="header__animate__item">
+                           <i class="icofont-file-text"></i>
+                            <h3>We'll deliver top-notch services, completing your projects on time and expertly
+                                marketing them to drive substantial business growth, when you give us the opportunity.
+                            </h3>
+                        </div>
+                        <div class="header__animate__item">
+                            <i class="icofont-email"></i>
+                            <h3><a href="mailto:muhammedahmadraza72@gmail.com">muhammedahmadraza72@gmail.com</a></h3>
+                        </div>
+                        <div class="header__animate__item">
+                            <i class="icofont-phone"></i>
+                            <h3><a href="tel:(+92)3086582833">+92 3086582833</a></h3>
+                        </div>
+        
+                        <!-- Duplicate Content for Smooth Continuity -->
+                        <div class="header__animate__item">
+                            <i class="icofont-file-text"></i>
+                            <h3>We'll deliver top-notch services, completing your projects on time and expertly
+                                marketing them to drive substantial business growth, when you give us the opportunity.
+                            </h3>
+                        </div>
+                        <div class="header__animate__item">
+                            <i class="icofont-email"></i>
+                            <h3><a href="mailto:muhammedahmadraza72@gmail.com">muhammedahmadraza72@gmail.com</a></h3>
+                        </div>
+                        <div class="header__animate__item">
+                            <i class="icofont-phone"></i>
+                            <h3><a href="tel:(+92)3086582833">+92 3086582833</a></h3>
+                        </div>
                     </div>
                 </div>
             </div>
