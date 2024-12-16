@@ -4975,5 +4975,8 @@
     top: 240px;
     animation: dot-anim-2 3s linear 0s infinite alternate;
 }
- 
+.brand__4.brand__3 .brand__inner--2 {
+  row-gap: 0px !important;
+  padding-bottom: 0px !important;
+}
 }
