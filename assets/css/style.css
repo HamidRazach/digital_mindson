@@ -9096,7 +9096,7 @@ p.mt-2 {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  gap: 20px;
+  gap: 5px;
 }
 
 .breadcrumbarea__overlay {
