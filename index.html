@@ -40,10 +40,8 @@
         .header__animate__content {
             display: flex;
             gap: 50px;
-            /* Space between items */
             animation: marquee 60s linear infinite;
             will-change: transform;
-            /* Optimize rendering */
         }
 
         @keyframes marquee {
@@ -70,7 +68,8 @@
 
         .header__animate__content {
             -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
+            -moz-osx-font-smoothing: grayscale; 
+            cursor: pointer;
         }
     </style>
      <!-- title scrollbar -->
