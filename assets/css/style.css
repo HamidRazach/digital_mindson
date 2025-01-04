@@ -7663,6 +7663,7 @@ Grid Area
 
 .footer__menu ul li {
   display: block;
+  max-width: max-content;
 }
 
 .footer__menu ul li a {
