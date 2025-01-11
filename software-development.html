@@ -2,10 +2,9 @@
 <html class="no-js" lang="zxx">
 
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Blog | Digital Minds on</title>
+    <title>Web Development and Web Design Explained | Digital Minds On </title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -20,6 +19,18 @@
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- title scrollbar -->
+    <script>
+        // Text for the title
+        let titleText = "Web Development and Web Design Explained | Digital Minds On ";
+        let index = 0;
+        function scrollTitle() {
+            document.title = titleText.slice(index) + titleText.slice(0, index);
+            index = (index + 1) % titleText.length;
+        }
+        setInterval(scrollTitle, 200); 
+    </script>
+    <!-- title scrollbar -->
     <script>
         // On page load or when changing themes, best to add inline in `head` to avoid FOUC
         if (localStorage.getItem("theme-color") === "dark" || (!("theme-color" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
@@ -29,24 +40,26 @@
             document.documentElement.classList.remove("is_dark");
         } 
     </script>
-   <!-- Meta Pixel Code -->
-<script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '1265254278096647');
-    fbq('track', 'PageView');
+
+    <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1265254278096647');
+        fbq('track', 'PageView');
     </script>
     <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=1265254278096647&ev=PageView&noscript=1"
-    /></noscript>
+            src="https://www.facebook.com/tr?id=1265254278096647&ev=PageView&noscript=1" /></noscript>
     <!-- End Meta Pixel Code -->
-
 </head>
 
 
@@ -84,11 +97,14 @@
     </div>
     <!-- Dark/Light area end -->
 
+
+
     <main class="main_wrapper overflow-hidden">
         <!-- animation  -->
         <div class="header__animate bg__black">
             <div class="container-fluid">
                 <div class="header__animate__wraper">
+
                     <div class="header__animate__item">
                         <i class="icofont-phone"></i>
                         <h3><a href="tel:(+92)3086582833">+92 3086582833</a></h3>
@@ -138,6 +154,7 @@
             </div>
         </div>
         <!-- header start -->
+
         <header>
             <div class="headerarea headerarea--1 headerarea__transparent header__sticky main__header ">
                 <div class="container desktop__menu__wrapper">
@@ -193,7 +210,7 @@
                                             <!-- <li><a href="#">Careers </a></li> -->
                                             <li><a href="blog">BLOG </a></li>
                                             <li><a href="project">Portfolio </a></li>
-                                           
+
 
                                             <li class="headerarea__common__dropdown"><a
                                                     class="headerarea__has__dropdown" href="contact">CONTACT
@@ -270,8 +287,8 @@
                             <ul class="offcanvas__sub_menu">
                                 <li class="offcanvas__sub_menu_li"><a href="blog"
                                         class="offcanvas__sub_menu_item">Blog</a></li>
-                                        <li class="offcanvas__sub_menu_li"><a href="team"
-                                            class="offcanvas__sub_menu_item">Team</a></li>
+                                <li class="offcanvas__sub_menu_li"><a href="team"
+                                        class="offcanvas__sub_menu_item">Team</a></li>
                                 <li class="offcanvas__sub_menu_li"><a href="project"
                                         class="offcanvas__sub_menu_item">Projects</a></li>
                                 <!-- <li class="offcanvas__sub_menu_li"><a href="project-details.html"
@@ -314,20 +331,20 @@
         <!-- End Offcanvas header menu -->
 
         <!-- breadcrumbarea__start -->
-        <div class="breadcrumbarea aos-init aos-animate" data-aos="fade-up"
-            style="background: url(assets/img/herobaner/blog-img.webp);">
+        <div class="breadcrumbarea"
+            style="background: url(assets/img/herobaner/blog-img.webp); background-size: cover !important;">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-12" data-aos="fade-up" data-aos-duration="1500">
                         <div class="breadcrumbarea__content__wraper">
                             <div class="breadcrumbarea__title">
-                                <h2 class="heading">Blog</h2>
+                                <h2 class="heading"> What Is Software Development? A Comprehensive Guide</h2>
                             </div>
                             <div class="breadcrumbarea__inner">
                                 <ul>
                                     <li><a href="/">Home</a></li>
                                     <li>// </li>
-                                    <li> Blog </li>
+                                    <li> Blog Details</li>
                                 </ul>
                             </div>
                         </div>
@@ -346,17 +363,17 @@
 
 
         <!-- service__details__start -->
-        <div class="service__details sp_top_140 sp_bottom_140 special__spacing">
+        <div class="blog__details sp_top_140 sp_bottom_140">
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-4 col-lg-4 col-md-5 col-sm-12">
+                    <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
                         <div class="service__details__sidebar sidebar">
                             <div class="sidebar__widget" data-aos="fade-up" data-aos-duration="1500">
 
                                 <div class="sidebar__search">
                                     <form action="#" style="position: relative;">
                                         <input class="sidebar__common__input" type="text" placeholder="Search Here...">
-                                        <div class="sidebar__search__button">
+                                        <button class="sidebar__search__button">
                                             <svg width="18" height="19" viewBox="0 0 18 19" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path
@@ -364,11 +381,12 @@
                                                     fill="#1C5C05" />
                                             </svg>
 
-                                        </div>
+                                        </button>
                                     </form>
                                 </div>
 
                             </div>
+
                             <div class="sidebar__widget" data-aos="fade-up" data-aos-duration="1500">
 
                                 <div class="sidebar__title">
@@ -497,6 +515,7 @@
 
                             </div>
 
+
                             <div class="sidebar__widget" data-aos="fade-up" data-aos-duration="1500">
 
                                 <div class="sidebar__title">
@@ -505,39 +524,40 @@
                                 <div class="sidebar__tag">
                                     <ul>
                                         <li>
-                                            <a class="common__gradient__bg active" href="web-development-services">
+                                            <a class="common__gradient__bg active"
+                                                href="mobile-app-development-services">
+                                                <span>App Development</span>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a class="common__gradient__bg " href="ui-ux-design">
+                                                <span>UI/UX Design</span>
+                                            </a>
+                                        </li>
+
+
+                                        <li>
+                                            <a class="common__gradient__bg " href="web-development-services">
                                                 <span>Web Development</span>
                                             </a>
                                         </li>
 
                                         <li>
-                                            <a class="common__gradient__bg " href="mobile-app-development-services">
-                                                <span>Mobile App Development</span>
-                                            </a>
-                                        </li>
-
-
-                                        <li>
-                                            <a class="common__gradient__bg " href="software-development-services">
-                                                <span>Software Development</span>
-                                            </a>
-                                        </li>
-
-                                        <li>
-                                            <a class="common__gradient__bg" href="digital-marketing-services">
-                                                <span>Digital Marketing</span>
-                                            </a>
-                                        </li>
-
-                                        <li>
-                                            <a class="common__gradient__bg " href="network-services">
-                                                <span>network Solution</span>
+                                            <a class="common__gradient__bg " href="wordpress-development-services">
+                                                <span>WordPress Development</span>
                                             </a>
                                         </li>
 
                                         <li>
                                             <a class="common__gradient__bg " href="seo-services">
-                                                <span>SEO Expert</span>
+                                                <span>SEO</span>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a class="common__gradient__bg " href="network-services">
+                                                <span>Networking Solution</span>
                                             </a>
                                         </li>
                                     </ul>
@@ -549,151 +569,192 @@
 
                         </div>
                     </div>
-                    <div class="col-xl-8 col-lg-8 col-md-7 col-sm-12">
-                        <div class="row">
-                            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12" data-aos="fade-up"
-                                data-aos-duration="1500">
-                                <div class="blog__4__single blog__3__single single__transform bg__pink">
-                                    <div class="blog__4__img">
-                                        <img src="assets/img/blog/app-blog.webp" alt="image">
-                                    </div>
-                                    <div class="blog__4__time">
-                                        <p class="bg__white"><span class="text__gradient">08 May, 2024</span></p>
-                                    </div>
-                                    <div class="blog__4__heading">
-                                        <h6><a href="what-is-mobile-application-development" target="_blank">What is Mobile App
-                                                Development</a></h6>
-                                    </div>
-                                    <div class="blog__4__text">
-                                        <p>Mobile application development is the process of designing, developing and
-                                            programming software applications...</p>
-                                    </div>
-                                    <div class="blog__4__button">
-                                        <a class="default__button" href="what-is-mobile-application-development" target="_blank">READ
-                                            MORE</a>
-                                    </div>
+                    <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="blog__details__wrapper">
+
+                            <div class="blog__details__img__wrapper" data-aos="fade-up" data-aos-duration="1500">
+                                <div class="blog__details__img">
+                                    <img src="assets/img/blog/Web-blog.webp" alt="img">
                                 </div>
-                            </div>
-                            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12" data-aos="fade-up"
-                                data-aos-duration="1700">
-                                <div class="blog__4__single blog__3__single single__transform bg__pink">
-                                    <div class="blog__4__img">
-                                        <img src="assets/img/blog/Software.webp" alt="image">
-                                    </div>
-                                    <div class="blog__4__time">
-                                        <p class="bg__white"><span class="text__gradient">10 May, 2024</span></p>
-                                    </div>
-                                    <div class="blog__4__heading">
-                                        <h6><a href="what-is-software-development" target="_blank">Whats is Software Development</a>
-                                        </h6>
-                                    </div>
-                                    <div class="blog__4__text">
-                                        <p>Software development is the process of designing, creating, testing, and
-                                            maintaining software applications...</p>
-                                    </div>
-                                    <div class="blog__4__button">
-                                        <a class="default__button" href="what-is-software-development" target="_blank">READ MORE</a>
-                                    </div>
+                                <div class="blog__details__small__button">
+                                    <span>08 May, 2024</span>
                                 </div>
                             </div>
 
-                            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12" data-aos="fade-up"
-                                data-aos-duration="1900">
-                                <div class="blog__4__single blog__3__single single__transform bg__pink">
-                                    <div class="blog__4__img">
-                                        <img src="assets/img/blog/Web-blog.webp" alt="image">
-                                    </div>
-                                    <div class="blog__4__time">
-                                        <p class="bg__white"><span class="text__gradient">11 May, 2024</span></p>
-                                    </div>
-                                    <div class="blog__4__heading">
-                                        <h6><a href="what-is-web-development" target="_blank">What is Web Development</a></h6>
-                                    </div>
-                                    <div class="blog__4__text">
-                                        <p>Web development is the process of creating, maintaining, and building
-                                            websites...</p>
-                                    </div>
-                                    <div class="blog__4__button">
-                                        <a class="default__button" href="what-is-web-development" target="_blank">READ MORE</a>
-                                    </div>
-                                </div>
+
+                            <div class="blog__details__text" data-aos="fade-up" data-aos-duration="1500">
+                                <p> From the app on your phone to the system powering your favorite website or the tools
+                                    behind that business you run, software development is the skeleton of modern
+                                    technology. When it comes to software development it’s no surprise this is an
+                                    important service in keeping a business up to date and growing, and as Minds On, we
+                                    understand that.</p>
                             </div>
-                            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12" data-aos="fade-up"
-                                data-aos-duration="2100">
-                                <div class="blog__4__single blog__3__single single__transform bg__pink">
-                                    <div class="blog__4__img">
-                                        <img src="assets/img/blog/Web-blog.webp" alt="img">
-                                    </div>
-                                    <div class="blog__4__time">
-                                        <p class="bg__white"><span class="text__gradient">15 May, 2024</span></p>
-                                    </div>
-                                    <div class="blog__4__heading">
-                                        <h6><a href="what-is-wordpress-development" target="_blank">What is Wordpress Development</a></h6>
-                                    </div>
-                                    <div class="blog__4__text">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                            tempor
-                                            incididunt.</p>
-                                    </div>
-                                    <div class="blog__4__button">
-                                        <a class="default__button" href="what-is-wordpress-development" target="_blank">READ MORE</a>
-                                    </div>
+                            <div class="blog__details__text" data-aos="fade-up" data-aos-duration="1500">
+                                <div class="blog__details__heading" data-aos="fade-up" data-aos-duration="1500">
+                                    <h2> Software Development Basics</h2>
                                 </div>
+                                <p>Software development is a process that is basically involving of designing, creating,
+                                    testing, and maintaining software-based software applications or systems. The
+                                    process requires a mix of technical knowhow, creativity and an ability to find
+                                    solutions to problems. Programming languages, tools, and frameworks are used by
+                                    developers to build software that satisfies given requirements in personal,
+                                    commercial and industrial use.
+                                </p>
+                                <p>
+                                    The aim of development of any software is not only to make things which the user can
+                                    easily use, it, in turn should be meaningful, efficient and scalable. It is a
+                                    process where multiple stakeholders essentially develop a product that would satisfy
+                                    the needs of a user.
+                                </p>
+                            </div>
+                            <div class="blog__details__heading" data-aos="fade-up" data-aos-duration="1500">
+                                <h2>How Software Development Works?</h2>
+                                <h3>Requirement Analysis and planning.</h3>
                             </div>
 
-                            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12" data-aos="fade-up"
-                                data-aos-duration="2300">
-                                <div class="blog__4__single blog__3__single single__transform bg__pink">
-                                    <div class="blog__4__img">
-                                        <img src="assets/img/blog/Web-blog.webp" alt="img">
-                                    </div>
-                                    <div class="blog__4__time">
-                                        <p class="bg__white"><span class="text__gradient">05 May, 2024</span></p>
-                                    </div>
-                                    <div class="blog__4__heading">
-                                        <h6><a href="software-development">What Is Software Development? A Comprehensive Guide</a></h6>
-                                    </div>
-                                    <div class="blog__4__text">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                            tempor
-                                            incididunt.</p>
-                                    </div>
-                                    <div class="blog__4__button">
-                                        <a class="default__button" href="software-development">READ MORE</a>
-                                    </div>
-                                </div>
+                            <div class="blog__details__list" data-aos="fade-up" data-aos-duration="1500">
+                                <p>
+                                    When it comes to the process, you first have to know the purpose of the software and
+                                    the requirements the user is looking for. In a business context, you can outline
+                                    your goal, your target audience, and what you precisely want to be in your software.
+                                    During this important stage, Minds On helps organizations to refine their ideas,
+                                    outline their objectives and to position themselves within the market.
+                                </p>
                             </div>
-                            <!-- <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12" data-aos="fade-up"
-                                data-aos-duration="2500">
-                                <div class="blog__4__single blog__3__single single__transform bg__pink">
-                                    <div class="blog__4__img">
-                                        <img src="assets/img/blog/blog__8.png" alt="">
-                                    </div>
-                                    <div class="blog__4__time">
-                                        <p class="bg__white"><span class="text__gradient ">20 May, 2024</span></p>
-                                    </div>
-                                    <div class="blog__4__heading">
-                                        <h6><a href="blog-details">A BEGINNER 'S GUIDE...</a></h6>
-                                    </div>
-                                    <div class="blog__4__text">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                            tempor
-                                            incididunt.</p>
-                                    </div>
-                                    <div class="blog__4__button">
-                                        <a class="default__button " href="blog-details">READ MORE</a>
-                                    </div>
-                                </div>
-                            </div> -->
+
+                            <div class="blog__details__heading" data-aos="fade-up" data-aos-duration="1500">
+                                <h2>Software Architecture Design</h2>
+                            </div>
+
+                            <div class="blog__details__text" data-aos="fade-up" data-aos-duration="1500">
+                                <p>
+                                    The software is then designed, after the requirements have been gathered. The
+                                    software that they develop is like drawing up a blueprint or giving an architecture
+                                    of how the software is supposed to work. In this phase, this is the phase of the
+                                    decision applicable to the user interface, data flow as well as the integration with
+                                    other systems.
+                                </p>
+                            </div>
+
+                            <div class="blog__details__heading" data-aos="fade-up" data-aos-duration="1500">
+                                <h2>Development and Coding</h2>
+                            </div>
+
+
+                            <div class="blog__details__text" data-aos="fade-up" data-aos-duration="1500">
+                                <p> This is where it all starts with actual coding. Depending on the project
+                                    requirements, the developers write the code within programming languages like,
+                                    Python, Java, C++, or JavaScript. You will need a good level of technical skill and
+                                    precision to get through this stage because the software must run flawlessly.</p>
+                            </div>
+                            <div class="blog__details__heading" data-aos="fade-up" data-aos-duration="1500">
+                                <h4>Testing</h4>
+                            </div>
+
+                            <div class="blog__details__text" data-aos="fade-up" data-aos-duration="1500">
+                                <p>
+                                    All the testing is done before the software is released to see if there are any
+                                    problems or bugs. To achieve that, quality assurance (QA) teams perform everything
+                                    from functionality to performance to security checks to make sure the software is
+                                    reliable and secure. Minds On team works hard to do as much testing as possible so
+                                    you get the best solution.
+                                </p>
+                            </div>
+                            <div class="blog__details__heading" data-aos="fade-up" data-aos-duration="1500">
+                                <h4>Deployment</h4>
+                            </div>
+                            <div class="blog__details__text" data-aos="fade-up" data-aos-duration="1500">
+                                <p> Then the software happens to be deployed to the users once the software goes through
+                                    all tests. This deployment may then involve installing on individual devices,
+                                    putting it out online, or into a current system. Training users as well as providing
+                                    documentation is included in this stage too.
+                                </p>
+                            </div>
+                            <div class="blog__details__heading" data-aos="fade-up" data-aos-duration="1500">
+                                <h2>Maintenance and Updates</h2>
+                            </div>
+                            <div class="blog__details__text" data-aos="fade-up" data-aos-duration="1500">
+                                <p> After deployment, the work doesn’t end. Software needs to be updated regularly
+                                    ranging from new features added, to faster performance and fixing security
+                                    vulnerabilities. By keeping track of the latest trends, Minds On makes sure that
+                                    software is always up to date and still meets the ever-changing user needs.p>
+                            </div>
+
+
+
                         </div>
-                        <div class="pagination" data-aos="fade-up" data-aos-duration="1500">
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                        <div class="blog__details__text" data-aos="fade-up" data-aos-duration="1500">
+                            <h2>The Role of Minds On in Software Development
+                                h2>
+                        </div>
+
+                        <div class="blog__details__heading" data-aos="fade-up" data-aos-duration="1500">
+                            <p>Minds On recognizes that businesses will not survive in today’s market without tailored
+                                software solutions. The experts on our team work with our clients closely to deliver
+                                quality software that addresses their challenges as well as goals.</p>
+                            <p>We aim at delivering full end to end services from planning, feature development to
+                                testing and maintenance. Our focus on producing quality software means that we don’t
+                                just produce functional, but also scalable and user-friendly software. If you want
+                                custom-built software or support for your current systems, Minds on is your trusted
+                                partner.</p>
+
+                        </div>
+                        <div class="blog__details__text" data-aos="fade-up" data-aos-duration="1500">
+                            <h2>Why Software Development Matters?</h2>
+                            <p>Writing code is easy; software development is much more than that: solving problems and
+                                creating value. Software is the lifeblood of business.</p>
+
+                            <p>For instance, e-commerce companies have software that allows them to keep their online
+                                stores run, make payment, and always keep track of their inventory. Software helps
+                                patients receive better care from healthcare providers, as well as helps them maintain
+                                patient records. As you would expect, software development is essential to modern
+                                business in every industry.</p>
+                        </div>
+                        <div class="blog__details__heading" data-aos="fade-up" data-aos-duration="1500">
+                            <h2>Conclusion</h2>
+                        </div>
+                        <div class="blog__details__text" data-aos="fade-up" data-aos-duration="1500">
+                            <p> Software development is a constantly fluctuating and changing field that actually powers
+                                innovation and progress. Every step from planning and coding to deployment and
+                                maintenance is critical to producing the perfect software for your users.</p>
+                            <p>One of the main things that Minds On focuses on is software development services and
+                                because we aim to provide the best performance. We have experts who are passionate
+                                enough that we always make sure that our clients get solutions that will drive growth
+                                and success. If you are ready to write new software or further develop existing systems,
+                                help is on hand from Minds On with the complexities of software development.</p>
+                        </div>
+                        <div class="blog__details__social__icon" data-aos="fade-up" data-aos-duration="1500">
                             <ul>
-                                <li><a class="common__gradient__bg active" href="javascript:void(0)"><span>1</span></a>
+                                <div class="blog__details__share">
+                                    <span>Share Post:</span>
+                                </div>
+
+                                <li>
+                                    <a href="https://web.facebook.com/people/Digital-Minds-On/61565893842788/"
+                                        target="_blank">
+                                        <i class="icofont-facebook"></i>
+                                    </a>
                                 </li>
-                                <li><a class="common__gradient__bg" href="javascript:void(0)"><span>2</span></a></li>
-                                <li><a class="common__gradient__bg" href="javascript:void(0)"><span>3</span></a></li>
-                                <li><a class="common__gradient__bg" href="javascript:void(0)"><span><i
-                                                class="icofont-simple-right"></i></span></a></li>
+                                <li>
+                                    <a href="https://www.instagram.com/digitalmindson/" target="_blank">
+                                        <i class="icofont-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="skype:live:.cid.a40e7b5b65a42e46?chat" target="_blank"><i
+                                            class="icofont-skype"></i></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com/company/digital-minds-on" target="_blank">
+                                        <i class="icofont-linkedin"></i>
+                                    </a>
+                                </li>
+
                             </ul>
                         </div>
                     </div>
@@ -701,7 +762,6 @@
             </div>
         </div>
         <!-- service__details__end -->
-
 
 
 
@@ -725,22 +785,23 @@
         <div class="footer__3 position-relative sp_top_200 bg__black">
 
             <!-- brand__start -->
-            <div class="brand__4 brand__3 " data-aos="fade-up" data-aos-duration="1500">
+            <div class="brand__4 brand__3" data-aos="fade-up" data-aos-duration="1500">
                 <div class="container">
 
                     <div class="brand__inner brand__inner--2">
                         <div class="brand__single">
-                            <img src="assets/img/logo/footer_brand_crunch_base.webp" alt="">
+                            <img src="assets/img/logo/footer_brand_crunch_base.webp" alt="logo-img">
                         </div>
                         <div class="brand__single">
-                            <img src="assets/img/logo/footer_brand_trust.webp" alt="">
+                            <img src="assets/img/logo/footer_brand_design_crunch.webp" alt="logo-img">
                         </div>
                         <div class="brand__single">
-                            <img src="assets/img/logo/footer_brand_design_crunch.webp" alt="">
+                            <img src="assets/img/logo/footer_brand_trust.webp" alt="logo-img">
                         </div>
                         <div class="brand__single">
-                            <img src="assets/img/logo/footer_brand1.webp" alt="">
+                            <img src="assets/img/logo/footer_brand1.webp" alt="logo-img">
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -748,155 +809,160 @@
 
             <!-- footer start -->
             <div class="footer position-relative sp_top_250 pink__bg__color" id="footer__area"
-            style="background-image: url(assets/img/footer/footer_1.png);">
+                style="background-image: url(assets/img/footer/footer_1.png);">
 
-            <div class="bastun__brand__badge bastun__brand__badge__footer">
-                <div class="bastun__brand__badge__inner position-relative">
-                    <a href="/">
+                <div class="bastun__brand__badge bastun__brand__badge__footer">
+                    <div class="bastun__brand__badge__inner position-relative">
+                        <a href="/">
 
-                        <img class="bbb__animate" src="assets/img/footer/brand__badge.png" alt="Footer badge">
-                        <img class="bbb__icon" src="assets/img/logo/logo/icon.svg" alt="Footer icon badge">
-                    </a>
+                            <img class="bbb__animate" src="assets/img/footer/brand__badge.png" alt="Footer badge">
+                            <img class="bbb__icon" src="assets/img/logo/logo/icon.svg" alt="Footer icon badge">
+                        </a>
+                    </div>
                 </div>
-            </div>
 
-            <div class="container">
-                <div class="footer__wrapper sp_bottom_110">
-                    <div class="row">
-                        <div class="col-xl-4 col-lg-6 col-md-6" data-aos="fade-up" data-aos-duration="1500">
-                            <div class="footer__widget footer__left">
-                                <div class="footer__logo">
-                                    <a class="offcanvas__logo_link" href="/">
-                                        <img src="assets/img/logo/full-logo.svg" alt="">
-                                    </a>
-                                </div>
-                                <div class="footer__text">
-                                    <p>Trusted software, web, and app development company delivering innovative
-                                        solutions to empower businesses with cutting-edge technology.</p>
-                                </div>
-                                <div class="footer__icon">
-                                    <ul>
-                                        <li>
-                                            <a href="https://web.facebook.com/people/Digital-Minds-On/61565893842788/"
-                                                target="_blank">
-                                                <i class="icofont-facebook"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="https://www.instagram.com/digitalmindson/" target="_blank">
-                                                <i class="icofont-instagram"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="skype:live:.cid.a40e7b5b65a42e46?chat" target="_blank"><i
-                                                    class="icofont-skype"></i></a>
-                                        </li>
-                                        <li>
-                                            <a href="https://www.linkedin.com/company/digital-minds-on" target="_blank">
-                                                <i class="icofont-linkedin"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-2 col-lg-6 col-md-6 col-sm-6" data-aos="fade-up" data-aos-duration="2000">
-                            <div class="footer__widget footer__support">
-                                <div class="footer__menu__title">
-                                    <h6>SUPPORT :</h6>
-                                </div>
-                                <div class="footer__menu">
-                                    <ul>
-                                        <li>
-                                            <a href="/">Home</a>
-                                        </li>
-                                        <li>
-                                            <a href="about">About us</a>
-                                        </li>
-                                        <li>
-                                            <a href="blog">Blog update</a>
-                                        </li>
-                                        <li>
-                                            <a href="services">Our services</a>
-                                        </li>
-                                        <li>
-                                            <a href="team">Team</a>
-                                        </li>
-                                    </ul>
+                <div class="container">
+                    <div class="footer__wrapper sp_bottom_110">
+                        <div class="row">
+                            <div class="col-xl-4 col-lg-6 col-md-6" data-aos="fade-up" data-aos-duration="1500">
+                                <div class="footer__widget footer__left">
+                                    <div class="footer__logo">
+                                        <a class="offcanvas__logo_link" href="/">
+                                            <img src="assets/img/logo/full-logo.svg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="footer__text">
+                                        <p>Trusted software, web, and app development company delivering innovative
+                                            solutions to empower businesses with cutting-edge technology.</p>
+                                    </div>
+                                    <div class="footer__icon">
+                                        <ul>
+                                            <li>
+                                                <a href="https://web.facebook.com/people/Digital-Minds-On/61565893842788/"
+                                                    target="_blank">
+                                                    <i class="icofont-facebook"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.instagram.com/digitalmindson/" target="_blank">
+                                                    <i class="icofont-instagram"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="skype:live:.cid.a40e7b5b65a42e46?chat" target="_blank"><i
+                                                        class="icofont-skype"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.linkedin.com/company/digital-minds-on"
+                                                    target="_blank">
+                                                    <i class="icofont-linkedin"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-xl-2 col-lg-6 col-md-6 col-sm-6" data-aos="fade-up" data-aos-duration="2500">
-                            <div class="footer__widget footer__quick">
-                                <div class="footer__menu__title">
-                                    <h6>QUICK LINKS :</h6>
-                                </div>
-                                <div class="footer__menu">
-                                    <ul>
-                                        <li>
-                                            <a href="project">Portfolio </a>
-                                        </li>
-                                        <li>
-                                            <a href="seo-services">Seo Services</a>
-                                        </li>
-                                        <li>
-                                            <a href="faq">FAQ</a>
-                                        </li>
-                                        <li>
-                                            <a href="contact">Customer support</a>
-                                        </li>
-                                        <li>
-                                            <a href="contact">Contact us</a>
-                                        </li>
-                                    </ul>
+                            <div class="col-xl-2 col-lg-6 col-md-6 col-sm-6" data-aos="fade-up"
+                                data-aos-duration="2000">
+                                <div class="footer__widget footer__support">
+                                    <div class="footer__menu__title">
+                                        <h6>SUPPORT :</h6>
+                                    </div>
+                                    <div class="footer__menu">
+                                        <ul>
+                                            <li>
+                                                <a href="/">Home</a>
+                                            </li>
+                                            <li>
+                                                <a href="about">About us</a>
+                                            </li>
+                                            <li>
+                                                <a href="blog">Blog update</a>
+                                            </li>
+                                            <li>
+                                                <a href="services">Our services</a>
+                                            </li>
+                                            <li>
+                                                <a href="team">Team</a>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12" data-aos="fade-up" data-aos-duration="3000">
-                            <div class="footer__widget footer__right">
-                                <div class="footer__menu__title">
-                                    <h6>Let's discuss your project :</h6>
+                            <div class="col-xl-2 col-lg-6 col-md-6 col-sm-6" data-aos="fade-up"
+                                data-aos-duration="2500">
+                                <div class="footer__widget footer__quick">
+                                    <div class="footer__menu__title">
+                                        <h6>QUICK LINKS :</h6>
+                                    </div>
+                                    <div class="footer__menu">
+                                        <ul>
+                                            <li>
+                                                <a href="project">Portfolio </a>
+                                            </li>
+                                            <li>
+                                                <a href="seo-services">Seo Services</a>
+                                            </li>
+                                            <li>
+                                                <a href="faq">FAQ</a>
+                                            </li>
+                                            <li>
+                                                <a href="contact">Customer support</a>
+                                            </li>
+                                            <li>
+                                                <a href="contact">Contact us</a>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
-                                <div class="footer__text">
-                                    <p>
-                                        Send us a message or schedule a meeting on WhatsApp below, and let's take the
-                                        first step toward creating your product.</p>
+                            </div>
+                            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12" data-aos="fade-up"
+                                data-aos-duration="3000">
+                                <div class="footer__widget footer__right">
+                                    <div class="footer__menu__title">
+                                        <h6>Let's discuss your project :</h6>
+                                    </div>
+                                    <div class="footer__text">
+                                        <p>
+                                            Send us a message or schedule a meeting on WhatsApp below, and let's take
+                                            the
+                                            first step toward creating your product.</p>
 
-                                </div>
-                                <div class="footer__bottom">
-                                    <a class="default__button" href="contact">CONTACT US</a>
+                                    </div>
+                                    <div class="footer__bottom">
+                                        <a class="default__button" href="contact">CONTACT US</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="copyright">
+                    <div class="copyright">
 
-                    <div class="row align-items-center">
-                        <div class="col-xl-6 col-lg-6 col-md-6 col-12">
-                            <div class="copyright__left">
-                                <p>Copyright © 2025 <a href="/">Digitalminds on.</a> All Right Reserved</p>
+                        <div class="row align-items-center">
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-12">
+                                <div class="copyright__left">
+                                    <p>Copyright © 2025 <a href="/">Digitalminds on.</a> All Right Reserved</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-12">
+                                <div class="copyright__right">
+                                    <ul>
+                                        <li>
+                                            <a href="javascript:avoid()">Privacy & Policy ||</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:avoid()">Terms & Conditions</a>
+                                        </li>
+                                    </ul>
+
+                                </div>
                             </div>
                         </div>
-                        <div class="col-xl-6 col-lg-6 col-md-6 col-12">
-                            <div class="copyright__right">
-                                <ul>
-                                    <li>
-                                        <a href="javascript:avoid()">Privacy & Policy ||</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:avoid()">Terms & Conditions</a>
-                                    </li>
-                                </ul>
-    
-                            </div>
-                        </div>
+
                     </div>
-    
                 </div>
             </div>
-        </div>
             <!-- footer__section__end -->
             <!-- back to top -->
             <a class="back-to-top" id="backToTop">
