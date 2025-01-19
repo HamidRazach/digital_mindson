@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="assets/img/logo/icon.svg" type="image/x-icon">
-    <title>Our Services | Digital Minds On</title>
+    <title>Our Services | Digital Minds On </title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/services.css">
@@ -14,7 +14,18 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
         rel="stylesheet">
-</head>
+    <!-- title scrollbar -->
+        <script>
+            let titleText = "Our Services | Digital Minds On ";
+            let index = 0;
+            function scrollTitle() {
+                document.title = titleText.slice(index) + titleText.slice(0, index);
+                index = (index + 1) % titleText.length;
+            }
+            setInterval(scrollTitle, 200); 
+        </script>
+    <!-- title scrollbar--->
+     </head>
 
 <body>
     <header class="header-area">
