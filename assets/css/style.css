@@ -9301,4 +9301,15 @@ p.mt-2 {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8));
   border-radius: 20px;
 }
-
+.about-section p {
+  font-weight: 400;
+  text-align: justify;
+  font-size: 18px;
+  line-height: 32px;
+}
+.service-section .col-md-6.text-center p {
+  font-weight: 400;
+  font-size: 18px;
+  text-align: justify;
+  line-height: 32px;
+}
