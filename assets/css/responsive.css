@@ -4823,6 +4823,17 @@
     line-height: 40px;
   }
 }
+@media (max-width: 768px) {
+  #service__area .container .col-md-6 {
+    width: 100%;
+  }
+  .about-section .col-md-4 {
+    width: 100%;
+}
+.about-section .col-md-8 {
+  width: 100%;
+}
+}
 
 @media (max-width: 767px) {
   .footer__4__heading h1 {
