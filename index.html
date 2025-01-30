@@ -19,73 +19,6 @@
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
-    <style>
-        .header__animate__item i {
-            font-size: 21px;
-            color: #fff;
-        }
-
-        .header__animate__content:hover {
-            animation-play-state: paused;
-        }
-
-        .header__animate {
-            overflow: hidden;
-            white-space: nowrap;
-            position: relative;
-        }
-
-        .header__animate__wraper {
-            display: flex;
-        }
-
-        .header__animate__content {
-            display: flex;
-            gap: 50px;
-            animation: marquee 60s linear infinite;
-            will-change: transform;
-        }
-
-        @keyframes marquee {
-            0% {
-                transform: translateX(0);
-                /* Start position */
-            }
-
-            100% {
-                transform: translateX(-50%);
-                /* End position */
-            }
-        }
-
-        .header__animate__item {
-            display: flex;
-            align-items: center;
-            white-space: nowrap;
-        }
-
-        .header__animate__item i {
-            margin-right: 10px;
-        }
-
-        .header__animate__content {
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-            cursor: pointer;
-        }
-    </style>
-    <!-- title scrollbar -->
-    <!-- <script>
-     
-        let titleText = "Digital Minds On | Web & App Development | E-commerce | Graphic Design ";
-        let index = 0;
-        function scrollTitle() {
-            document.title = titleText.slice(index) + titleText.slice(0, index);
-            index = (index + 1) % titleText.length;
-        }
-        setInterval(scrollTitle, 200); 
-    </script> -->
-    <!-- title scrollbar -->
     <script>
         if (
             localStorage.getItem("theme-color") === "dark" ||
@@ -124,7 +57,7 @@
         !function (f, b, e, v, n, t, s) {
             if (f.fbq) return; n = f.fbq = function () {
                 n.callMethod ?
-                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
             };
             if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
             n.queue = []; t = b.createElement(e); t.async = !0;
@@ -150,7 +83,6 @@
 
 </head>
 
-
 <body class="body__wrapper">
     <!-- pre loader area start -->
     <div id="back__preloader">
@@ -160,8 +92,6 @@
         </div>
     </div>
     <!-- pre loader area end -->
-
-
     <!-- Dark/Light area start -->
     <div class="mode_switcher my_switcher">
         <button id="light--to-dark-button" class="light align-items-center">
@@ -190,37 +120,51 @@
         <div class="header__animate bg__black">
             <div class="container-fluid">
                 <div class="header__animate__wraper">
-                    <div class="header__animate__content">
-                        <div class="header__animate__item">
-                            <i class="icofont-file-text"></i>
-                            <h3>We'll deliver top-notch services, completing your projects on time and expertly
-                                marketing them to drive substantial business growth, when you give us the opportunity.
-                            </h3>
-                        </div>
-                        <div class="header__animate__item">
-                            <i class="icofont-email"></i>
-                            <h3><a href="mailto:muhammedahmadraza72@gmail.com">muhammedahmadraza72@gmail.com</a></h3>
-                        </div>
-                        <div class="header__animate__item">
-                            <i class="icofont-phone"></i>
-                            <h3><a href="tel:(+92)3086582833">+92 3086582833</a></h3>
-                        </div>
 
-                        <!-- Duplicate Content for Smooth Continuity -->
-                        <div class="header__animate__item">
-                            <i class="icofont-file-text"></i>
-                            <h3>We'll deliver top-notch services, completing your projects on time and expertly
-                                marketing them to drive substantial business growth, when you give us the opportunity.
-                            </h3>
-                        </div>
-                        <div class="header__animate__item">
-                            <i class="icofont-email"></i>
-                            <h3><a href="mailto:muhammedahmadraza72@gmail.com">muhammedahmadraza72@gmail.com</a></h3>
-                        </div>
-                        <div class="header__animate__item">
-                            <i class="icofont-phone"></i>
-                            <h3><a href="tel:(+92)3086582833">+92 3086582833</a></h3>
-                        </div>
+                    <div class="header__animate__item">
+                        <i class="icofont-phone"></i>
+                        <h3><a href="tel:(+92)3086582833">+92 3086582833</a></h3>
+                    </div>
+
+                    <div class="header__animate__item">
+                        <i class="icofont-email"></i>
+                        <h3><a href="mailto:muhammedahmadraza72@gmail.com">muhammedahmadraza72@gmail.com</a></h3>
+                    </div>
+                    <div class="header__animate__item">
+                        <i class="icofont-phone"></i>
+                        <h3><a href="tel:(+92)3086582833">+92 3086582833</a></h3>
+                    </div>
+
+                    <div class="header__animate__item">
+                        <i class="icofont-email"></i>
+                        <h3><a href="mailto:muhammedahmadraza72@gmail.com">muhammedahmadraza72@gmail.com</a></h3>
+                    </div>
+                    <div class="header__animate__item">
+                        <i class="icofont-phone"></i>
+                        <h3><a href="tel:(+92)3086582833">+92 3086582833</a></h3>
+                    </div>
+
+                    <div class="header__animate__item">
+                        <i class="icofont-email"></i>
+                        <h3><a href="mailto:muhammedahmadraza72@gmail.com">muhammedahmadraza72@gmail.com</a></h3>
+                    </div>
+                    <div class="header__animate__item">
+                        <i class="icofont-phone"></i>
+                        <h3><a href="tel:(+92)3086582833">+92 3086582833</a></h3>
+                    </div>
+
+                    <div class="header__animate__item">
+                        <i class="icofont-email"></i>
+                        <h3><a href="mailto:muhammedahmadraza72@gmail.com">muhammedahmadraza72@gmail.com</a></h3>
+                    </div>
+                    <div class="header__animate__item">
+                        <i class="icofont-phone"></i>
+                        <h3><a href="tel:(+92)3086582833">+92 3086582833</a></h3>
+                    </div>
+
+                    <div class="header__animate__item">
+                        <i class="icofont-email"></i>
+                        <h3><a href="mailto:muhammedahmadraza72@gmail.com">muhammedahmadraza72@gmail.com</a></h3>
                     </div>
                 </div>
             </div>
