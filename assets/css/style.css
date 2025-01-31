@@ -4508,6 +4508,7 @@ img.herobanner__vector.hero__icon__3 {
 .project__img img {
   max-width: 100%;
   position: relative;
+  width: 100%;
   z-index: 1;
   transform: translateY(0);
   transition: transform 5s linear;
