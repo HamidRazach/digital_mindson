@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
     .header__animate__wraper {
       display: flex;
       width: max-content;
-      animation: marquee 120s linear infinite; /* Adjust speed here */
+      animation: marquee 100s linear infinite; /* Adjust speed here */
     }
 
     .header__animate__wraper:hover {
