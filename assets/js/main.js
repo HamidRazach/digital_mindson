@@ -8,6 +8,41 @@ windowOn.addEventListener("load", function () {
     backPreloader.style.display = "none";
   }, 1000);
 });
+// Duplicate content for seamless looping marquee start
+document.addEventListener("DOMContentLoaded", function () {
+  // Dynamically inject the required CSS
+  const style = document.createElement("style");
+  style.textContent = `
+    @keyframes marquee {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    .header__animate__wraper {
+      display: flex;
+      width: max-content;
+      animation: marquee 120s linear infinite; /* Adjust speed here */
+    }
+
+    .header__animate__wraper:hover {
+      animation-play-state: paused;
+    }
+  `;
+  document.head.appendChild(style);
+
+  // Duplicate marquee content for seamless scrolling
+  const marqueeWrapper = document.querySelector(".header__animate__wraper");
+  if (marqueeWrapper) {
+    const items = marqueeWrapper.innerHTML; // Get the original items
+    marqueeWrapper.innerHTML += items; // Duplicate for infinite loop
+  }
+});
+
+// Duplicate content for seamless looping marquee end
 
 //Herobanner Slider
 var swiper = new Swiper(".herobanner__slider__active", {
