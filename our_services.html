@@ -1,0 +1,1384 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Digital Minds On | Web & App Development | E-commerce | Graphic Design </title>
+    <meta name="description"
+        content="Digital Minds On offers expert graphic design and web development services, helping businesses create stunning visuals and build dynamic, user-friendly websites.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-site-verification" content="-_ZrhZCdztaNLH4pipNSt_2lcMkOG-R4WaORMjFcjM4" />
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/icon.svg">
+    <!-- Place favicon.ico in the root directory -->
+    <!-- CSS here -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css ">
+    <link rel="stylesheet" href="assets/css/aos.min.css">
+    <link rel="stylesheet" href="assets/css/icofont.min.css">
+    <link rel="stylesheet" href="assets/css/glightbox.min.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/Landing.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <script>
+        if (localStorage.getItem("theme-color") === "dark" || (!("theme-color" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+            document.documentElement.classList.add("is_dark");
+            document.querySelectorAll('.card').forEach(card => {
+                card.classList.add('dark-mode-card');
+            });
+        } else {
+            document.documentElement.classList.remove("is_dark");
+            document.querySelectorAll('.card').forEach(card => {
+                card.classList.remove('dark-mode-card');
+            });
+        }
+    </script>
+    <!-- service card dark mode or light mode  -->
+    <script>
+        function applyTheme() {
+            if (localStorage.getItem("theme-color") === "dark" || (!("theme-color" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+                document.documentElement.classList.add("is_dark");
+                document.documentElement.classList.remove("light_mode");
+            } else {
+                document.documentElement.classList.add("light_mode");
+                document.documentElement.classList.remove("is_dark");
+            }
+        }
+        applyTheme();
+        window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", applyTheme);
+    </script>
+    <!-- Meta Pixel Code -->
+    <script>
+        ! function (f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function () {
+                n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1265254278096647');
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=1265254278096647&ev=PageView&noscript=1" />
+    </noscript>
+    <!-- End Meta Pixel Code -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MNB5PPLTK3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-MNB5PPLTK3');
+    </script>
+</head>
+
+<body class="body__wrapper">
+    <!-- pre loader area start -->
+    <div id="back__preloader">
+        <div id="back__circle_loader"></div>
+        <div class="back__loader_logo">
+            <img src="assets/img/logo/icon.svg" alt="Preload">
+        </div>
+    </div>
+    <!-- pre loader area end -->
+    <!-- Dark/Light area start -->
+    <div class="mode_switcher my_switcher">
+        <button id="light--to-dark-button" class="light align-items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon dark__mode" viewBox="0 0 512 512">
+                <path
+                    d="M160 136c0-30.62 4.51-61.61 16-88C99.57 81.27 48 159.32 48 248c0 119.29 96.71 216 216 216 88.68 0 166.73-51.57 200-128-26.39 11.49-57.38 16-88 16-119.29 0-216-96.71-216-216z"
+                    fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                    stroke-width="32" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon light__mode" viewBox="0 0 512 512">
+                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32"
+                    d="M256 48v48M256 416v48M403.08 108.92l-33.94 33.94M142.86 369.14l-33.94 33.94M464 256h-48M96 256H48M403.08 403.08l-33.94-33.94M142.86 142.86l-33.94-33.94" />
+                <circle cx="256" cy="256" r="80" fill="none" stroke="currentColor" stroke-linecap="round"
+                    stroke-miterlimit="10" stroke-width="32" />
+            </svg>
+            <span class="light__mode">Light</span>
+            <span class="dark__mode">Dark</span>
+        </button>
+    </div>
+    <!-- Dark/Light area end -->
+    <main class="main_wrapper overflow-hidden">
+        <!-- animation  -->
+        <div class="header__animate bg__black">
+            <div class="container-fluid">
+                <div class="header__animate__wraper">
+                    <div class="header__animate__item">
+                        <i class="icofont-phone"></i>
+                        <h3>
+                            <a href="tel:(+92)3086582833">+92 3086582833</a>
+                        </h3>
+                    </div>
+                    <div class="header__animate__item">
+                        <i class="icofont-email"></i>
+                        <h3>
+                            <a href="mailto:muhammedahmadraza72@gmail.com">muhammedahmadraza72@gmail.com</a>
+                        </h3>
+                    </div>
+                    <div class="header__animate__item">
+                        <i class="icofont-phone"></i>
+                        <h3>
+                            <a href="tel:(+92)3086582833">+92 3086582833</a>
+                        </h3>
+                    </div>
+                    <div class="header__animate__item">
+                        <i class="icofont-email"></i>
+                        <h3>
+                            <a href="mailto:muhammedahmadraza72@gmail.com">muhammedahmadraza72@gmail.com</a>
+                        </h3>
+                    </div>
+                    <div class="header__animate__item">
+                        <i class="icofont-phone"></i>
+                        <h3>
+                            <a href="tel:(+92)3086582833">+92 3086582833</a>
+                        </h3>
+                    </div>
+                    <div class="header__animate__item">
+                        <i class="icofont-email"></i>
+                        <h3>
+                            <a href="mailto:muhammedahmadraza72@gmail.com">muhammedahmadraza72@gmail.com</a>
+                        </h3>
+                    </div>
+                    <div class="header__animate__item">
+                        <i class="icofont-phone"></i>
+                        <h3>
+                            <a href="tel:(+92)3086582833">+92 3086582833</a>
+                        </h3>
+                    </div>
+                    <div class="header__animate__item">
+                        <i class="icofont-email"></i>
+                        <h3>
+                            <a href="mailto:muhammedahmadraza72@gmail.com">muhammedahmadraza72@gmail.com</a>
+                        </h3>
+                    </div>
+                    <div class="header__animate__item">
+                        <i class="icofont-phone"></i>
+                        <h3>
+                            <a href="tel:(+92)3086582833">+92 3086582833</a>
+                        </h3>
+                    </div>
+                    <div class="header__animate__item">
+                        <i class="icofont-email"></i>
+                        <h3>
+                            <a href="mailto:muhammedahmadraza72@gmail.com">muhammedahmadraza72@gmail.com</a>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- header start -->
+        <header>
+            <div class="headerarea headerarea--1 headerarea__transparent header__sticky main__header ">
+                <div class="container desktop__menu__wrapper">
+                    <div class="headerarea__main__wrapper position-relative">
+                        <div class="headerarea__component__wrap">
+                            <div class="headerarea__component">
+                                <div class="headerarea__logo">
+                                    <a href="javascript:void(0);">
+                                        <img src="assets/img/logo/full-logo.svg" alt="Digitalminds-logo"
+                                            class="dark-mode">
+                                        <img src="assets/img/logo/header/logo-local-host new.svg"
+                                            alt="Digitalminds-logo" class="light-mode">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="headerarea__component">
+                                <div class="headerarea__main__menu">
+                                    <nav>
+                                        <ul>
+                                            <li>
+                                                <a href="#home" data-scroll-nav="1">Home</a>
+                                            </li>
+                                            <li>
+                                                <a href="#about" data-scroll-nav="2">About</a>
+                                            </li>
+                                            <li>
+                                                <a href="#service" data-scroll-nav="3">Service</a>
+                                            </li>
+                                            <li>
+                                                <a href="#portfolio" data-scroll-nav="4">Portfolio</a>
+                                            </li>
+                                            <li>
+                                                <a href="#testimonial" data-scroll-nav="5">Testimonial</a>
+                                            </li>
+                                            <li>
+                                                <a href="#faq" data-scroll-nav="6">Faq</a>
+                                            </li>
+                                            <li>
+                                                <a href="#contact" data-scroll-nav="7">Contact</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mob_menu_wrapper container-fluid">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="mobile__log">
+                        <a class="offcanvas__logo_link" href="javascript:void(0);">
+                            <img src="assets/img/logo/full-logo.svg" alt="Digitalminds-logo" class="dark-mode">
+                            <img src="assets/img/logo/header/logo-local-host new.svg" alt="Digitalminds-logo"
+                                class="light-mode">
+                        </a>
+                    </div>
+                    <div class="offcanvas__header--menu__open ">
+                        <a class="offcanvas__header--menu__open--btn" href="javascript:void(0)" data-offcanvas>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon offcanvas__header--menu__open--svg"
+                                viewBox="0 0 512 512">
+                                <path fill="currentColor" stroke="currentColor" stroke-linecap="round"
+                                    stroke-miterlimit="10" stroke-width="32" d="M80 160h352M80 256h352M80 352h352" />
+                            </svg>
+                            <span class="visually-hidden">Offcanvas Menu Open</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Start Offcanvas header menu -->
+        <div class="offcanvas__header">
+            <div class="offcanvas__inner">
+                <div class="offcanvas__logo">
+                    <a class="offcanvas__logo_link" href="javascript:void(0);">
+                        <img src="assets/img/logo/full-logo.svg" alt="Digitalminds-logo" class="dark-mode">
+                        <img src="assets/img/logo/header/logo-local-host new.svg" alt="Digitalminds-logo"
+                            class="light-mode">
+                    </a>
+                    <button class="offcanvas__close--btn" data-offcanvas>Close</button>
+                </div>
+                <nav class="offcanvas__menu">
+                    <ul class="offcanvas__menu_ul">
+                        <li class="offcanvas__menu_li">
+                            <a class="offcanvas__menu_item" href="#home" data-scroll-nav="1">Home</a>
+                        </li>
+                        <li class="offcanvas__menu_li">
+                            <a class="offcanvas__menu_item" href="#about" data-scroll-nav="2">About</a>
+                        </li>
+                        <li class="offcanvas__menu_li">
+                            <a class="offcanvas__menu_item" href="#service" data-scroll-nav="3">Service</a>
+                        </li>
+                        <li class="offcanvas__menu_li">
+                            <a class="offcanvas__menu_item" href="#portfolio" data-scroll-nav="4">Portfolio</a>
+                        </li>
+                        <li class="offcanvas__menu_li">
+                            <a class="offcanvas__menu_item" href="#testimonial" data-scroll-nav="5">Testimonial</a>
+                        </li>
+                        <li class="offcanvas__menu_li">
+                            <a class="offcanvas__menu_item" href="#faq" data-scroll-nav="6">Faq</a>
+                        </li>
+                        <li class="offcanvas__menu_li">
+                            <a class="offcanvas__menu_item" href="#contact" data-scroll-nav="7">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <!-- home banner start-->
+        <div class="breadcrumbarea sp_bottom_100"
+            style="background: url(assets/img/about/contact-scaled.webp); background-repeat: no-repeat !important; background-size: cover !important;"
+            data-scroll="1" id="home">
+            <!-- <div class="breadcrumbarea__overlay"></div> -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 aos-init aos-animate" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="breadcrumbarea__content__wraper">
+                            <div class="breadcrumbarea__title">
+                                <h2 class="heading">Contact Us</h2>
+                            </div>
+                            <div class="breadcrumbarea__inner">
+                                <p>I develop captivating digital interfaces for conversion purposes. I build impressive
+                                    user-friendly websites at my role as a Web and UI Designer which deliver both visual
+                                    appeal and actionable outcomes. Through my use of HTML and CSS and JavaScript
+                                    expertise I develop interfaces which both deliver superior user experience and
+                                    better usability. My designs lead innovation by introducing new trends and inventive
+                                    approaches to each project no matter whether it involves complete new construction
+                                    or strategic redesign work.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 aos-init aos-animate" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="contact__input__wrapper contact__grident__bg">
+                            <form id="contact-form" class="contact-form" action="email.php">
+                                <div class="row">
+                                    <div class="col-xl-12">
+                                        <div class="contact__input">
+                                            <input class="contact__common__input" type="text" name="con_name"
+                                                id="con_name" placeholder="Your Name">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-12">
+                                        <div class="contact__input">
+                                            <input class="contact__common__input" type="text" name="con_email"
+                                                id="con_email" placeholder="Email" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-12">
+                                        <div class="contact__input">
+                                            <input class="contact__common__input" type="text" name="phone"
+                                                placeholder="Phone" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-12">
+                                        <textarea class="contact__common__input" name="con_message"
+                                            placeholder="write a message...." id="con_message" cols="30"
+                                            rows="10"></textarea>
+                                    </div>
+                                    <div class="col-xl-12">
+                                        <div class="contact__button">
+                                            <button type="submit" onclick="handleSubmit()" value="submit"
+                                                class="default__button" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal">SEND MESSAGE</button>
+                                            <p class="form-messege"></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Services Section -->
+        <section class="service-card-section" data-scroll="3" id="service">
+            <div class="container py-5">
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="service-card">
+
+                            <div class="project__heading">
+                                <h3>Web Development</h3>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et mattis neque, a varius
+                                lacus. Etiam tincidunt quis diam id vehicula. Sed diam turpis, scelerisque nec ultrices
+                                id, semper quis diam. Suspendisse potenti. Cras eget ullamcorper magna. Sed elementum,
+                                velit vel ornare hendrerit, quam eros luctus magna, a sagittis nisl diam in libero.</p>
+                            <div class="hover-line"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="service-card">
+
+                            <div class="project__heading">
+                                <h3>Mobile App</h3>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et mattis neque, a varius
+                                lacus. Etiam tincidunt quis diam id vehicula. Sed diam turpis, scelerisque nec ultrices
+                                id, semper quis diam. Suspendisse potenti. Cras eget ullamcorper magna. Sed elementum,
+                                velit vel ornare hendrerit, quam eros luctus magna, a sagittis nisl diam in libero.</p>
+                            <div class="hover-line"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="service-card">
+
+                            <div class="project__heading">
+                                <h3>Graphic Designer</h3>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et mattis neque, a varius
+                                lacus. Etiam tincidunt quis diam id vehicula. Sed diam turpis, scelerisque nec ultrices
+                                id, semper quis diam. Suspendisse potenti. Cras eget ullamcorper magna. Sed elementum,
+                                velit vel ornare hendrerit, quam eros luctus magna, a sagittis nisl diam in libero.</p>
+                            <div class="hover-line"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="service-card">
+
+                            <div class="project__heading">
+                                <h3>Wordpress Development</h3>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et mattis neque, a varius
+                                lacus. Etiam tincidunt quis diam id vehicula. Sed diam turpis, scelerisque nec ultrices
+                                id, semper quis diam. Suspendisse potenti. Cras eget ullamcorper magna. Sed elementum,
+                                velit vel ornare hendrerit, quam eros luctus magna, a sagittis nisl diam in libero.</p>
+                            <div class="hover-line"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="service-card">
+
+                            <div class="project__heading">
+                                <h3>Digital Marketing</h3>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et mattis neque, a varius
+                                lacus. Etiam tincidunt quis diam id vehicula. Sed diam turpis, scelerisque nec ultrices
+                                id, semper quis diam. Suspendisse potenti. Cras eget ullamcorper magna. Sed elementum,
+                                velit vel ornare hendrerit, quam eros luctus magna, a sagittis nisl diam in libero.</p>
+                            <div class="hover-line"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="service-card">
+
+                            <div class="project__heading">
+                                <h3>Content Creater</h3>
+                            </div>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et mattis neque, a varius
+                                lacus. Etiam tincidunt quis diam id vehicula. Sed diam turpis, scelerisque nec ultrices
+                                id, semper quis diam. Suspendisse potenti. Cras eget ullamcorper magna. Sed elementum,
+                                velit vel ornare hendrerit, quam eros luctus magna, a sagittis nisl diam in libero.</p>
+                            <div class="hover-line"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="service-card">
+
+                            <div class="project__heading">
+                                <h3>Seo</h3>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et mattis neque, a varius
+                                lacus. Etiam tincidunt quis diam id vehicula. Sed diam turpis, scelerisque nec ultrices
+                                id, semper quis diam. Suspendisse potenti. Cras eget ullamcorper magna. Sed elementum,
+                                velit vel ornare hendrerit, quam eros luctus magna, a sagittis nisl diam in libero.</p>
+                            <div class="hover-line"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Protiflio start-->
+        <div class="all__project sp_top_140 sp_bottom_140 special__spacing" data-scroll="4" id="portfolio">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 aos-init aos-animate" data-aos="fade-up"
+                        data-aos-duration="1500">
+                        <div class="project__single single__transform">
+                            <div class="project__img">
+                                <img src="assets/img/full-page/screencapture-roilevelup-2024-12-01-04_42_17_3_11zon.webp"
+                                    alt="img" loading="lazy" class="lazy-load"
+                                    style="transform: translateY(0px); transition: transform 5s linear;">
+                            </div>
+                            <div class="project__content">
+                                <div class="project__heading">
+                                    <h3><a href="https://roilevelup.com/" target="_blank">Level Up Your Business - SaaS
+                                            Tools and Growth
+                                            Consulting</a></h3>
+                                </div>
+                                <div class="project__icon">
+                                    <a class="direction__btn direction__btn--2" href="https://roilevelup.com/"
+                                        target="_blank"><svg width="34" height="34" viewBox="0 0 34 34" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.4258 10.9897L23.0101 10.9897L23.0101 19.574" stroke="#0A0624"
+                                                stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                            <path d="M10.9902 23.0107L22.8908 11.1101" stroke="#0A0624"
+                                                stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 aos-init aos-animate" data-aos="fade-up"
+                        data-aos-duration="1700" loading="lazy">
+                        <div class="project__single single__transform">
+                            <div class="project__img">
+                                <img src="assets/img/full-page/screencapture-app-thepathfinderhub-2024-12-01-04_43_17_3_11zon.webp"
+                                    alt="img" loading="lazy" class="lazy-load">
+                            </div>
+                            <div class="project__content">
+                                <div class="project__heading">
+                                    <h3><a href="https://app.thepathfinderhub.com/" target="_blank">Resume Builder</a>
+                                    </h3>
+                                </div>
+                                <div class="project__icon">
+                                    <a class="direction__btn direction__btn--2" href="https://app.thepathfinderhub.com/"
+                                        target="_blank"><svg width="34" height="34" viewBox="0 0 34 34" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.4258 10.9897L23.0101 10.9897L23.0101 19.574" stroke="#0A0624"
+                                                stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                            <path d="M10.9902 23.0107L22.8908 11.1101" stroke="#0A0624"
+                                                stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 aos-init aos-animate" data-aos="fade-up"
+                        data-aos-duration="1900">
+                        <div class="project__single single__transform">
+                            <div class="project__img">
+                                <img src="assets/img/full-page/screencapture-shortlistme-2024-12-01-04_43_51_4_11zon.webp"
+                                    alt="img" loading="lazy" class="lazy-load">
+                            </div>
+                            <div class="project__content">
+                                <div class="project__heading">
+                                    <h3><a href="https://shortlistme.com/" target="_blank">Skill-First Job Search Portal
+                                            India |
+                                            ShortlistMe</a></h3>
+                                </div>
+                                <div class="project__icon">
+                                    <a class="direction__btn direction__btn--2" href="https://shortlistme.com/"
+                                        target="_blank"><svg width="34" height="34" viewBox="0 0 34 34" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.4258 10.9897L23.0101 10.9897L23.0101 19.574" stroke="#0A0624"
+                                                stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                            <path d="M10.9902 23.0107L22.8908 11.1101" stroke="#0A0624"
+                                                stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 aos-init aos-animate" data-aos="fade-up"
+                        data-aos-duration="2100">
+                        <div class="project__single single__transform">
+                            <div class="project__img">
+                                <img src="assets/img/full-page/screencapture-superbullionwire-about-2024-12-02-22_55_11_5_11zon.webp"
+                                    alt="img" loading="lazy" class="lazy-load">
+                            </div>
+                            <div class="project__content">
+                                <div class="project__heading">
+                                    <h3><a href="https://superbullionwire.com/" target="_blank">Super Bullion Wire</a>
+                                    </h3>
+                                </div>
+                                <div class="project__icon">
+                                    <a class="direction__btn direction__btn--2" href="https://superbullionwire.com/"
+                                        target="_blank"><svg width="34" height="34" viewBox="0 0 34 34" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.4258 10.9897L23.0101 10.9897L23.0101 19.574" stroke="#0A0624"
+                                                stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                            <path d="M10.9902 23.0107L22.8908 11.1101" stroke="#0A0624"
+                                                stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 aos-init aos-animate" data-aos="fade-up"
+                        data-aos-duration="2300">
+                        <div class="project__single single__transform">
+                            <div class="project__img">
+                                <img src="assets/img/full-page/screencapture-peglobal-net-2024-12-01-04_45_39_2_11zon.webp"
+                                    alt="img" loading="lazy" class="lazy-load">
+                            </div>
+                            <div class="project__content">
+                                <div class="project__heading">
+                                    <h3><a href="https://www.peglobal.net/" target="_blank">International Recruitment
+                                            Agency Ireland &amp;
+                                            UK | Cork &amp; Dublin</a></h3>
+                                </div>
+                                <div class="project__icon">
+                                    <a class="direction__btn direction__btn--2" href="https://www.peglobal.net/"
+                                        target="_blank"><svg width="34" height="34" viewBox="0 0 34 34" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.4258 10.9897L23.0101 10.9897L23.0101 19.574" stroke="#0A0624"
+                                                stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                            <path d="M10.9902 23.0107L22.8908 11.1101" stroke="#0A0624"
+                                                stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 aos-init aos-animate" data-aos="fade-up"
+                        data-aos-duration="2500">
+                        <div class="project__single single__transform">
+                            <div class="project__img">
+                                <img src="assets/img/full-page/screencapture-amberoil-ie-2024-12-01-04_46_12_2_11zon.webp"
+                                    alt="img" loading="lazy" class="lazy-load"
+                                    style="transform: translateY(0px); transition: transform 5s linear;">
+                            </div>
+                            <div class="project__content">
+                                <div class="project__heading">
+                                    <h3><a href="https://www.amberoil.ie/" target="_blank">Heating Oil &amp; Agri Diesel
+                                            Supplier in North
+                                            Cork &amp; Beyond | Amber Oil</a></h3>
+                                </div>
+                                <div class="project__icon">
+                                    <a class="direction__btn direction__btn--2" href="https://www.amberoil.ie/"
+                                        target="_blank"><svg width="34" height="34" viewBox="0 0 34 34" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.4258 10.9897L23.0101 10.9897L23.0101 19.574" stroke="#0A0624"
+                                                stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                            <path d="M10.9902 23.0107L22.8908 11.1101" stroke="#0A0624"
+                                                stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 aos-init aos-animate" data-aos="fade-up"
+                        data-aos-duration="2700">
+                        <div class="project__single single__transform">
+                            <div class="project__img">
+                                <img src="assets/img/full-page/screencapture-mcci-ie-2024-12-01-04_46_48_1_11zon.webp"
+                                    alt="images" loading="lazy" class="lazy-load">
+                            </div>
+                            <div class="project__content">
+                                <div class="project__heading">
+                                    <h3><a href="https://www.mcci.ie/" target="_blank">Large Scale Microelectronics
+                                            Technology Centre -
+                                            MCCI</a></h3>
+                                </div>
+                                <div class="project__icon">
+                                    <a class="direction__btn direction__btn--2" href="https://www.mcci.ie/"
+                                        target="_blank"><svg width="34" height="34" viewBox="0 0 34 34" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.4258 10.9897L23.0101 10.9897L23.0101 19.574" stroke="#0A0624"
+                                                stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                            <path d="M10.9902 23.0107L22.8908 11.1101" stroke="#0A0624"
+                                                stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 aos-init aos-animate" data-aos="fade-up"
+                        data-aos-duration="2900">
+                        <div class="project__single single__transform">
+                            <div class="project__img">
+                                <img src="assets/img/full-page/screencapture-ikc-ie-2024-12-01-04_48_06_1_11zon.webp"
+                                    alt="image" loading="lazy" class="lazy-load"
+                                    style="transform: translateY(0px); transition: transform 5s linear;">
+                            </div>
+                            <div class="project__content">
+                                <div class="project__heading">
+                                    <h3><a href="https://www.ikc.ie/" target="_blank">Home | The Irish Kennel Club</a>
+                                    </h3>
+                                </div>
+                                <div class="project__icon">
+                                    <a class="direction__btn direction__btn--2" href="https://www.ikc.ie/"
+                                        target="_blank"><svg width="34" height="34" viewBox="0 0 34 34" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.4258 10.9897L23.0101 10.9897L23.0101 19.574" stroke="#0A0624"
+                                                stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                            <path d="M10.9902 23.0107L22.8908 11.1101" stroke="#0A0624"
+                                                stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 aos-init aos-animate" data-aos="fade-up"
+                        data-aos-duration="2900">
+                        <div class="project__single single__transform">
+                            <div class="project__img">
+                                <img src="assets/img/full-page/gym.webp" alt="gym" loading="lazy" class="lazy-load">
+                            </div>
+                            <div class="project__content">
+                                <div class="project__heading">
+                                    <h3><a href="http://82.112.240.94:5173/" target="_blank">Heraklean</a></h3>
+                                </div>
+                                <div class="project__icon">
+                                    <a class="direction__btn direction__btn--2" href="http://82.112.240.94:5173/"
+                                        target="_blank"><svg width="34" height="34" viewBox="0 0 34 34" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.4258 10.9897L23.0101 10.9897L23.0101 19.574" stroke="#0A0624"
+                                                stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                            <path d="M10.9902 23.0107L22.8908 11.1101" stroke="#0A0624"
+                                                stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <h3 style="text-align: center; margin-bottom: 30px;">Mobile App</h3>
+                    <!-- Alleo.ai -->
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12 aos-init aos-animate" data-aos="fade-up"
+                        data-aos-duration="2900">
+                        <div class="project__single single__transform">
+                            <div class="project__img">
+                                <img src="assets/img/full-page/mobile_app/alio.png" alt="gym" loading="lazy"
+                                    class="lazy-load">
+                            </div>
+                            <div class="project__content">
+                                <div class="project__heading">
+                                    <h3><a href="https://play.google.com/store/apps/details?id=com.alleo.mobile"
+                                            target="_blank">Alleo.ai</a></h3>
+                                </div>
+                                <div class="project__icon">
+                                    <a class="direction__btn direction__btn--2"
+                                        href="https://play.google.com/store/apps/details?id=com.alleo.mobile"
+                                        target="_blank"><svg width="34" height="34" viewBox="0 0 34 34" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.4258 10.9897L23.0101 10.9897L23.0101 19.574" stroke="#0A0624"
+                                                stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                            <path d="M10.9902 23.0107L22.8908 11.1101" stroke="#0A0624"
+                                                stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Pro Business Connections -->
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12 aos-init aos-animate" data-aos="fade-up"
+                        data-aos-duration="2900">
+                        <div class="project__single single__transform">
+                            <div class="project__img">
+                                <img src="assets/img/full-page/mobile_app/business.png" alt="gym" loading="lazy"
+                                    class="lazy-load">
+                            </div>
+                            <div class="project__content">
+                                <div class="project__heading">
+                                    <h3><a href="https://play.google.com/store/apps/details?id=com.techmicrosol.probusinessconnectionsofficial"
+                                            target="_blank">Pro Business Connections</a></h3>
+                                </div>
+                                <div class="project__icon">
+                                    <a class="direction__btn direction__btn--2"
+                                        href="https://play.google.com/store/apps/details?id=com.techmicrosol.probusinessconnectionsofficial"
+                                        target="_blank"><svg width="34" height="34" viewBox="0 0 34 34" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.4258 10.9897L23.0101 10.9897L23.0101 19.574" stroke="#0A0624"
+                                                stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                            <path d="M10.9902 23.0107L22.8908 11.1101" stroke="#0A0624"
+                                                stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- TiSegnalo -->
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12 aos-init aos-animate" data-aos="fade-up"
+                        data-aos-duration="2900">
+                        <div class="project__single single__transform">
+                            <div class="project__img">
+                                <img src="assets/img/full-page/mobile_app/car.png" alt="gym" loading="lazy"
+                                    class="lazy-load"
+                                    style="transform: translateY(0px); transition: transform 5s linear;">
+                            </div>
+                            <div class="project__content">
+                                <div class="project__heading">
+                                    <h3><a href="https://play.google.com/store/apps/details?id=com.carmine.tisegnalo"
+                                            target="_blank">TiSegnalo</a></h3>
+                                </div>
+                                <div class="project__icon">
+                                    <a class="direction__btn direction__btn--2"
+                                        href="https://play.google.com/store/apps/details?id=com.carmine.tisegnalo"
+                                        target="_blank"><svg width="34" height="34" viewBox="0 0 34 34" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.4258 10.9897L23.0101 10.9897L23.0101 19.574" stroke="#0A0624"
+                                                stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                            <path d="M10.9902 23.0107L22.8908 11.1101" stroke="#0A0624"
+                                                stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Food Fair - Spring Valley -->
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12 aos-init aos-animate" data-aos="fade-up"
+                        data-aos-duration="2900">
+                        <div class="project__single single__transform">
+                            <div class="project__img">
+                                <img src="assets/img/full-page/mobile_app/food.png" alt="gym" loading="lazy"
+                                    class="lazy-load">
+                            </div>
+                            <div class="project__content">
+                                <div class="project__heading">
+                                    <h3><a href="https://play.google.com/store/apps/details?id=com.telonline.ffspringvalley"
+                                            target="_blank">Food Fair - Spring Valley</a></h3>
+                                </div>
+                                <div class="project__icon">
+                                    <a class="direction__btn direction__btn--2"
+                                        href="https://play.google.com/store/apps/details?id=com.telonline.ffspringvalley"
+                                        target="_blank"><svg width="34" height="34" viewBox="0 0 34 34" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.4258 10.9897L23.0101 10.9897L23.0101 19.574" stroke="#0A0624"
+                                                stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                            <path d="M10.9902 23.0107L22.8908 11.1101" stroke="#0A0624"
+                                                stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Clannit -->
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12 aos-init aos-animate" data-aos="fade-up"
+                        data-aos-duration="2900">
+                        <div class="project__single single__transform">
+                            <div class="project__img">
+                                <img src="assets/img/full-page/mobile_app/client.png" alt="gym" loading="lazy"
+                                    class="lazy-load">
+                            </div>
+                            <div class="project__content">
+                                <div class="project__heading">
+                                    <h3><a href="https://play.google.com/store/apps/details?id=com.serveconsulting.Clannit"
+                                            target="_blank">Clannit</a></h3>
+                                </div>
+                                <div class="project__icon">
+                                    <a class="direction__btn direction__btn--2"
+                                        href="https://play.google.com/store/apps/details?id=com.serveconsulting.Clannit"
+                                        target="_blank"><svg width="34" height="34" viewBox="0 0 34 34" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.4258 10.9897L23.0101 10.9897L23.0101 19.574" stroke="#0A0624"
+                                                stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                            <path d="M10.9902 23.0107L22.8908 11.1101" stroke="#0A0624"
+                                                stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- RingVoz -->
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12 aos-init aos-animate" data-aos="fade-up"
+                        data-aos-duration="2900">
+                        <div class="project__single single__transform">
+                            <div class="project__img">
+                                <img src="assets/img/full-page/mobile_app/ring.png" alt="gym" loading="lazy"
+                                    class="lazy-load">
+                            </div>
+                            <div class="project__content">
+                                <div class="project__heading">
+                                    <h3><a href="https://play.google.com/store/apps/details?id=com.ringvoz.ringvozmobileapp"
+                                            target="_blank">RingVoz</a></h3>
+                                </div>
+                                <div class="project__icon">
+                                    <a class="direction__btn direction__btn--2"
+                                        href="https://play.google.com/store/apps/details?id=com.ringvoz.ringvozmobileapp"
+                                        target="_blank"><svg width="34" height="34" viewBox="0 0 34 34" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.4258 10.9897L23.0101 10.9897L23.0101 19.574" stroke="#0A0624"
+                                                stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                            <path d="M10.9902 23.0107L22.8908 11.1101" stroke="#0A0624"
+                                                stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- BUILD-->
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12 aos-init aos-animate" data-aos="fade-up"
+                        data-aos-duration="2900">
+                        <div class="project__single single__transform">
+                            <div class="project__img">
+                                <img src="assets/img/full-page/mobile_app/build.png" alt="gym" loading="lazy"
+                                    class="lazy-load">
+                            </div>
+                            <div class="project__content">
+                                <div class="project__heading">
+                                    <h3><a href="https://apps.apple.com/us/app/build-convos-to-actions/id1571755886"
+                                            target="_blank">BUILD</a></h3>
+                                </div>
+                                <div class="project__icon">
+                                    <a class="direction__btn direction__btn--2"
+                                        href="https://apps.apple.com/us/app/build-convos-to-actions/id1571755886"
+                                        target="_blank"><svg width="34" height="34" viewBox="0 0 34 34" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.4258 10.9897L23.0101 10.9897L23.0101 19.574" stroke="#0A0624"
+                                                stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                            <path d="M10.9902 23.0107L22.8908 11.1101" stroke="#0A0624"
+                                                stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- AWRS -->
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12 aos-init aos-animate" data-aos="fade-up"
+                        data-aos-duration="2900">
+                        <div class="project__single single__transform">
+                            <div class="project__img">
+                                <img src="assets/img/full-page/mobile_app/awrs.png" alt="gym" loading="lazy"
+                                    class="lazy-load">
+                            </div>
+                            <div class="project__content">
+                                <div class="project__heading">
+                                    <h3><a href="https://apps.apple.com/us/app/aw-recovery-services-charlie/id6446933727"
+                                            target="_blank">AWRS</a></h3>
+                                </div>
+                                <div class="project__icon">
+                                    <a class="direction__btn direction__btn--2"
+                                        href="https://apps.apple.com/us/app/aw-recovery-services-charlie/id6446933727"
+                                        target="_blank"><svg width="34" height="34" viewBox="0 0 34 34" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.4258 10.9897L23.0101 10.9897L23.0101 19.574" stroke="#0A0624"
+                                                stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                            <path d="M10.9902 23.0107L22.8908 11.1101" stroke="#0A0624"
+                                                stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portiflio end -->
+        <!-- faq -->
+        <section class="faq-section" data-scroll="6" id="faq">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-12 aos-init aos-animate" data-aos="fade-up"
+                        data-aos-duration="1500">
+                        <div class="faq__accordion">
+                            <div class="accordion" id="accordionPanelsStayOpenExample">
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                            aria-controls="panelsStayOpen-collapseOne">
+                                            What is Web Development?
+                                        </button>
+                                    </h2>
+                                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                                        aria-labelledby="panelsStayOpen-headingOne">
+                                        <div class="accordion-body">
+                                            <div class="row">
+                                                <div class="col-xl-12 col-lg-12 col-md-6 col-sm-12">
+                                                    <div class="accordion__text">
+                                                        <p>Web Development is the work of creating and maintaining
+                                                            websites or web based applications. It encompasses various
+                                                            activities inclusive of the formation of the site
+                                                            construction, the layout of the facility, to coding of the
+                                                            website, testing and launch of the website for availability
+                                                            on the internet. </p>
+                                                    </div>
+                                                </div>
+                                                <!-- <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                            <div class="accordion__img">
+                                                <img src="assets/img/contact/contact__2.png" alt="">
+                                            </div>
+                                        </div> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true"
+                                            aria-controls="panelsStayOpen-collapseTwo">
+                                            What services does Digital Minds On provide?
+                                        </button>
+                                    </h2>
+                                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show"
+                                        aria-labelledby="panelsStayOpen-headingTwo" style="">
+                                        <div class="accordion-body">
+                                            <div class="row">
+                                                <div class="col-xl-12 col-lg-12 col-md-6 col-sm-12">
+                                                    <div class="accordion__text">
+                                                        <p>Digital Minds On offers a wide range of digital solutions,
+                                                            including:<br>
+
+                                                            <b>Web Development:</b> Creating custom websites tailored to
+                                                            your business needs.<br>
+                                                            <b>App Development:</b> Designing and developing innovative
+                                                            mobile applications.<br>
+                                                            <b>UI/UX Design:</b> Enhancing user experience with
+                                                            intuitive and visually appealing designs.<br>
+                                                            <b>Game Development:</b> Crafting engaging and high-quality
+                                                            games for various platforms.<br>
+                                                            <b>Networking Solutions:</b> Providing reliable and
+                                                            efficient network infrastructure for businesses.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <!-- <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                            <div class="accordion__img">
+                                                <img src="assets/img/contact/contact__2.png" alt="">
+                                            </div>
+                                        </div> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree"
+                                            aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                            How does Digital Minds On approach project development?
+                                        </button>
+                                    </h2>
+                                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                                        aria-labelledby="panelsStayOpen-headingThree">
+                                        <div class="accordion-body">
+                                            <div class="row">
+                                                <div class="col-xl-12 col-lg-12 col-md-6 col-sm-12">
+                                                    <div class="accordion__text">
+                                                        <p>We follow a structured and collaborative approach:<br>
+
+                                                            <b>Requirement Analysis:</b> Understanding your business
+                                                            needs and objectives.<br>
+                                                            <b>Planning &amp; Design:</b> Creating a comprehensive
+                                                            project
+                                                            roadmap and design prototypes.<br>
+                                                            <b>Development &amp; Testing:</b> Building and rigorously
+                                                            testing the product for optimal performance.<br>
+                                                            <b>Deployment &amp; Support:</b> Launching the final product
+                                                            and
+                                                            providing ongoing support.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <!-- <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                            <div class="accordion__img">
+                                                <img src="assets/img/contact/contact__2.png" alt="">
+                                            </div>
+                                        </div> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="panelsStayOpen-headingfour">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsefour"
+                                            aria-expanded="false" aria-controls="panelsStayOpen-collapsefour">
+                                            Do you offer customized solutions for networking needs?
+                                        </button>
+                                    </h2>
+                                    <div id="panelsStayOpen-collapsefour" class="accordion-collapse collapse"
+                                        aria-labelledby="panelsStayOpen-headingfour">
+                                        <div class="accordion-body">
+                                            <div class="row">
+                                                <div class="col-xl-12 col-lg-12 col-md-6 col-sm-12">
+                                                    <div class="accordion__text">
+                                                        <p>Yes, we offer companies and businesses networking solutions
+                                                            that can improve performance, increase security and address
+                                                            issues of scalability. We are involved in cabling and
+                                                            installation, diagnosing issues with your network and making
+                                                            improvements where necessary.</p>
+                                                    </div>
+                                                </div>
+                                                <!-- <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                            <div class="accordion__img">
+                                                <img src="assets/img/contact/contact__2.png" alt="">
+                                            </div>
+                                        </div> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="panelsStayOpen-headingfive">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsefive"
+                                            aria-expanded="false" aria-controls="panelsStayOpen-collapsefive">
+                                            Can you handle e-commerce website maintenance?
+                                        </button>
+                                    </h2>
+                                    <div id="panelsStayOpen-collapsefive" class="accordion-collapse collapse"
+                                        aria-labelledby="panelsStayOpen-headingfive">
+                                        <div class="accordion-body">
+                                            <div class="row">
+                                                <div class="col-xl-12 col-lg-12 col-md-6 col-sm-12">
+                                                    <div class="accordion__text">
+                                                        <p>Absolutely. We specialize in maintaining e-commerce
+                                                            platforms, including product updates, payment gateway
+                                                            integrations, performance optimization, and ensuring secure
+                                                            transactions.</p>
+                                                    </div>
+                                                </div>
+                                                <!-- <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                            <div class="accordion__img">
+                                                <img src="assets/img/contact/contact__2.png" alt="">
+                                            </div>
+                                        </div> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="panelsStayOpen-headingsix">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsesix"
+                                            aria-expanded="false" aria-controls="panelsStayOpen-collapsesix">
+                                            What is UI/UX design, and why is it important for my business?
+                                        </button>
+                                    </h2>
+                                    <div id="panelsStayOpen-collapsesix" class="accordion-collapse collapse"
+                                        aria-labelledby="panelsStayOpen-headingsix">
+                                        <div class="accordion-body">
+                                            <div class="row">
+                                                <div class="col-xl-12 col-lg-12 col-md-6 col-sm-12">
+                                                    <div class="accordion__text">
+                                                        <p>UI (User Interface) focuses on the visual elements of your
+                                                            product, such as buttons, layouts, and typography, while UX
+                                                            (User Experience) ensures the product is easy to use and
+                                                            meets user needs. Together, they enhance user satisfaction,
+                                                            improve engagement, and boost conversions.</p>
+                                                    </div>
+                                                </div>
+                                                <!-- <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                            <div class="accordion__img">
+                                                <img src="assets/img/contact/contact__2.png" alt="">
+                                            </div>
+                                        </div> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="panelsStayOpen-headingseven">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseseven"
+                                            aria-expanded="false" aria-controls="panelsStayOpen-collapseseven">
+                                            How long does it take to develop a game?
+                                        </button>
+                                    </h2>
+                                    <div id="panelsStayOpen-collapseseven" class="accordion-collapse collapse"
+                                        aria-labelledby="panelsStayOpen-headingseven">
+                                        <div class="accordion-body">
+                                            <div class="row">
+                                                <div class="col-xl-12 col-lg-12 col-md-6 col-sm-12">
+                                                    <div class="accordion__text">
+                                                        <p>The timeline depends on the game's complexity:<br>
+
+                                                            <b>Simple games:</b> 2–4 months<br>
+                                                            <b>Medium complexity games:</b> 6–12 months<br>
+                                                            <b>Large-scale or AAA games:</b> Large-scale or AAA games:
+                                                            1+ year<br>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <!-- <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                            <div class="accordion__img">
+                                                <img src="assets/img/contact/contact__2.png" alt="">
+                                            </div>
+                                        </div> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="panelsStayOpen-headingeight">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseeight"
+                                            aria-expanded="false" aria-controls="panelsStayOpen-collapseeight">
+                                            Does Digital Minds On provide customer support for its services?
+                                        </button>
+                                    </h2>
+                                    <div id="panelsStayOpen-collapseeight" class="accordion-collapse collapse"
+                                        aria-labelledby="panelsStayOpen-headingeight">
+                                        <div class="accordion-body">
+                                            <div class="row">
+                                                <div class="col-xl-12 col-lg-12 col-md-6 col-sm-12">
+                                                    <div class="accordion__text">
+                                                        <p>Yes, we offer comprehensive customer support for all our
+                                                            services, including web development, app development, UI/UX
+                                                            design, game development, and networking solutions. Our team
+                                                            is available to assist with queries, troubleshooting, and
+                                                            updates.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- faq -->
+        <!--contact-->
+        <section class="contact-from" data-scroll="7" id="contact">
+            <div class="container">
+                <div class="row justify-content-center aos-init aos-animate" data-aos="fade-up"
+                    data-aos-duration="1500">
+                    <div class="col-lg-8">
+                        <div class="section-title">
+                            <h4>Contact us</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-6 aos-init aos-animate" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="contact__input__wrapper contact__grident__bg">
+                            <form id="contact-form" class="contact-form" action="email.php">
+                                <div class="row">
+                                    <div class="col-xl-12">
+                                        <div class="contact__input">
+                                            <input class="contact__common__input" type="text" name="con_name"
+                                                id="con_name" placeholder="Your Name">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-12">
+                                        <div class="contact__input">
+                                            <input class="contact__common__input" type="text" name="con_email"
+                                                id="con_email" placeholder="Email" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-12">
+                                        <div class="contact__input">
+                                            <input class="contact__common__input" type="text" name="phone"
+                                                placeholder="Phone" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-12">
+                                        <textarea class="contact__common__input" name="con_message"
+                                            placeholder="write a message...." id="con_message" cols="30"
+                                            rows="10"></textarea>
+                                    </div>
+                                    <div class="col-xl-12">
+                                        <div class="contact__button">
+                                            <button type="submit" onclick="handleSubmit()" value="submit"
+                                                class="default__button" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal">SEND MESSAGE</button>
+                                            <p class="form-messege"></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 aos-init aos-animate" data-aos="fade-up" data-aos-duration="1500">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--contact-->
+
+        <!--whattapp-icon-->
+        <div class="whatsapp-icons">
+            <a href="https://wa.me/923086582833" class="w-inline-block floatingg-icon" target="_blank"
+                aria-label="whatsapp">
+                <span style="display:none">Whatsup</span>
+                <div class="tochatbe-icon-whatsapp">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        aria-hidden="true" focusable="false" width="1em" height="1em"
+                        style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
+                        preserveAspectRatio="xMidYMid meet" viewBox="0 0 448 512">
+                        <path fill="#ffffff"
+                            d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z">
+                        </path>
+                    </svg>
+                </div>
+            </a>
+        </div>
+        <!--whattappicon-->
+        <!-- footer start -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p class="copyright-text">© 2025 by Digitalmindson</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer__section__end -->
+        <!-- back to top -->
+        <a class="back-to-top" id="backToTop">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up">
+                <path d="M12 19V6M5 12l7-7 7 7" />
+            </svg>
+        </a>
+        <!-- back to top -->
+    </main>
+    <!-- JS here -->
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/glightbox.min.js"></script>
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/Landing.js"></script>
+
+
+    <script>
+        // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+        if (localStorage.getItem("theme-color") === "dark" || (!("theme-color" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+            document.getElementById("light--to-dark-button")?.classList.add("dark--mode");
+        }
+        if (localStorage.getItem("theme-color") === "#4a179b") {
+            document.getElementById("light--to-dark-button")?.classList.remove("dark--mode");
+        }
+    </script>
+</body>
+
+</html>
