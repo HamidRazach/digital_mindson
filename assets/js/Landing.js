@@ -286,3 +286,86 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+// animation on scroll
+AOS.init({
+  offset: 40,
+  duration: 1000,
+  once: true,
+  easing: "ease",
+});
+
+//testimonial Slider (Testimonial)
+var swiper = new Swiper(".testimonial__slider__active", {
+  grabCursor: true,
+  pagination: {
+    el: ".swiper-pagination",
+    type: "fraction",
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
+var swiper = new Swiper(".testimonial__slider__active__2", {
+  grabCursor: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  slidesPerView: 1,
+  breakpoints: {
+    575: {
+      slidesPerView: 1,
+    },
+
+    768: {
+      slidesPerView: 1,
+    },
+
+    992: {
+      slidesPerView: 1,
+    },
+    1200: {
+      slidesPerView: 2,
+    },
+    1500: {
+      slidesPerView: 2,
+    },
+  },
+});
+
+var swiper = new Swiper(".testimonial__3__slider__active", {
+  grabCursor: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  slidesPerView: 3,
+  breakpoints: {
+    350: {
+      slidesPerView: 1,
+    },
+    575: {
+      slidesPerView: 1,
+    },
+
+    768: {
+      slidesPerView: 2,
+    },
+
+    992: {
+      slidesPerView: 2,
+    },
+    1200: {
+      slidesPerView: 3,
+    },
+    1500: {
+      slidesPerView: 3,
+    },
+  },
+});
