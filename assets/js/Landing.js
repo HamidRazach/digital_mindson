@@ -10,35 +10,27 @@ windowOn.addEventListener("load", function () {
 });
 // Duplicate content for seamless looping marquee start
 document.addEventListener("DOMContentLoaded", function () {
-  // Dynamically inject the required CSS
-  const style = document.createElement("style");
-  style.textContent = `
-    @keyframes marquee {
-      0% {
-        transform: translateX(0);
-      }
-      100% {
-        transform: translateX(-50%);
-      }
-    }
-
-    .header__animate__wraper {
-      display: flex;
-      width: max-content;
-      animation: marquee 100s linear infinite; /* Adjust speed here */
-    }
-
-    .header__animate__wraper:hover {
-      animation-play-state: paused;
-    }
-  `;
-  document.head.appendChild(style);
-
-  // Duplicate marquee content for seamless scrolling
   const marqueeWrapper = document.querySelector(".header__animate__wraper");
+
   if (marqueeWrapper) {
-    const items = marqueeWrapper.innerHTML; // Get the original items
-    marqueeWrapper.innerHTML += items; // Duplicate for infinite loop
+    // Duplicate content for smooth looping
+    const originalContent = marqueeWrapper.innerHTML;
+    marqueeWrapper.innerHTML += originalContent;
+
+    let scrollAmount = parseFloat(localStorage.getItem("marqueeScroll")) || 0; // Restore previous position
+    let speed = 0.5; // Adjust speed (lower = slower, higher = faster)
+
+    function smoothScroll() {
+      scrollAmount -= speed; // Move left
+      if (Math.abs(scrollAmount) >= marqueeWrapper.scrollWidth / 2) {
+        scrollAmount = 0; // Reset position seamlessly
+      }
+      marqueeWrapper.style.transform = `translateX(${scrollAmount}px)`;
+      localStorage.setItem("marqueeScroll", scrollAmount); // Save position
+      requestAnimationFrame(smoothScroll);
+    }
+
+    smoothScroll(); // Start animation
   }
 });
 

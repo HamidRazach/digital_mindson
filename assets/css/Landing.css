@@ -25,7 +25,19 @@ a {
     text-decoration: none;
     transition: var(--transition);
 }
-
+.header__animate__container {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    position: relative;
+  }
+  
+  .header__animate__wraper {
+    display: flex;
+    width: max-content;
+    will-change: transform; /* Optimized for smooth scrolling */
+  }
+  
 /*  */
 .copyright__left {
     display: flex;
