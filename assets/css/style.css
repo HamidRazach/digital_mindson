@@ -9320,13 +9320,13 @@ p.mt-2 {
 }
 .about-section p {
   font-weight: 400;
-  text-align: justify;
+  text-align: left;
   font-size: 18px;
   line-height: 32px;
 }
 .service-section .col-md-6.text-center p {
   font-weight: 400;
   font-size: 18px;
-  text-align: justify;
+  text-align: left;
   line-height: 32px;
 }
