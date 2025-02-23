@@ -191,7 +191,7 @@
                         <div class="headerarea__component__wrap">
                             <div class="headerarea__component">
                                 <div class="headerarea__logo">
-                                    <a href="javascript:void(0);">
+                                    <a href="#home" data-scroll-nav="1">
                                         <img src="assets/img/logo/full-logo.svg" alt="Digitalminds-logo"
                                             class="dark-mode">
                                         <img src="assets/img/logo/header/logo-local-host new.svg"
@@ -235,7 +235,7 @@
             <div class="mob_menu_wrapper container-fluid">
                 <div class="d-flex justify-content-between align-items-center">
                     <div class="mobile__log">
-                        <a class="offcanvas__logo_link" href="javascript:void(0);">
+                        <a class="offcanvas__logo_link" href="#home" data-scroll-nav="1">
                             <img src="assets/img/logo/full-logo.svg" alt="Digitalminds-logo" class="dark-mode">
                             <img src="assets/img/logo/header/logo-local-host new.svg" alt="Digitalminds-logo"
                                 class="light-mode">
@@ -342,6 +342,12 @@
                                         <textarea class="contact__common__input" name="con_message"
                                             placeholder="write a message...." id="con_message" cols="30"
                                             rows="10"></textarea>
+                                    </div>
+                                    <!-- CAPTCHA Math Question -->
+                                    <div class="col-xl-12">
+                                        <p>Solve: <span id="captchaQuestion"></span></p>
+                                        <input type="number" id="captchaAnswer" class="contact__common__input"
+                                            placeholder="Your Answer" required>
                                     </div>
                                     <div class="col-xl-12">
                                         <div class="contact__button">
@@ -462,8 +468,8 @@
                                 class="service__single__wraper service__single__wraper--2 common__gradient__bg single__transform">
                                 <div class="service__single__inner">
                                     <div class="service__img">
-                                        <img src="assets/img/service/services_2/Mobile_service.png" alt="img" loading="lazy"
-                                            class="lazy-load">
+                                        <img src="assets/img/service/services_2/Mobile_service.png" alt="img"
+                                            loading="lazy" class="lazy-load">
                                     </div>
                                     <div class="service__content">
                                         <div class="service__heading">
@@ -1063,7 +1069,7 @@
                         </div>
                     </div>
                     <!-- Pro Business Connections -->
-                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12 aos-init aos-animate" data-aos="fade-up"
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12 aos-init aos-animate" data-aos="fade-down"
                         data-aos-duration="2900">
                         <div class="project__single single__transform">
                             <div class="project__img">
@@ -1124,7 +1130,7 @@
                         </div>
                     </div>
                     <!-- Food Fair - Spring Valley -->
-                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12 aos-init aos-animate" data-aos="fade-up"
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12 aos-init aos-animate" data-aos="fade-down"
                         data-aos-duration="2900">
                         <div class="project__single single__transform">
                             <div class="project__img">
@@ -1184,7 +1190,7 @@
                         </div>
                     </div>
                     <!-- RingVoz -->
-                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12 aos-init aos-animate" data-aos="fade-up"
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12 aos-init aos-animate" data-aos="fade-down"
                         data-aos-duration="2900">
                         <div class="project__single single__transform">
                             <div class="project__img">
@@ -1244,7 +1250,7 @@
                         </div>
                     </div>
                     <!-- AWRS -->
-                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12 aos-init aos-animate" data-aos="fade-up"
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12 aos-init aos-animate" data-aos="fade-down"
                         data-aos-duration="2900">
                         <div class="project__single single__transform">
                             <div class="project__img">
@@ -1708,6 +1714,12 @@
                                             placeholder="write a message...." id="con_message" cols="30"
                                             rows="10"></textarea>
                                     </div>
+                                    <!-- CAPTCHA Math Question -->
+                                    <div class="col-xl-12">
+                                        <p>Solve: <span id="captchaQuestion"></span></p>
+                                        <input type="number" id="captchaAnswer" class="contact__common__input"
+                                            placeholder="Your Answer" required>
+                                    </div>
                                     <div class="col-xl-12">
                                         <div class="contact__button">
                                             <button type="submit" onclick="handleSubmit()" value="submit"
@@ -1772,6 +1784,25 @@
     <script src="assets/js/plugins.js"></script>
     <script src="assets/js/swiper-bundle.min.js"></script>
     <script src="assets/js/Landing.js"></script>
+    <script>
+        // Generate random numbers for CAPTCHA
+        const num1 = 7; // Fixed value
+        const num2 = 4; // Fixed value
+        const correctAnswer = num1 + num2;
+
+        // Show the math question
+        document.getElementById("captchaQuestion").textContent = `${num1} + ${num2} = ?`;
+
+        // Form validation on submit
+        document.getElementById("contactForm").addEventListener("submit", function (event) {
+            const userAnswer = document.getElementById("captchaAnswer").value;
+
+            if (parseInt(userAnswer) !== correctAnswer) {
+                alert("Incorrect answer! Please try again.");
+                event.preventDefault(); // Stop form submission
+            }
+        });
+    </script>
     <script>
         // On page load or when changing themes, best to add inline in `head` to avoid FOUC
         if (localStorage.getItem("theme-color") === "dark" || (!("theme-color" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
