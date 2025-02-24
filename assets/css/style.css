@@ -2739,20 +2739,6 @@ img.herobanner__vector.hero__icon__3 {
   margin: 0 auto;
   text-align: center;
 }
-/* marquee smooth work css  */
-.header__animate__container {
-  overflow: hidden;
-  white-space: nowrap;
-  width: 100%;
-  position: relative;
-}
-
-.header__animate__wraper {
-  display: flex;
-  width: max-content;
-  will-change: transform;
-}
-/* ======================= */
 .service {
   position: relative;
   background-color: var(--pinkcolor);
