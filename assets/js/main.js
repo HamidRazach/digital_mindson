@@ -8,33 +8,6 @@ windowOn.addEventListener("load", function () {
     backPreloader.style.display = "none";
   }, 1000);
 });
-// Duplicate content for seamless looping marquee start
-document.addEventListener("DOMContentLoaded", function () {
-  const marqueeWrapper = document.querySelector(".header__animate__wraper");
-
-  if (marqueeWrapper) {
-    // Duplicate content for smooth looping
-    const originalContent = marqueeWrapper.innerHTML;
-    marqueeWrapper.innerHTML += originalContent;
-
-    let scrollAmount = parseFloat(localStorage.getItem("marqueeScroll")) || 0; // Restore previous position
-    let speed = 0.5; // Adjust speed (lower = slower, higher = faster)
-
-    function smoothScroll() {
-      scrollAmount -= speed; // Move left
-      if (Math.abs(scrollAmount) >= marqueeWrapper.scrollWidth / 2) {
-        scrollAmount = 0; // Reset position seamlessly
-      }
-      marqueeWrapper.style.transform = `translateX(${scrollAmount}px)`;
-      localStorage.setItem("marqueeScroll", scrollAmount); // Save position
-      requestAnimationFrame(smoothScroll);
-    }
-
-    smoothScroll(); // Start animation
-  }
-});
-// Duplicate content for seamless looping marquee end
-
 //Herobanner Slider
 var swiper = new Swiper(".herobanner__slider__active", {
   grabCursor: true,
