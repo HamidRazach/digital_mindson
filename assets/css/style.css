@@ -9330,3 +9330,13 @@ p.mt-2 {
   text-align: left;
   line-height: 32px;
 }
+/* Hide arrows in number input for WebKit browsers */
+input[type="number"]::-webkit-inner-spin-button, 
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+/* Hide arrows in number input for Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
