@@ -115,11 +115,13 @@ input[type="number"] {
 .box-title {
     margin-bottom: 0px;
 }
+
 .contact-us-img img {
     width: 100%;
     border-radius: 15px;
     height: auto;
 }
+
 .parent-contact {
     display: flex;
     flex-direction: column;
@@ -128,6 +130,7 @@ input[type="number"] {
     gap: 20px;
     height: 100%;
 }
+
 /* footer */
 .footer {
     background: var(--gradientColor);
@@ -155,4 +158,87 @@ input[type="number"] {
 
 .section-title {
     margin-bottom: 60px;
+}
+/* banner_animation */
+.aos-animate {
+    transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
+}
+/* portiflio */
+.project__single {
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+    transform: translateY(0);
+}
+
+.project__single:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+}
+/*  faq */
+.faq__accordion .accordion-item {
+    transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+.faq__accordion .aos-animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* contact */
+/* Custom Zoom-in Animation */
+@keyframes zoomInCustom {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Apply Animation to Section Title */
+.section-title h4 {
+    animation: zoomInCustom 1s ease-in-out;
+}
+
+/* Image & Social Media Icons - Smooth Zoom */
+.contact-us-img img {
+    animation: zoomInCustom 1.2s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+}
+
+.contact-us-img img:hover {
+    transform: scale(1.05);
+}
+
+/* Social Icons - Hover Effect */
+.footer__icon ul li a {
+    display: inline-block;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.footer__icon ul li a:hover {
+    transform: scale(1.2);
+}
+
+/* Contact Form - Smooth Fade-in */
+.contact__input__wrapper {
+    animation: zoomInCustom 1.5s ease-in-out;
+}
+
+/* Button Animation */
+.default__button {
+    transition: all 0.3s ease-in-out;
+}
+
+.default__button:hover {
+    transform: scale(1.05);
+}
+
+/* Smooth Input Focus Effect */
+.contact__common__input {
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
