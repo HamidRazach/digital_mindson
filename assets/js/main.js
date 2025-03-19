@@ -685,3 +685,11 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("scroll", loadImages);
   window.addEventListener("resize", loadImages);
 });
+
+
+if (window.location.pathname === "/project") {
+  setTimeout(function() {
+      window.location.href = "https://www.digitalmindson.com/portfolio";
+  }, 1000); 
+}
+
