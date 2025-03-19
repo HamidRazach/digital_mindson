@@ -688,8 +688,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 if (window.location.pathname === "/project") {
-  setTimeout(function() {
-      window.location.href = "https://www.digitalmindson.com/portfolio";
-  }, 1000); 
+  window.location.replace("https://www.digitalmindson.com/portfolio");
 }
 
