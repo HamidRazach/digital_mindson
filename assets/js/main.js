@@ -686,8 +686,16 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("resize", loadImages);
 });
 
+// pages rediect code
+var redirects = {
+  "/portfolio-slider.html": "https://www.digitalmindson.com/portfolio",
+  "/project": "https://www.digitalmindson.com/portfolio",
+  "/web.html": "https://www.digitalmindson.com/web-development-services"
+};
 
-if (window.location.pathname === "/project") {
-  window.location.replace("https://www.digitalmindson.com/portfolio");
+var currentPath = window.location.pathname;
+
+if (redirects[currentPath]) {
+  window.location.replace(redirects[currentPath]);
 }
 
