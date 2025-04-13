@@ -4896,9 +4896,6 @@
     .service-page .col-md-6 .card .col-md-8 h5.card-title {
       font-size: 19px;
     }
-    .service-page .col-md-6 .card .col-md-8 {
-       padding: 0px;
-    }
 }
 @media (max-width: 990px) {
   .horizontal-card .col-md-6 {

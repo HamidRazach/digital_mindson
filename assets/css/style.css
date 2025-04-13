@@ -8985,7 +8985,6 @@ p.mt-2 {
   align-items: flex-start;
   flex-direction: column;
   height: 100%;
-  gap: 10px;
   justify-content: space-around;
 }
 
