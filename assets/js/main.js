@@ -689,7 +689,6 @@ document.addEventListener("DOMContentLoaded", function () {
 // pages rediect code
 var redirects = {
   "/portfolio-slider.html": "https://www.digitalmindson.com/portfolio",
-  "/project": "https://www.digitalmindson.com/portfolio",
   "/web.html": "https://www.digitalmindson.com/web-development-services"
 };
 
