@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Web Development and Web Design Explained | Digital Minds On </title>
-    <meta name="description" content="">
+    <title>Web Development and Web Design Explained | Digital Minds On</title>
+    <meta name="description" content="Digital Minds On: Discover what web development is, its key tools, and how it shapes modern websites and online experiences.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/icon.svg">
@@ -19,18 +19,6 @@
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
-    <!-- title scrollbar -->
-    <script>
-        // Text for the title
-        let titleText = "Web Development and Web Design Explained | Digital Minds On ";
-        let index = 0;
-        function scrollTitle() {
-            document.title = titleText.slice(index) + titleText.slice(0, index);
-            index = (index + 1) % titleText.length;
-        }
-        setInterval(scrollTitle, 200); 
-    </script>
-    <!-- title scrollbar -->
     <script>
         // On page load or when changing themes, best to add inline in `head` to avoid FOUC
         if (localStorage.getItem("theme-color") === "dark" || (!("theme-color" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
