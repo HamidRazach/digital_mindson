@@ -688,9 +688,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // pages rediect code
 var redirects = {
-  "/portfolio-slider.html": "https://www.digitalmindson.com/portfolio",
-  "/project": "https://www.digitalmindson.com/portfolio",
-  "/web.html": "https://www.digitalmindson.com/web-development-services"
+  "/portfolio-slider.html": "https://digitalmindson.com/portfolio",
+  "/project": "https://digitalmindson.com/portfolio",
+  "/web.html": "https://digitalmindson.com/web-development-services"
 };
 
 var currentPath = window.location.pathname;
