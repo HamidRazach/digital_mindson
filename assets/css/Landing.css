@@ -12,7 +12,7 @@ body {
     line-height: 32px;
     position: relative;
     overflow-x: hidden;
-    user-select: none;
+    /* user-select: none; */
 }
 
 p {
@@ -20,7 +20,9 @@ p {
     margin-bottom: 15px;
     color: var(--contentColor);
 }
-
+.breadcrumbarea__inner p {
+    color: #fff;
+}
 a {
     text-decoration: none;
     transition: var(--transition);
