@@ -3,9 +3,11 @@ p {
     margin-bottom: 15px;
     color: var(--contentColor);
 }
+
 .breadcrumbarea__inner p {
     color: #fff;
 }
+
 a {
     text-decoration: none;
     transition: var(--transition);
@@ -144,10 +146,12 @@ input[type="number"] {
 .section-title {
     margin-bottom: 60px;
 }
+
 /* banner_animation */
 .aos-animate {
     transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
 }
+
 /* portiflio */
 .project__single {
     transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
@@ -157,6 +161,7 @@ input[type="number"] {
 .project__single:hover {
     transform: translateY(-10px);
 }
+
 /*  faq */
 .faq__accordion .accordion-item {
     transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
@@ -225,4 +230,71 @@ input[type="number"] {
 /* Smooth Input Focus Effect */
 .contact__common__input {
     transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* frature section css */
+.features-section {
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 40px 20px;
+}
+
+.feature-box {
+    transition: all 0.3s ease;
+    width: 125px;
+    height: 125px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feature-box:hover {
+    transform: translateY(-5px);
+}
+
+.features-section .default__button a {
+    padding: 0px;
+}
+
+.features-section .default__button a:hover {
+    color: var(--blackColor);
+}
+.feature-button {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.feature-icon {
+    font-size: 32px;
+    color: #1a3d7c;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 50%;
+    border: 2px solid #1a3d7c;
+    background-color: #f9f9f9;
+
+}
+
+.feature-text {
+    font-weight: 600;
+    color: #fff;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .feature-box {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .feature-box {
+        width: 90%;
+    }
 }
