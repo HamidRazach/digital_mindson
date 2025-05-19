@@ -261,12 +261,14 @@ input[type="number"] {
 .features-section .default__button a:hover {
     color: var(--blackColor);
 }
+
 .feature-button {
     margin-top: 20px;
     display: flex;
     justify-content: center;
     gap: 10px;
 }
+
 .feature-icon {
     font-size: 32px;
     color: #1a3d7c;
@@ -297,4 +299,18 @@ input[type="number"] {
     .feature-box {
         width: 45%;
     }
+
+    .feature-button {
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    .parent-contact .footer__icon {
+        margin-bottom: 20px;
+    }
+    .icon-box-list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 20px;
+}
 }
