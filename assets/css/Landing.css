@@ -295,6 +295,6 @@ input[type="number"] {
 
 @media (max-width: 480px) {
     .feature-box {
-        width: 90%;
+        width: 45%;
     }
 }
