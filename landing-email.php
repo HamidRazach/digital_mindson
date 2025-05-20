@@ -82,19 +82,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['form_submitted'])) {
     if ($mail->send()) {
     echo "<script src=\"https://cdn.jsdelivr.net/npm/sweetalert2@11\"></script>
     <script>
-document.addEventListener('DOMContentLoaded', function () {
-    Swal.fire({
-        icon: 'success',
-        title: 'Message Sent!',
-        text: 'We have received your message. We will contact you as soon as possible. We will schedule a detailed meeting with you soon so that your ideas can be turned into reality.',
-        confirmButtonText: 'Go Back'
-    }).then((result) => {
-        if (result.isConfirmed) {
-            window.history.back();
-        }
-    });
-});
-</script>";
+        document.addEventListener('DOMContentLoaded', function () {
+            Swal.fire({
+                icon: 'success',
+                title: 'Message Sent!',
+                text: 'We have received your message. We will contact you as soon as possible. We will schedule a detailed meeting with you soon so that your ideas can be turned into reality.',
+                confirmButtonText: 'Go Back'
+            }).then((result) => {
+                if (result.isConfirmed) {  
+                    window.history.back();
+                }
+            });
+        });
+    </script>";
 }
  else {
         echo "<script>alert('Failed to send email. Try again later.'); window.history.back();</script>";
