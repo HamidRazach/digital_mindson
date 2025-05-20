@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', function () {
     Swal.fire({
         icon: 'success',
         title: 'Message Sent!',
-        text: 'Your message has been sent successfully.',
+        text: 'We have received your message. We will contact you as soon as possible. We will schedule a detailed meeting with you soon so that your ideas can be turned into reality.',
         confirmButtonText: 'Go Back'
     }).then((result) => {
         if (result.isConfirmed) {
