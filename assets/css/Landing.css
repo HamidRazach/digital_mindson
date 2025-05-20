@@ -249,6 +249,7 @@ input[type="number"] {
     flex-wrap: wrap;
     gap: 15px;
     padding: 40px 0px;
+    justify-content: center;
 }
 .contact_bg {
   background: var(--gradientColor);
