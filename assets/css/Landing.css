@@ -5,7 +5,6 @@ p {
 }
 
 .breadcrumbarea__inner p {
-    color: #000;
     margin-bottom: 0px;
 }
 
@@ -13,9 +12,17 @@ a {
     text-decoration: none;
     transition: var(--transition);
 }
+.text-theme {
+  color: #000; 
+}
+.is_dark .text-theme {
+  color: #fff; 
+}
+.is_light .feature-text {
+    color: #000;
+}
 
 /*==== input field=== */
-/* Chrome, Safari, Edge, Opera */
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
     -webkit-appearance: none;
@@ -114,11 +121,10 @@ input[type="number"] {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
     gap: 20px;
-    height: 100%;
+    padding: 30px 0px;
+   
 }
-
 /* footer */
 .footer {
     background: var(--gradientColor);
@@ -257,10 +263,11 @@ input[type="number"] {
 
 .features-section .default__button a {
     padding: 0px;
+    color: #fff;
 }
 
-.features-section .default__button a:hover {
-    color: var(--blackColor);
+.is_light .features-section .default__button a:hover {
+    color: #fff;
 }
 
 .feature-button {
