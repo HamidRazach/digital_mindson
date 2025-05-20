@@ -69,7 +69,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['form_submitted'])) {
     //Content
     $mail->isHTML(true); //Set email format to HTML
     $mail->Subject = 'Digital Mindson Website: Contact Form';
-    $mail->Body = 'Name: <b>' . $_POST['con_name'] . '</b><br />Email: <b>' . $_POST['con_email'] . '</b><br />Mobile Number: <b>'.$_POST['countryCode'].''.$_POST['phone'].'</b><br />Message: ' . $_POST['con_message'];
+    $mail->Body = 'Name: <b>' . $_POST['con_name'] . '</b><br />Email: <b>' . $_POST['con_email'] . '</b><br />Mobile Number: <b>'.$_POST['phone'].'</b><br />Message: ' . $_POST['con_message'];
     $mail->AltBody = $_POST['con_name'] . ' ' . $_POST['con_email'] . ' '.$_POST['phone'].' ' . $_POST['con_message'];
 
     
@@ -80,8 +80,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['form_submitted'])) {
     // $headers = "From: $email";
 
     if ($mail->send()) {
-        echo "<script>alert('Message sent successfully.'); window.history.back();</script>";
-    } else {
+    echo "<script src=\"https://cdn.jsdelivr.net/npm/sweetalert2@11\"></script>
+    <script>
+document.addEventListener('DOMContentLoaded', function () {
+    Swal.fire({
+        icon: 'success',
+        title: 'Message Sent!',
+        text: 'Your message has been sent successfully.',
+        confirmButtonText: 'Go Back'
+    }).then((result) => {
+        if (result.isConfirmed) {
+            window.history.back();
+        }
+    });
+});
+</script>";
+}
+ else {
         echo "<script>alert('Failed to send email. Try again later.'); window.history.back();</script>";
     }
 } else {
