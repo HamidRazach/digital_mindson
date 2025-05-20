@@ -367,7 +367,7 @@
                     </div>
                     <div class="col-xl-6" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="400">
                         <div class="contact__input__wrapper contact__grident__bg">
-                            <form id="contact-form" class="contact-form" action="email.php">
+                            <form id="contact-form" method="POST" class="contact-form" action="landing-email.php">
                                 <div class="row">
                                     <div class="col-xl-12">
                                         <div class="contact__input">
@@ -395,9 +395,10 @@
                                     <!-- CAPTCHA Math Question -->
                                     <div class="col-xl-12">
                                         <p>Solve: <span id="captchaQuestion"></span></p>
-                                        <input type="number" id="captchaAnswer" name="captchaAnswer" class="contact__common__input"
+                                        <input type="number" id="captcha" name="captcha" class="contact__common__input"
                                             placeholder="Your Answer" required>
                                     </div>
+                                    <input type="hidden" name="form_submitted" value="1">
                                     <div class="col-xl-12">
                                         <div class="contact__button">
                                             <button type="submit" onclick="handleSubmit()" value="submit"
@@ -1753,7 +1754,7 @@
                     <!-- Right Side - Contact Form -->
                     <div class="col-xl-6" data-aos="zoom-in" data-aos-duration="600">
                         <div class="contact__input__wrapper contact__grident__bg">
-                            <form id="contact-form" class="contact-form" action="email.php">
+                            <form id="contact-form" method="POST" class="contact-form" action="landing-email.php">
                                 <div class="row">
                                     <div class="col-xl-12">
                                         <div class="contact__input">
@@ -1781,9 +1782,10 @@
                                     <!-- CAPTCHA Math Question -->
                                     <div class="col-xl-12">
                                         <p>Solve: 7 + 4 = ? <span id="captchaQuestion"></span></p>
-                                        <input type="number" id="captchaAnswer" name="captchaAnswer" class="contact__common__input"
+                                        <input type="number" id="captcha" name="captcha" class="contact__common__input"
                                             placeholder="Your Answer" required>
                                     </div>
+                                    <input type="hidden" name="form_submitted" value="1">
                                     <div class="col-xl-12">
                                         <div class="contact__button">
                                             <button type="submit" onclick="handleSubmit()" class="default__button">SEND
