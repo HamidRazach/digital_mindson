@@ -329,6 +329,10 @@ input[type="number"] {
 #service .service__single__wraper--2 {
     height: 100%;
 }
+.floatingg-icon {
+    z-index: 99;
+    position: fixed;
+}
 @media (max-width: 768px) {
     .feature-box {
         width: 45%;
