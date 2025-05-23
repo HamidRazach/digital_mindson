@@ -625,6 +625,11 @@ button.default__button {
   margin: 0;
 }
 
+.footer__logo .offcanvas__logo_link img.lazy-load {
+    width: 220px;
+    max-width: 100%;
+}
+
 .breadcrumbarea__content__wraper .breadcrumbarea__title h1.heading {
   color: #fff;
 }
