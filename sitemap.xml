@@ -1,117 +1,139 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- sitemaps -->
-
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!--  created with Free Online Sitemap Generator www.xml-sitemaps.com  -->
 <url>
-  <loc>https://digitalmindson.com/</loc>
-  <lastmod>2024-12-10T02:19:00+00:00</lastmod>
-  <priority>1.00</priority>
+<loc>https://digitalmindson.com/</loc>
+<lastmod>2025-05-28T12:05:50+00:00</lastmod>
+<priority>1.00</priority>
 </url>
 <url>
-  <loc>https://digitalmindson.com/services</loc>
-  <lastmod>2024-12-10T02:19:00+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://digitalmindson.com/services</loc>
+<lastmod>2025-05-28T12:05:50+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://digitalmindson.com/web-development-services</loc>
-  <lastmod>2024-12-10T02:19:00+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://digitalmindson.com/web-development-services</loc>
+<lastmod>2025-05-28T12:05:50+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://digitalmindson.com/software-development-services</loc>
-  <lastmod>2024-12-10T02:19:00+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://digitalmindson.com/software-development-services</loc>
+<lastmod>2025-05-28T12:05:50+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://digitalmindson.com/mobile-app-development-services</loc>
-  <lastmod>2024-12-10T02:19:00+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://digitalmindson.com/mobile-app-development-services</loc>
+<lastmod>2025-05-28T12:05:50+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://digitalmindson.com/game-development-services</loc>
-  <lastmod>2024-12-10T02:19:00+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://digitalmindson.com/game-development-services</loc>
+<lastmod>2025-05-28T12:05:50+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://digitalmindson.com/digital-marketing-services</loc>
-  <lastmod>2024-12-10T02:19:00+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://digitalmindson.com/digital-marketing-services</loc>
+<lastmod>2025-05-28T12:05:50+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://digitalmindson.com/ui-ux-design</loc>
-  <lastmod>2024-12-10T02:19:00+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://digitalmindson.com/ui-ux-design</loc>
+<lastmod>2025-05-28T12:05:50+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://digitalmindson.com/network-services</loc>
-  <lastmod>2024-12-10T02:19:00+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://digitalmindson.com/network-services</loc>
+<lastmod>2025-05-28T12:05:50+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://digitalmindson.com/wordpress-development-services</loc>
-  <lastmod>2024-12-10T02:19:00+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://digitalmindson.com/wordpress-development-services</loc>
+<lastmod>2025-05-28T12:05:50+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://digitalmindson.com/content-creater</loc>
-  <lastmod>2024-12-10T02:19:00+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://digitalmindson.com/content-creater</loc>
+<lastmod>2025-05-28T12:05:50+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://digitalmindson.com/seo-services</loc>
-  <lastmod>2024-12-10T02:19:00+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://digitalmindson.com/seo-services</loc>
+<lastmod>2025-05-28T12:05:50+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://digitalmindson.com/blog</loc>
-  <lastmod>2024-12-10T02:19:00+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://digitalmindson.com/blog</loc>
+<lastmod>2025-05-28T12:05:50+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://digitalmindson.com/portfolio</loc>
-  <lastmod>2024-12-10T02:19:00+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://digitalmindson.com/portfolio</loc>
+<lastmod>2025-05-28T12:05:50+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://digitalmindson.com/contact</loc>
-  <lastmod>2024-12-10T02:19:00+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://digitalmindson.com/contact</loc>
+<lastmod>2025-05-28T12:05:50+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://digitalmindson.com/about</loc>
-  <lastmod>2024-12-10T02:19:00+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://digitalmindson.com/about</loc>
+<lastmod>2025-05-28T12:05:50+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://digitalmindson.com/team</loc>
-  <lastmod>2024-12-10T02:19:00+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://digitalmindson.com/team</loc>
+<lastmod>2025-05-28T12:05:50+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://digitalmindson.com/what-is-mobile-application-development</loc>
-  <lastmod>2024-12-10T02:19:00+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://digitalmindson.com/what-is-mobile-application-development</loc>
+<lastmod>2025-05-28T12:05:50+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://digitalmindson.com/what-is-software-development</loc>
-  <lastmod>2024-12-10T02:19:00+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://digitalmindson.com/what-is-software-development</loc>
+<lastmod>2025-05-28T12:05:50+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://digitalmindson.com/what-is-web-development</loc>
-  <lastmod>2024-12-10T02:19:00+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://digitalmindson.com/what-is-web-development</loc>
+<lastmod>2025-05-28T12:05:50+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://digitalmindson.com/faq</loc>
-  <lastmod>2024-12-10T02:19:00+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://digitalmindson.com/faq</loc>
+<lastmod>2025-05-28T12:15:21+00:00</lastmod>
+<priority>0.80</priority>
 </url>
-
-
+<url>
+<loc>https://digitalmindson.com/what-is-wordpress-development</loc>
+<lastmod>2025-05-28T12:05:50+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://digitalmindson.com/what-is-software-development-a-comprehensive-guide</loc>
+<lastmod>2025-05-28T12:05:50+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://digitalmindson.com/What-is-application-development-a-detailed-guide-to-2025</loc>
+<lastmod>2025-05-28T12:05:50+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://digitalmindson.com/digital-marketing-and-advertising-company</loc>
+<lastmod>2025-05-28T12:05:50+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://digitalmindson.com/Professional-Web-Development-Company</loc>
+<lastmod>2025-05-28T12:05:50+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://digitalmindson.com/web-development-solution</loc>
+<lastmod>2025-05-28T12:05:50+00:00</lastmod>
+<priority>0.64</priority>
+</url>
 </urlset>
