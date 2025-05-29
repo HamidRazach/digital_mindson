@@ -3,6 +3,5 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([a-zA-Z0-9_-]+)$ $1.html [L]
 ErrorDocument 404 /error.html
-RewriteCond %{HTTP_HOST} ^www\.digitalmindson\.com [NC]
-RewriteRule ^(.*)$ https://digitalmindson.com/$1 [L,R=301]
+
 
